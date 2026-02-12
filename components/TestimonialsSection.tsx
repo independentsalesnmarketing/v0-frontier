@@ -7,32 +7,8 @@ export function TestimonialsSection() {
     reviewCount: testimonials.length,
   }
 
-  const serviceWithReviewsSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://frontier-deals.com/#service",
-    name: "Frontier Fiber Internet",
-    description: "High-speed fiber internet with speeds up to 7 Gbps from Frontier Communications.",
-    provider: {
-      "@type": "Organization",
-      name: "Frontier Communications",
-      url: "https://frontier-deals.com",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: aggregateRating.ratingValue.toFixed(1),
-      reviewCount: aggregateRating.reviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
-  }
-
   return (
     <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceWithReviewsSchema) }}
-      />
 
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
