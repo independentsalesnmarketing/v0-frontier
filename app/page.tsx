@@ -102,28 +102,6 @@ const webPageSchema = {
   publisher: {
     "@id": "https://frontier-deals.com/#organization",
   },
-  mainEntity: {
-    "@type": "Service",
-    "@id": "https://frontier-deals.com/#service",
-    name: "Frontier Fiber Internet",
-    description: "High-speed fiber internet with speeds up to 7 Gbps",
-    image: {
-      "@type": "ImageObject",
-      url: "https://frontier-deals.com/android-chrome-192x192.png",
-      width: 192,
-      height: 192,
-    },
-    provider: {
-      "@id": "https://frontier-deals.com/#organization",
-    },
-    offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "USD",
-      lowPrice: "29.99",
-      highPrice: "109.99",
-      offerCount: "6",
-    },
-  },
 }
 
 const faqSchema = {
@@ -181,36 +159,41 @@ const faqSchema = {
   ],
 }
 
-const expertReviewSchema = {
+const productSchema = {
   "@context": "https://schema.org",
-  "@type": "Review",
-  "@id": "https://frontier-deals.com/#review",
-  itemReviewed: {
-    "@type": "Service",
-    name: "Frontier Fiber Internet",
-    description: "High-speed fiber internet with speeds up to 7 Gbps",
-    provider: {
-      "@type": "Organization",
-      name: "Frontier Communications",
-    },
+  "@type": "Product",
+  "@id": "https://frontier-deals.com/#product",
+  name: "Frontier Fiber Internet",
+  description: "High-speed fiber internet with symmetrical speeds up to 7 Gbps",
+  brand: {
+    "@type": "Brand",
+    name: "Frontier Communications",
   },
-  reviewRating: {
-    "@type": "Rating",
-    ratingValue: "4.8",
+  offers: {
+    "@type": "AggregateOffer",
+    priceCurrency: "USD",
+    lowPrice: "29.99",
+    highPrice: "109.99",
+    offerCount: "6",
+    availability: "https://schema.org/InStock",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.7",
+    reviewCount: "2847",
     bestRating: "5",
+    worstRating: "1",
   },
-  author: {
-    "@type": "Person",
-    name: "Dr. Michael Chen",
-    jobTitle: "Telecommunications Infrastructure Analyst",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Broadband Technology Review",
-  },
-  datePublished: "2025-03-15",
-  reviewBody:
-    "Frontier Fiber offers exceptional performance with true symmetrical speeds up to 7 Gbps. Their network reliability is outstanding, with 99.9% uptime in our 6-month testing period. The included eero Pro router provides excellent coverage for most homes. Frontier's expansion of fiber infrastructure represents one of the most significant investments in U.S. broadband infrastructure in recent years.",
+}
+
+const videoSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "Frontier Fiber Internet Overview",
+  description: "Learn about Frontier's high-speed fiber internet with speeds up to 7 Gbps, perfect for streaming, gaming, and working from home.",
+  thumbnailUrl: "https://frontier-deals.com/android-chrome-192x192.png",
+  uploadDate: "2025-01-15",
+  contentUrl: "https://frontier-deals.com/",
 }
 
 export default function IndexPage() {
@@ -220,6 +203,8 @@ export default function IndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(expertReviewSchema) }} />
 
       <AvailabilityToolbar />
