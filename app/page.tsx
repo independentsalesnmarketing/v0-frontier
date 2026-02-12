@@ -37,10 +37,16 @@ import { MoneyBackGuarantee } from "@/components/MoneyBackGuarantee"
 // Structured data for SEO
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness"],
+  "@type": "LocalBusiness",
+  "@id": "https://frontier-deals.com/#organization",
   name: "Frontier Communications",
   url: "https://frontier-deals.com",
-  logo: "https://frontier-deals.com/android-chrome-192x192.png",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://frontier-deals.com/android-chrome-192x192.png",
+    width: 192,
+    height: 192,
+  },
   sameAs: [
     "https://www.facebook.com/FrontierCorp",
     "https://twitter.com/FrontierCorp",
@@ -61,44 +67,54 @@ const structuredData = {
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+1-800-921-8101",
-    contactType: "customer service",
-    availableLanguage: ["English", "Spanish"],
+    contactType: "Customer Service",
+    availableLanguage: ["en", "es"],
   },
-  areaServed: {
-    "@type": "Country",
-    name: "United States",
-  },
-  foundingDate: "1935",
-  award: "Fiber Broadband Association Excellence Award 2024",
+  areaServed: [
+    {
+      "@type": "Country",
+      name: "United States",
+    },
+  ],
+  foundingDate: "1935-01-01",
+  priceRange: "$29.99-$109.99",
 }
 
 const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "https://frontier-deals.com/#webpage",
   url: "https://frontier-deals.com",
   name: "Frontier Communications - High-Speed Fiber Internet, TV & Phone Services",
   description:
     "Experience lightning-fast fiber internet with speeds up to 7 Gbps, plus TV and phone services from Frontier Communications. Reliable connectivity for homes and businesses.",
   datePublished: "2024-01-15",
   dateModified: "2025-04-15",
+  isPartOf: {
+    "@id": "https://frontier-deals.com/#website",
+  },
+  primaryImageOfPage: {
+    "@type": "ImageObject",
+    url: "https://frontier-deals.com/android-chrome-192x192.png",
+    width: 192,
+    height: 192,
+  },
   publisher: {
-    "@type": "Organization",
-    name: "Frontier Communications",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://frontier-deals.com/android-chrome-192x192.png",
-    },
+    "@id": "https://frontier-deals.com/#organization",
   },
   mainEntity: {
     "@type": "Service",
     "@id": "https://frontier-deals.com/#service",
     name: "Frontier Fiber Internet",
     description: "High-speed fiber internet with speeds up to 7 Gbps",
-    image: "https://frontier-deals.com/android-chrome-192x192.png",
+    image: {
+      "@type": "ImageObject",
+      url: "https://frontier-deals.com/android-chrome-192x192.png",
+      width: 192,
+      height: 192,
+    },
     provider: {
-      "@type": "Organization",
-      name: "Frontier Communications",
-      url: "https://frontier-deals.com",
+      "@id": "https://frontier-deals.com/#organization",
     },
     offers: {
       "@type": "AggregateOffer",
@@ -168,16 +184,20 @@ const faqSchema = {
 const expertReviewSchema = {
   "@context": "https://schema.org",
   "@type": "Review",
+  "@id": "https://frontier-deals.com/#review",
   itemReviewed: {
     "@type": "Service",
     "@id": "https://frontier-deals.com/#service",
     name: "Frontier Fiber Internet",
-    image: "https://frontier-deals.com/android-chrome-192x192.png",
+    image: {
+      "@type": "ImageObject",
+      url: "https://frontier-deals.com/android-chrome-192x192.png",
+      width: 192,
+      height: 192,
+    },
     description: "High-speed fiber internet with speeds up to 7 Gbps",
     provider: {
-      "@type": "Organization",
-      name: "Frontier Communications",
-      url: "https://frontier-deals.com",
+      "@id": "https://frontier-deals.com/#organization",
     },
   },
   reviewRating: {
