@@ -79,13 +79,13 @@ export default function Template5({
                 Check Availability
                 <ChevronRight className="w-5 h-5 ml-1" />
               </Link>
-              <a
-                href="tel:+18009218101"
+              <Link
+                href="/internet"
                 className="inline-flex items-center justify-center border-2 border-white/30 hover:bg-white/10 text-white font-bold py-4 px-10 rounded-lg transition-colors"
               >
-                <Phone className="w-5 h-5 mr-2" />
-                (800) 921-8101
-              </a>
+                View Plans
+                <ChevronRight className="w-5 h-5 ml-1" />
+              </Link>
             </div>
           </div>
         </div>
