@@ -11,8 +11,64 @@ export const metadata: Metadata = {
 }
 
 export default function FAQPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What speeds are available for Frontier Fiber?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Frontier offers fiber internet speeds ranging from 500 Mbps to 5 Gbps, depending on your location and plan. Our most popular plans include 500/500 Mbps, 1 Gig (1000/1000 Mbps), 2 Gig (2000/2000 Mbps), and 5 Gig (5000/5000 Mbps). Check availability in your area to see which speeds are offered at your location.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I troubleshoot my internet connection?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If you're experiencing internet issues, try these steps: 1) Restart your router by unplugging it, waiting 30 seconds, then plugging it back in. 2) Check cable connections to ensure all cables are securely connected. 3) Run a speed test to check your connection. 4) Try a wired connection by connecting your device directly to the router with an Ethernet cable. 5) Check for service outages on our support page. If issues persist after trying these steps, please contact our support team for further assistance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I bundle internet with other services?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, Frontier offers bundling options that include internet, TV, and phone services for both residential and business customers. Popular bundles include Fiber Internet + YouTube TV, Fiber Internet + Digital Voice, and Fiber Internet + Digital Voice + YouTube TV. Bundling services can often lead to cost savings and simplified billing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I pay my Frontier bill?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Frontier offers several convenient ways to pay your bill: Online through your account at frontier.com, AutoPay with automatic monthly payments from your bank account or credit card, by phone at 1-800-801-6652, by mail with a check to the address listed on your bill, or in person at an authorized payment location near you.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What equipment do I need for Frontier Fiber Internet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For Frontier Fiber Internet, you'll need an Optical Network Terminal (ONT) installed by a Frontier technician to convert the fiber optic signal to Ethernet, a router (we provide a free eero Pro 6 router with most plans offering Wi-Fi 6 technology), and an Ethernet cable to connect your router to the ONT. If you prefer to use your own router, it must be compatible with fiber internet and capable of handling your selected speed tier.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can I upgrade my current Frontier service?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To upgrade your Frontier service: 1) Log in to your account at frontier.com, 2) Navigate to the Services or Plans section, 3) Review available upgrades for your area, 4) Select the upgrade you want and follow the prompts. Alternatively, you can call our customer service at 1-800-921-8101 to speak with a representative about upgrade options.",
+        },
+      },
+    ],
+  }
+
   return (
     <div className="bg-gray-900 text-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Breadcrumbs items={[{ label: "Support", href: "/support" }, { label: "FAQ", href: "/support/faq" }]} />
       <section className="bg-gradient-to-r from-[#0a192f] to-[#1d2d50] py-20">
         <div className="container mx-auto px-4 text-center">

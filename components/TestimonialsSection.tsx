@@ -25,24 +25,6 @@ export function TestimonialsSection() {
       bestRating: 5,
       worstRating: 1,
     },
-    review: testimonials.map((review, idx) => ({
-      "@type": "Review",
-      itemReviewed: {
-        "@type": "Service",
-        name: "Frontier Fiber Internet",
-      },
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: review.rating,
-        bestRating: 5,
-      },
-      author: {
-        "@type": "Person",
-        name: review.name,
-      },
-      datePublished: review.date,
-      reviewBody: review.text,
-    })),
   }
 
   return (
