@@ -186,19 +186,7 @@ const expertReviewSchema = {
   "@type": "Review",
   "@id": "https://frontier-deals.com/#review",
   itemReviewed: {
-    "@type": "Service",
     "@id": "https://frontier-deals.com/#service",
-    name: "Frontier Fiber Internet",
-    image: {
-      "@type": "ImageObject",
-      url: "https://frontier-deals.com/android-chrome-192x192.png",
-      width: 192,
-      height: 192,
-    },
-    description: "High-speed fiber internet with speeds up to 7 Gbps",
-    provider: {
-      "@id": "https://frontier-deals.com/#organization",
-    },
   },
   reviewRating: {
     "@type": "Rating",
