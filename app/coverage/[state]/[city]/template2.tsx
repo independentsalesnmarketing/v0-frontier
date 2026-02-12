@@ -55,13 +55,13 @@ export default function Template2({ cityName, stateName, fiber = true, maxSpeed 
                 Check Availability
                 <ChevronRight className="w-5 h-5 ml-1" />
               </Link>
-              <Link
-                href="/internet"
+              <a
+                href="tel:+18009218101"
                 className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-8 rounded-lg transition-colors"
               >
-                View Plans
-                <ChevronRight className="w-5 h-5 ml-1" />
-              </Link>
+                <Phone className="w-5 h-5 mr-2" />
+                (800) 921-8101
+              </a>
             </div>
           </div>
         </div>
