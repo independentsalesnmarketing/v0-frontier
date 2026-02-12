@@ -205,7 +205,6 @@ export default function IndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(expertReviewSchema) }} />
 
       <AvailabilityToolbar />
       <div className="pt-[108px] md:pt-[112px] bg-[#0A1E3C] text-[#333333]">
