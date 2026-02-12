@@ -186,6 +186,7 @@ const expertReviewSchema = {
   "@type": "Review",
   "@id": "https://frontier-deals.com/#review",
   itemReviewed: {
+    "@type": "Service",
     "@id": "https://frontier-deals.com/#service",
   },
   reviewRating: {
