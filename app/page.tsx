@@ -192,7 +192,7 @@ const videoSchema = {
   name: "Frontier Fiber Internet Overview",
   description: "Learn about Frontier's high-speed fiber internet with speeds up to 7 Gbps, perfect for streaming, gaming, and working from home.",
   thumbnailUrl: "https://frontier-deals.com/android-chrome-192x192.png",
-  uploadDate: "2025-01-15",
+  uploadDate: "2025-01-15T00:00:00Z",
   contentUrl: "https://frontier-deals.com/",
 }
 
