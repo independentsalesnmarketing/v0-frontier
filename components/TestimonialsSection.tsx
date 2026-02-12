@@ -27,6 +27,10 @@ export function TestimonialsSection() {
     },
     review: testimonials.map((review, idx) => ({
       "@type": "Review",
+      itemReviewed: {
+        "@type": "Service",
+        name: "Frontier Fiber Internet",
+      },
       reviewRating: {
         "@type": "Rating",
         ratingValue: review.rating,
