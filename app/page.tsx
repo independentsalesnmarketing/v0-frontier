@@ -165,6 +165,7 @@ const productSchema = {
   "@id": "https://frontier-deals.com/#product",
   name: "Frontier Fiber Internet",
   description: "High-speed fiber internet with symmetrical speeds up to 7 Gbps",
+  image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/android-chrome-192x192%20(6)-OXl8LEh2N7JM8QRjGplNWnLk4qOjZu.png",
   brand: {
     "@type": "Brand",
     name: "Frontier Communications",
@@ -175,6 +176,7 @@ const productSchema = {
     lowPrice: "29.99",
     highPrice: "109.99",
     offerCount: "6",
+    url: "https://frontier-deals.com/",
     availability: "https://schema.org/InStock",
   },
   aggregateRating: {
@@ -183,6 +185,21 @@ const productSchema = {
     reviewCount: "2847",
     bestRating: "5",
     worstRating: "1",
+  },
+  review: {
+    "@type": "Review",
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: "4.7",
+      bestRating: "5",
+    },
+    author: {
+      "@type": "Person",
+      name: "Sarah Martinez",
+    },
+    reviewBody:
+      "Frontier Fiber Internet has transformed our home internet experience. The symmetrical speeds are perfect for our family's streaming and remote work needs.",
+    datePublished: "2025-02-20",
   },
 }
 

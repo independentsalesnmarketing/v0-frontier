@@ -48,7 +48,7 @@ const productSchema = {
   "@type": "Product",
   name: "Frontier Fiber Internet",
   description: "High-speed fiber internet with symmetrical speeds up to 7 Gbps, unlimited data, and no contracts.",
-  image: "https://frontier-deals.com/android-chrome-192x192.png",
+  image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/android-chrome-192x192%20(6)-OXl8LEh2N7JM8QRjGplNWnLk4qOjZu.png",
   brand: { "@type": "Brand", name: "Frontier Communications" },
   offers: {
     "@type": "AggregateOffer",
@@ -56,6 +56,8 @@ const productSchema = {
     lowPrice: "29.99",
     highPrice: "109.99",
     offerCount: "6",
+    url: "https://frontier-deals.com/internet",
+    availability: "https://schema.org/InStock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
