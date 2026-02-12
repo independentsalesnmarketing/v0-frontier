@@ -7,27 +7,8 @@ export function TestimonialsSection() {
     reviewCount: testimonials.length,
   }
 
-  const collectionSchema = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "Customer Testimonials - Frontier Fiber Internet",
-    description: "Real customer reviews and testimonials for Frontier Fiber Internet services",
-    url: "https://frontier-deals.com/#testimonials",
-    isPartOf: {
-      "@id": "https://frontier-deals.com/#website",
-    },
-    mainEntity: {
-      "@type": "AggregateRating",
-      ratingValue: aggregateRating.ratingValue.toFixed(1),
-      reviewCount: aggregateRating.reviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
-  }
-
   return (
     <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
 
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
