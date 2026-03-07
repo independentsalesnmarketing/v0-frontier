@@ -9,11 +9,13 @@ export function PageOrderButton({
   className,
   planName,
   size,
+  defaultDigitalVoice,
 }: {
   children: React.ReactNode
   className?: string
   planName?: string
   size?: "lg" | "default" | "sm"
+  defaultDigitalVoice?: boolean
 }) {
   const [isOrderFormOpen, setIsOrderFormOpen] = useState(false)
 
@@ -31,6 +33,7 @@ export function PageOrderButton({
         onClose={() => setIsOrderFormOpen(false)}
         preSelectedPlan={planName}
         orderType="residential"
+        defaultDigitalVoice={defaultDigitalVoice}
       />
     </>
   )

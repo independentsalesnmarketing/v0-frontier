@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Is Multi-Gig Internet Worth It? Who Actually Needs 2 Gig or 5 Gig Speeds",
@@ -10,8 +11,10 @@ export const metadata: Metadata = {
 
 export default function MultiGigPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Multi-Gig Internet" }]} />
     <article className="max-w-3xl mx-auto px-4 py-12">
-      <ContentMeta date="2025-10-28" readTime={8} category="Internet Technology" />
+      <ContentMeta publishDate="2025-10-28" updateDate="2026-03-15" readTime={8} categories={["Internet Technology"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/multi-gig-internet-worth-it" />
       <h1 className="text-4xl font-bold tracking-tight mb-6">Is Multi-Gig Internet Worth It? Who Actually Needs 2 Gig or 5 Gig Speeds</h1>
 
       <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -56,5 +59,6 @@ export default function MultiGigPage() {
         </Link>
       </div>
     </article>
+    </>
   )
 }

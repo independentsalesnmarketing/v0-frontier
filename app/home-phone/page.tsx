@@ -6,9 +6,25 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import RelatedServices from "@/components/RelatedServices"
 
 export const metadata: Metadata = {
-  title: "Frontier Home Phone Service | Unlimited Calling from $9.99/mo",
-  description: "Get reliable home phone service from Frontier with unlimited local and long-distance calling, crystal-clear voice quality, and enhanced calling features.",
+  title: "Home Phone Service from $9.99/mo | Frontier Deals",
+  description: "Frontier Digital Unlimited Voice: unlimited local & long-distance calling, HD voice quality, 20+ features. Bundle with fiber internet and save $25/mo.",
+  keywords: "home phone service, frontier home phone, unlimited calling, digital voice, VoIP phone service, home phone plans",
   alternates: { canonical: "/home-phone" },
+  openGraph: {
+    title: "Home Phone Service from $9.99/mo | Frontier Deals",
+    description: "Frontier Digital Unlimited Voice: unlimited calling, HD quality, 20+ features. Bundle with fiber and save $25/mo.",
+    url: "https://frontier-deals.com/home-phone",
+    siteName: "Frontier Deals",
+    images: [{ url: "/images/og-frontier-internet.jpg", width: 1200, height: 630, alt: "Frontier Home Phone Service" }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home Phone Service from $9.99/mo | Frontier Deals",
+    description: "Unlimited local & long-distance calling. Bundle with Frontier fiber and save $25/mo.",
+    images: ["/images/og-frontier-internet.jpg"],
+  },
 }
 
 const productSchema = {
@@ -17,7 +33,6 @@ const productSchema = {
   description: "Unlimited nationwide calling with crystal-clear HD voice quality and 20+ popular calling features.",
   brand: { "@type": "Brand", name: "Frontier Communications" },
   offers: { "@type": "Offer", price: "25.00", priceCurrency: "USD", availability: "https://schema.org/InStock" },
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", bestRating: "5", worstRating: "1", ratingCount: "1289" },
 }
 
 const faqSchema = {

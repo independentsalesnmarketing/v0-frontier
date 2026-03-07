@@ -48,7 +48,6 @@ export function BusinessOrderForm({ isOpen, onClose, preSelectedPlan }: Business
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    console.log("Business Form submission started")
 
     try {
       // Format data exactly as expected by the Google Apps Script
@@ -98,11 +97,7 @@ export function BusinessOrderForm({ isOpen, onClose, preSelectedPlan }: Business
       document.body.appendChild(form)
       form.submit()
 
-      console.log("Business Form submitted to Google Apps Script")
-
-      // Show thank you message after a short delay
       setTimeout(() => {
-        console.log("Showing thank you message")
         setIsSubmitting(false)
         setShowThankYou(true)
 
@@ -129,9 +124,7 @@ export function BusinessOrderForm({ isOpen, onClose, preSelectedPlan }: Business
           document.body.removeChild(form)
         }
 
-        // Close the thank you message after 5 seconds
         setTimeout(() => {
-          console.log("Closing thank you message")
           setShowThankYou(false)
           onClose()
         }, 5000)
@@ -523,6 +516,11 @@ export function BusinessOrderForm({ isOpen, onClose, preSelectedPlan }: Business
                 </Button>
               )}
             </div>
+            <p className="text-xs text-gray-500 leading-relaxed mt-4">
+              By submitting this form, you agree to our{" "}
+              <a href="/terms" className="underline hover:text-gray-700">Terms of Service</a> and{" "}
+              <a href="/privacy" className="underline hover:text-gray-700">Privacy Policy</a>, and you consent to be contacted by an authorized Frontier representative by phone, email, or text message at the contact information provided for the purpose of completing your business service order. Message and data rates may apply.
+            </p>
           </form>
         </div>
       </div>

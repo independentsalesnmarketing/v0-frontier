@@ -1,18 +1,21 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
-  title: "Rural Internet Options in 2025: Fiber, Fixed Wireless, Satellite, and More",
+  title: "Rural Internet Options in 2026: Fiber, Fixed Wireless, Satellite, and More",
   description: "If you live outside a major metro area, your internet options are different. Here's an honest comparison of every rural internet technology available today.",
   alternates: { canonical: "https://frontier-deals.com/blog/rural-internet-options" },
 }
 
 export default function RuralInternetPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Rural Internet Options" }]} />
     <article className="max-w-3xl mx-auto px-4 py-12">
-      <ContentMeta date="2026-01-25" readTime={9} category="Buying Guide" />
-      <h1 className="text-4xl font-bold tracking-tight mb-6">Rural Internet Options in 2025: Fiber, Fixed Wireless, Satellite, and More</h1>
+      <ContentMeta publishDate="2026-01-25" updateDate="2026-03-12" readTime={9} categories={["Buying Guide"]} factChecked={true} factChecker="Technical Review Team" author="Marcus Chen" pageSlug="/blog/rural-internet-options" />
+      <h1 className="text-4xl font-bold tracking-tight mb-6">Rural Internet Options in 2026: Fiber, Fixed Wireless, Satellite, and More</h1>
 
       <p className="text-lg text-gray-700 leading-relaxed mb-8">
         Living outside a major city used to mean settling for dial-up or sluggish DSL. The landscape has changed dramatically. Here&apos;s an honest look at every internet technology available in rural areas, with real pros and cons.
@@ -53,5 +56,6 @@ export default function RuralInternetPage() {
         </Link>
       </div>
     </article>
+    </>
   )
 }

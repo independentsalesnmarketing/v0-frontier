@@ -67,6 +67,32 @@ export function OrderCTAButton({
   )
 }
 
+export function ResidentialOrderButton({
+  children,
+  className,
+  planName,
+}: {
+  children: React.ReactNode
+  className?: string
+  planName?: string
+}) {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <>
+      <button onClick={() => setIsOpen(true)} className={className}>
+        {children}
+      </button>
+      <OrderForm
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        preSelectedPlan={planName}
+        orderType="residential"
+      />
+    </>
+  )
+}
+
 export function ServiceTabs({ residentialContent, businessContent }: {
   residentialContent: React.ReactNode
   businessContent: React.ReactNode

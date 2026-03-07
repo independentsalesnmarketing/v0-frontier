@@ -3,132 +3,145 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X } from "lucide-react"
+import { usePathname } from "next/navigation"
+import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { OrderForm } from "@/components/OrderForm"
 import { OrderTypePopup } from "@/components/OrderTypePopup"
 import { BusinessOrderForm } from "@/components/BusinessOrderForm"
-// import AvailabilityToolbar from "./AvailabilityToolbar" // Removed
+
+const navLinks = [
+  { href: "/internet", label: "Internet Plans" },
+  { href: "/bundles", label: "Bundles" },
+  { href: "/check-availability", label: "Check Availability" },
+  { href: "/business", label: "Business" },
+  { href: "/internet-speed-test", label: "Speed Test" },
+]
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isOrderTypePopupOpen, setIsOrderTypePopupOpen] = useState(false)
   const [isResidentialOrderFormOpen, setIsResidentialOrderFormOpen] = useState(false)
   const [isBusinessOrderFormOpen, setIsBusinessOrderFormOpen] = useState(false)
+  const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
 
+  // Scroll detection for header background
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    const handle = () => setScrolled(window.scrollY > 60)
+    window.addEventListener("scroll", handle, { passive: true })
+    return () => window.removeEventListener("scroll", handle)
   }, [])
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : ""
+    return () => { document.body.style.overflow = "" }
+  }, [isMenuOpen])
+
   const openOrderTypePopup = () => {
+    setIsMenuOpen(false)
     setIsOrderTypePopupOpen(true)
-  }
-
-  const closeOrderTypePopup = () => {
-    setIsOrderTypePopupOpen(false)
-  }
-
-  const openResidentialOrderForm = () => {
-    setIsOrderTypePopupOpen(false)
-    setIsResidentialOrderFormOpen(true)
-  }
-
-  const openBusinessOrderForm = () => {
-    setIsOrderTypePopupOpen(false)
-    setIsBusinessOrderFormOpen(true)
   }
 
   return (
     <header className="fixed top-0 left-0 right-0 w-full z-50">
-      <div className="bg-[#e10600] transition-all duration-300 w-full py-2">
+      {/* Main nav bar — glass at top, red when scrolled */}
+      <div className={`w-full transition-all duration-300 ${
+        scrolled
+          ? "bg-[#e10600] shadow-[0_2px_24px_rgba(0,0,0,0.3)]"
+          : "bg-[#0A1E3C]/70 backdrop-blur-md border-b border-white/10"
+      }`}>
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
-            <Link href="/" className="text-2xl font-bold flex items-center text-white">
+          <div className="flex justify-between items-center h-14">
+            {/* Logo */}
+            <Link href="/" className="flex items-center flex-shrink-0">
               <Image
                 src="/images/frontier-logo-design.png"
-                alt="Frontier Logo"
-                width={120}
-                height={40}
-                className="mr-2"
+                alt="Frontier Deals - Authorized Retailer"
+                width={110}
+                height={36}
+                priority
               />
             </Link>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/internet" className="text-white hover:text-[#0A1E3C] transition-colors font-medium">
-                Internet
-              </Link>
-              <Link href="/tv-netflix" className="text-white hover:text-[#0A1E3C] transition-colors font-medium">
-                TV
-              </Link>
-              <Link href="/home-phone" className="text-white hover:text-[#0A1E3C] transition-colors font-medium">
-                Home Phone
-              </Link>
-              <Link href="/coverage" className="text-white hover:text-[#0A1E3C] transition-colors font-medium">
-                Coverage
-              </Link>
-              <Link href="/business" className="text-white hover:text-[#0A1E3C] transition-colors font-medium">
-                Business
-              </Link>
-              <Link href="/blog" className="text-white hover:text-[#0A1E3C] transition-colors font-medium">
-                Blog
-              </Link>
-              <Link href="/support" className="text-white hover:text-[#0A1E3C] transition-colors font-medium">
-                Support
-              </Link>
+
+            {/* Desktop nav */}
+            <nav className="hidden lg:flex items-center gap-1">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    pathname === link.href
+                      ? "bg-white/20 text-white"
+                      : "text-white/90 hover:bg-white/10 hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
 
-            <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {/* Desktop CTA */}
+            <div className="hidden lg:flex items-center gap-3">
+              <Button
+                onClick={openOrderTypePopup}
+                size="sm"
+                className="bg-white text-[#e10600] hover:bg-gray-100 font-bold text-sm px-5 cta-pulse"
+              >
+                Order Online
+              </Button>
+            </div>
+
+            {/* Mobile menu toggle */}
+            <button
+              className="lg:hidden text-white p-2 -mr-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
+            >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* <AvailabilityToolbar /> // Removed */}
-
+      {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#0A1E3C] py-3 border-t border-[#1D3461] fixed top-[60px] left-0 right-0 w-full z-40">
-          <div className="container mx-auto px-4 mb-4">
-            <Image
-              src="/images/frontier-logo-design.png"
-              alt="Frontier Logo"
-              width={120}
-              height={40}
-              className="w-28"
-            />
-          </div>
-          <nav className="container mx-auto px-4 flex flex-col space-y-6">
-            <Link href="/internet" className="text-white hover:text-[#DA202C] transition-colors">
-              Internet
-            </Link>
-            <Link href="/tv-netflix" className="text-white hover:text-[#DA202C] transition-colors">
-              TV
-            </Link>
-            <Link href="/home-phone" className="text-white hover:text-[#DA202C] transition-colors">
-              Home Phone
-            </Link>
-            <Link href="/coverage" className="text-white hover:text-[#DA202C] transition-colors">
-              Coverage
-            </Link>
-            <Link href="/business" className="text-white hover:text-[#DA202C] transition-colors">
-              Business
-            </Link>
-            <Link href="/blog" className="text-white hover:text-[#DA202C] transition-colors">
+        <div className="lg:hidden fixed inset-x-0 top-14 bottom-0 bg-[#0A1E3C] z-40 overflow-y-auto">
+          <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  pathname === link.href
+                    ? "bg-white/10 text-white"
+                    : "text-white/80 hover:bg-white/5 hover:text-white"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link
+              href="/blog"
+              className="px-4 py-3 rounded-lg text-base font-medium text-white/80 hover:bg-white/5 hover:text-white transition-colors"
+            >
               Blog
             </Link>
-            <Link href="/support" className="text-white hover:text-[#DA202C] transition-colors">
-              Support
-            </Link>
+
+            <div className="border-t border-white/10 my-4" />
+
             <Button
-              variant="outline"
-              className="bg-[#DA202C] text-white hover:bg-[#B71C1C] hover:text-white border-0 w-full"
+              className="bg-[#DA202C] text-white hover:bg-[#B71C1C] border-0 w-full mt-2 py-6 text-base font-bold"
               onClick={openOrderTypePopup}
             >
-              Order Now
+              Order Online
             </Button>
           </nav>
         </div>
@@ -136,9 +149,15 @@ export default function Header() {
 
       <OrderTypePopup
         isOpen={isOrderTypePopupOpen}
-        onClose={closeOrderTypePopup}
-        onSelectResidential={openResidentialOrderForm}
-        onSelectBusiness={openBusinessOrderForm}
+        onClose={() => setIsOrderTypePopupOpen(false)}
+        onSelectResidential={() => {
+          setIsOrderTypePopupOpen(false)
+          setIsResidentialOrderFormOpen(true)
+        }}
+        onSelectBusiness={() => {
+          setIsOrderTypePopupOpen(false)
+          setIsBusinessOrderFormOpen(true)
+        }}
       />
       <OrderForm
         isOpen={isResidentialOrderFormOpen}

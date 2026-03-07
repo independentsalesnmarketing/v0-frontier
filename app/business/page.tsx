@@ -994,9 +994,9 @@ export default function BusinessSolutions() {
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white/10 bg-transparent"
-              asChild
+              onClick={scrollToPlans}
             >
-              <Link href="/contact">Contact Sales</Link>
+              View Business Plans
             </Button>
           </div>
         </div>

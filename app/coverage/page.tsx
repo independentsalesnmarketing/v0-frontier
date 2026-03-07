@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { MapPin, ChevronRight, Phone } from "lucide-react"
+import { MapPin, ChevronRight } from "lucide-react"
 import { frontierCoverage } from "@/lib/coverage-data"
 import Breadcrumbs from "@/components/Breadcrumbs"
 
@@ -8,6 +8,23 @@ export const metadata: Metadata = {
   title: "Frontier Fiber Coverage Map | Find Internet in Your Area",
   description:
     "Check Frontier Fiber Internet availability in your area. Browse our coverage map across 19+ states and hundreds of cities. Find plans starting at $29.99/mo.",
+  keywords: "frontier fiber coverage, frontier internet availability, fiber internet map, frontier service area, internet availability checker",
+  alternates: { canonical: "/coverage" },
+  openGraph: {
+    title: "Frontier Fiber Coverage Map | Find Internet in Your Area",
+    description: "Check Frontier Fiber Internet availability in your area. Browse our coverage map across 19+ states and hundreds of cities starting at $29.99/mo.",
+    url: "https://frontier-deals.com/coverage",
+    siteName: "Frontier Deals",
+    images: [{ url: "/images/og-frontier-internet.jpg", width: 1200, height: 630, alt: "Frontier Fiber Coverage Map" }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frontier Fiber Coverage Map | Find Internet in Your Area",
+    description: "Check Frontier Fiber availability across 19+ states. Find plans from $29.99/mo.",
+    images: ["/images/og-frontier-internet.jpg"],
+  },
 }
 
 export default function CoveragePage() {
@@ -28,19 +45,12 @@ export default function CoveragePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/order"
+              href="/check-availability"
               className="inline-flex items-center justify-center bg-[#da202c] hover:bg-[#b71c1c] text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               Check Your Address
               <ChevronRight className="w-5 h-5 ml-1" />
             </Link>
-            <a
-              href="tel:+18009218101"
-              className="inline-flex items-center justify-center border-2 border-white/30 hover:bg-white/10 text-white font-bold py-3 px-8 rounded-lg transition-colors"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              (800) 921-8101
-            </a>
           </div>
         </div>
       </section>
@@ -107,8 +117,32 @@ export default function CoveragePage() {
         </div>
       </section>
 
+      {/* Cross-links */}
+      <section className="py-12 bg-[#f5f7fa]">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <Link href="/internet" className="bg-white text-center p-4 rounded-lg border border-gray-100 hover:shadow-md transition-all">
+              <p className="font-semibold text-[#0A1E3C] text-sm">View Plans</p>
+              <p className="text-xs text-gray-500 mt-1">From $29.99/mo</p>
+            </Link>
+            <Link href="/deals" className="bg-white text-center p-4 rounded-lg border border-gray-100 hover:shadow-md transition-all">
+              <p className="font-semibold text-[#0A1E3C] text-sm">Current Deals</p>
+              <p className="text-xs text-gray-500 mt-1">Visa reward cards</p>
+            </Link>
+            <Link href="/blog/fiber-internet-availability-guide" className="bg-white text-center p-4 rounded-lg border border-gray-100 hover:shadow-md transition-all">
+              <p className="font-semibold text-[#0A1E3C] text-sm">Availability Guide</p>
+              <p className="text-xs text-gray-500 mt-1">How fiber expands</p>
+            </Link>
+            <Link href="/reviews" className="bg-white text-center p-4 rounded-lg border border-gray-100 hover:shadow-md transition-all">
+              <p className="font-semibold text-[#0A1E3C] text-sm">Customer Reviews</p>
+              <p className="text-xs text-gray-500 mt-1">Rated 4.8/5</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="py-16 bg-[#da202c] text-white">
+      <section className="bg-[#da202c] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             {"Don't"} See Your City?
@@ -118,7 +152,7 @@ export default function CoveragePage() {
             availability or call us to learn when service may be available in your area.
           </p>
           <Link
-            href="/order"
+            href="/check-availability"
             className="inline-flex items-center justify-center bg-white text-[#da202c] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
           >
             Check Availability

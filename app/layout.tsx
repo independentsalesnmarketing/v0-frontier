@@ -1,54 +1,51 @@
 import type React from "react"
-import { Inter, Playfair_Display } from "next/font/google"
+import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { StickyPromoBar } from "@/components/StickyPromoBar"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" })
 
 export const metadata = {
-  title: "Frontier Deals | Fast & Reliable Fiber Internet",
+  title: "Frontier Fiber Internet: Best Deals from $29.99/mo | Frontier Deals",
   description:
-    "Experience lightning-fast fiber internet, TV, and phone services from Frontier. Enjoy unbeatable speeds, reliability, and customer support for your home and business.",
+    "Get the best Frontier fiber internet deals through an authorized retailer. Plans from $29.99/mo with unlimited data, free eero router, and free installation. Order online today.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
   openGraph: {
-    title: "Frontier Deals | Fast & Reliable Fiber Internet",
+    title: "Frontier Deals | Authorized Retailer — Fiber Internet from $29.99/mo",
     description:
-      "Experience lightning-fast fiber internet, TV, and phone services from Frontier. Enjoy unbeatable speeds, reliability, and customer support for your home and business.",
+      "Shop Frontier fiber internet plans through an authorized retailer. Compare speeds up to 7 Gbps, check availability, and order online.",
     type: "website",
     images: [
       {
         url: "/images/og-frontier-hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Frontier Fiber Internet - Fast & Reliable",
+        alt: "Frontier Fiber Internet — Authorized Retailer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Frontier Deals | Fast & Reliable Fiber Internet",
+    title: "Frontier Fiber Internet: Best Deals from $29.99/mo | Frontier Deals",
     description:
-      "Experience lightning-fast fiber internet, TV, and phone services from Frontier. Enjoy unbeatable speeds, reliability, and customer support for your home and business.",
+      "Best Frontier fiber internet deals from $29.99/mo. Unlimited data, free eero router, free installation.",
     images: ["/images/og-frontier-hero.jpg"],
   },
   keywords: [
     "frontier fiber internet",
+    "frontier authorized retailer",
+    "frontier internet deals",
+    "fiber internet plans",
+    "frontier internet service",
     "high speed internet",
-    "fiber optic internet",
-    "frontier communications",
     "internet service provider",
-    "fast internet",
-    "reliable internet",
-    "fiber internet deals",
-    "home internet",
-    "business internet"
+    "frontier fiber deals",
   ],
   metadataBase: new URL("https://frontier-deals.com"),
   alternates: {
@@ -68,13 +65,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`scroll-smooth ${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <head>
         <meta name="theme-color" content="#e10600" />
       </head>
-      <body className="bg-white text-foreground font-sans pb-20">
+      <body className="bg-white text-foreground font-sans pb-16">
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen pt-14">{children}</main>
         <Footer />
         <StickyPromoBar />
       </body>

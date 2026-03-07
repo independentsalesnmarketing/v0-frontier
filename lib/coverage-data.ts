@@ -433,6 +433,8 @@ export const frontierCoverage: Record<string, string[]> = {
     "Beaumont",
     "Lewisville",
     "Tyler",
+    "San Angelo",
+    "Wichita Falls",
   ],
   "West Virginia": [
     "Charleston",

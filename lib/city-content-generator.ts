@@ -182,7 +182,7 @@ export function generateCitySpecificContent(cityName: string, stateName: string)
     benefits: [
       {
         title: "Lightning-Fast Speeds",
-        description: `With up to 5 Gig symmetrical speeds, ${cityName} residents enjoy buffer-free streaming, lag-free gaming, and seamless video calls.`,
+        description: `With up to 7 Gig symmetrical speeds, ${cityName} residents enjoy buffer-free streaming, lag-free gaming, and seamless video calls.`,
       },
       {
         title: "Unmatched Reliability",
@@ -243,7 +243,7 @@ export function generateCitySpecificContent(cityName: string, stateName: string)
     faqs: [
       {
         question: `Is Frontier Fiber available at my address in ${cityName}?`,
-        answer: `Frontier Fiber is available to ${coveragePercentage}% of homes in ${cityName}. To check if your specific address is serviceable, use our availability checker or call our local ${cityName} team at (800) 921-8101.`,
+        answer: `Frontier Fiber is available to ${coveragePercentage}% of homes in ${cityName}. To check if your specific address is serviceable, use our availability checker on the website.`,
       },
       {
         question: `How does Frontier Fiber compare to other internet providers in ${cityName}?`,

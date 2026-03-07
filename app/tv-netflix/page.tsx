@@ -147,7 +147,7 @@ export default function Netflix() {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <Check className="w-5 h-5 mr-2 text-[#da202c] mt-1 flex-shrink-0" />
-                  <span>Symmetrical speeds up to 5 Gig for multiple 4K streams</span>
+                  <span>Symmetrical speeds up to 7 Gig for multiple 4K streams</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 mr-2 text-[#da202c] mt-1 flex-shrink-0" />
@@ -263,7 +263,7 @@ export default function Netflix() {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Netflix Standard with Ads</h3>
                 <p className="text-4xl font-bold mb-4 text-[#da202c]">
-                  $6.99<span className="text-xl font-normal text-gray-600">/mo</span>
+                  $7.99<span className="text-xl font-normal text-gray-600">/mo</span>
                 </p>
                 <ul className="mb-6 space-y-2">
                   <li className="flex items-start">
@@ -290,7 +290,7 @@ export default function Netflix() {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Netflix Standard</h3>
                 <p className="text-4xl font-bold mb-4 text-[#da202c]">
-                  $15.49<span className="text-xl font-normal text-gray-600">/mo</span>
+                  $17.99<span className="text-xl font-normal text-gray-600">/mo</span>
                 </p>
                 <ul className="mb-6 space-y-2">
                   <li className="flex items-start">
@@ -320,7 +320,7 @@ export default function Netflix() {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Netflix Premium</h3>
                 <p className="text-4xl font-bold mb-4 text-[#da202c]">
-                  $22.99<span className="text-xl font-normal text-gray-600">/mo</span>
+                  $24.99<span className="text-xl font-normal text-gray-600">/mo</span>
                 </p>
                 <ul className="mb-6 space-y-2">
                   <li className="flex items-start">
@@ -483,7 +483,7 @@ export default function Netflix() {
                       <tbody>
                         <tr>
                           <td className="border border-gray-200 px-4 py-2">Starting Price</td>
-                          <td className="border border-gray-200 px-4 py-2 text-center">$6.99/mo</td>
+                          <td className="border border-gray-200 px-4 py-2 text-center">$7.99/mo</td>
                           <td className="border border-gray-200 px-4 py-2 text-center">$7.99/mo</td>
                           <td className="border border-gray-200 px-4 py-2 text-center">$7.99/mo</td>
                         </tr>

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Home Network Setup Guide: Router Placement, Ethernet, and Mesh WiFi",
@@ -10,8 +11,10 @@ export const metadata: Metadata = {
 
 export default function HomeNetworkGuidePage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Home Network Setup" }]} />
     <article className="max-w-3xl mx-auto px-4 py-12">
-      <ContentMeta date="2025-12-15" readTime={9} category="WiFi Tips" />
+      <ContentMeta publishDate="2025-12-15" updateDate="2026-03-06" readTime={9} categories={["WiFi Tips"]} factChecked={true} factChecker="Technical Review Team" author="Marcus Chen" pageSlug="/blog/home-network-setup-guide" />
       <h1 className="text-4xl font-bold tracking-tight mb-6">Home Network Setup Guide: Router Placement, Ethernet, and Mesh WiFi</h1>
 
       <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -51,5 +54,6 @@ export default function HomeNetworkGuidePage() {
         </Link>
       </div>
     </article>
+    </>
   )
 }

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "How to Fix WiFi Dead Zones in Your Home | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function WifiDeadZonesPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "WiFi Dead Zones Fix" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">How to Fix WiFi Dead Zones in Your Home</h1>
-        <ContentMeta publishDate="2025-08-18" readTime={7} categories={["WiFi Tips"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-08-18" updateDate="2026-03-07" readTime={7} categories={["WiFi Tips"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/wifi-dead-zones-fix" />
 
         <p className="text-lg text-gray-700 leading-relaxed">You have a fast internet plan, but certain rooms get terrible WiFi. The problem is not your internet connection -- it is how the signal gets from your router to your devices. Here are the most effective fixes, ranked from free to investment.</p>
 
@@ -48,5 +51,6 @@ export default function WifiDeadZonesPage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

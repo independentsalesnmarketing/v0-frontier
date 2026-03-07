@@ -2,23 +2,28 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Frontier Fiber Internet Plans & Pricing | Starting at $29.99/mo",
+  title: "Frontier Internet Pricing 2026 | Plans from $29.99/mo — No Hidden Fees",
   description:
-    "Compare Frontier Fiber Internet plans with speeds from 200 Mbps to 7 Gig. All plans include unlimited data, no contracts, and free Amazon eero routers.",
+    "Transparent Frontier Fiber internet pricing. Plans from $29.99/mo to $109.99/mo with no hidden fees, no contracts, free installation, and free eero router. Compare every plan.",
   alternates: { canonical: "/internet/pricing" },
   openGraph: {
-    title: "Frontier Fiber Internet Plans & Pricing | Starting at $29.99/mo",
+    title: "Frontier Internet Pricing 2026 — No Hidden Fees",
     description:
-      "Compare Frontier Fiber Internet plans with speeds from 200 Mbps to 7 Gig. All plans include unlimited data, no contracts, and free Amazon eero routers.",
-    images: [
-      {
-        url: "/images/hero-family-internet.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Frontier Fiber Internet Plans",
-      },
-    ],
+      "Compare Frontier Fiber pricing from $29.99/mo. Every plan side by side with real costs. No contracts, unlimited data.",
+    type: "website",
   },
+  keywords: [
+    "frontier internet pricing",
+    "frontier fiber cost",
+    "frontier internet price",
+    "frontier monthly cost",
+    "how much is frontier internet",
+    "frontier internet rates 2026",
+    "frontier internet plans and pricing",
+    "cheap fiber internet",
+    "affordable fiber plans",
+    "frontier fiber price per month",
+  ],
 }
 
 export default function PricingLayout({

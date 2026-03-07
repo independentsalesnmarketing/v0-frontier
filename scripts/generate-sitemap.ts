@@ -16,7 +16,6 @@ function generateSitemap() {
     { url: "/business", priority: "0.8", changefreq: "weekly" },
     { url: "/support", priority: "0.7", changefreq: "weekly" },
     { url: "/about", priority: "0.6", changefreq: "monthly" },
-    { url: "/contact", priority: "0.6", changefreq: "monthly" },
     { url: "/wifi", priority: "0.7", changefreq: "weekly" },
     { url: "/internet-speed-test", priority: "0.6", changefreq: "monthly" },
     { url: "/business/internet", priority: "0.7", changefreq: "weekly" },

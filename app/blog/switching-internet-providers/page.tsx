@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "How to Switch Internet Providers Without Losing Service",
@@ -10,8 +11,10 @@ export const metadata: Metadata = {
 
 export default function SwitchingProvidersPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Switching Internet Providers" }]} />
     <article className="max-w-3xl mx-auto px-4 py-12">
-      <ContentMeta date="2025-10-10" readTime={7} category="Buying Guide" />
+      <ContentMeta publishDate="2025-10-10" updateDate="2026-03-13" readTime={7} categories={["Buying Guide"]} factChecked={true} factChecker="Technical Review Team" author="Marcus Chen" pageSlug="/blog/switching-internet-providers" />
       <h1 className="text-4xl font-bold tracking-tight mb-6">How to Switch Internet Providers Without Losing Service</h1>
 
       <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -53,10 +56,11 @@ export default function SwitchingProvidersPage() {
         <p className="text-gray-700 mb-4">
           Frontier Fiber offers free installation, no contracts, and no data caps. Plans start at $29.99/mo.
         </p>
-        <Link href="/order" className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+        <Link href="/check-availability" className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
           Check Availability
         </Link>
       </div>
     </article>
+    </>
   )
 }

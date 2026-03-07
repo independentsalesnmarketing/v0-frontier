@@ -5,14 +5,41 @@ import { Wifi, Shield, Zap, Users } from "lucide-react"
 import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
-  title: "Frontier WiFi | Whole-Home WiFi Coverage & Router",
-  description: "Get reliable whole-home WiFi coverage with Frontier's included router. Eliminate dead zones and enjoy fast wireless speeds in every room.",
+  title: "Free eero Wi-Fi 6 Router with Frontier Fiber | Whole-Home Coverage",
+  description: "Every Frontier Fiber plan includes a free Amazon eero Wi-Fi 6 router. Get whole-home wireless coverage, eliminate dead zones, and enjoy fast WiFi in every room.",
+  keywords: "eero wifi 6 router, frontier wifi, whole home wifi, frontier eero router, wifi 6, mesh wifi, wireless internet",
   alternates: { canonical: "/wifi" },
+  openGraph: {
+    title: "Free eero Wi-Fi 6 Router with Frontier Fiber | Whole-Home Coverage",
+    description: "Every Frontier Fiber plan includes a free Amazon eero Wi-Fi 6 router for whole-home wireless coverage.",
+    url: "https://frontier-deals.com/wifi",
+    siteName: "Frontier Deals",
+    images: [{ url: "/images/og-frontier-internet.jpg", width: 1200, height: 630, alt: "Frontier eero Wi-Fi 6 Router" }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free eero Wi-Fi 6 Router with Frontier Fiber | Whole-Home Coverage",
+    description: "Every Frontier Fiber plan includes a free Amazon eero Wi-Fi 6 router. Eliminate dead zones.",
+    images: ["/images/og-frontier-internet.jpg"],
+  },
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "How many devices can connect to Frontier WiFi?", acceptedAnswer: { "@type": "Answer", text: "Frontier WiFi supports multiple devices, typically up to 250 connected devices depending on your plan and router capabilities." } },
+    { "@type": "Question", name: "Is Frontier WiFi secure?", acceptedAnswer: { "@type": "Answer", text: "Yes, Frontier WiFi comes with built-in security features to protect your network and connected devices from potential threats." } },
+    { "@type": "Question", name: "Can I manage my WiFi network remotely?", acceptedAnswer: { "@type": "Answer", text: "Yes, with the Frontier WiFi app, you can manage your network, set parental controls, and monitor connected devices from anywhere." } },
+  ],
 }
 
 export default function FrontierWiFi() {
   return (
     <div className="bg-[#0a192f] text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Breadcrumbs items={[{ label: "WiFi", href: "/wifi" }]} />
       <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold mb-8 text-center text-[#ff6b6b]">Frontier WiFi</h1>

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "How Many Smart Devices Can Your Internet Handle? | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function SmartHomeGuidePage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Smart Home Internet Guide" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">How Many Smart Devices Can Your Internet Handle?</h1>
-        <ContentMeta publishDate="2025-06-28" readTime={7} categories={["Smart Home"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-06-28" updateDate="2026-03-06" readTime={7} categories={["Smart Home"]} factChecked={true} factChecker="Technical Review Team" author="Marcus Chen" pageSlug="/blog/smart-home-internet-guide" />
 
         <p className="text-lg text-gray-700 leading-relaxed">The average American home now has 22 connected devices, up from 11 in 2019. Thermostats, doorbells, cameras, speakers, lights, locks, appliances -- they all need bandwidth. Here is how to make sure your internet keeps up.</p>
 
@@ -58,5 +61,6 @@ export default function SmartHomeGuidePage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

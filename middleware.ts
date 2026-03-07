@@ -30,6 +30,21 @@ export function middleware(request: NextRequest) {
     }
   }
 
+  // Redirect /tv-and-bundles -> /bundles (301)
+  if (pathname === "/tv-and-bundles") {
+    return NextResponse.redirect(new URL("/bundles", request.url), 301)
+  }
+
+  // Redirect dead plan pages
+  if (pathname === "/internet/pricing" || pathname === "/internet/fiber-200") {
+    return NextResponse.redirect(new URL("/internet", request.url), 301)
+  }
+
+  // Redirect /support -> /internet (301) — not an official support channel
+  if (pathname === "/support" || pathname === "/support/faq") {
+    return NextResponse.redirect(new URL("/internet", request.url), 301)
+  }
+
   // Redirect /locations/[location] -> /fiber-internet-in/[city]/[state] (301)
   const locationsMatch = pathname.match(/^\/locations\/([^/]+)$/)
   if (locationsMatch) {
@@ -55,5 +70,10 @@ export const config = {
     "/fiber-internet-in-:path*",
     "/coverage/:state/:city",
     "/locations/:path*",
+    "/tv-and-bundles",
+    "/support",
+    "/support/faq",
+    "/internet/pricing",
+    "/internet/fiber-200",
   ],
 }

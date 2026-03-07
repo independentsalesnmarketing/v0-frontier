@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Online Gaming Internet Guide: Speed, Latency, and Lag Explained | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function GamingGuidePage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Gaming Internet Guide" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Online Gaming Internet Guide: Speed, Latency, and Lag Explained</h1>
-        <ContentMeta publishDate="2025-06-10" readTime={8} categories={["Gaming"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-06-10" updateDate="2026-03-11" readTime={8} categories={["Gaming"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/gaming-internet-guide" />
 
         <p className="text-lg text-gray-700 leading-relaxed">Most gamers fixate on download speed when choosing an internet plan. The truth is that latency, jitter, and upload speed have a far bigger impact on your in-game experience. Here is what each metric means and what to look for.</p>
 
@@ -58,5 +61,6 @@ export default function GamingGuidePage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

@@ -78,7 +78,7 @@ export function getCityLocalExpertise(cityName: string, stateName: string, hasFi
     "Sunset Hills",
   ]
 
-  const popularAreas = []
+  const popularAreas: string[] = []
   for (let i = 0; i < 4; i++) {
     popularAreas.push(areas[(hash + i) % areas.length])
   }

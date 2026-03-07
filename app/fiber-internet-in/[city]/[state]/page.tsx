@@ -5,10 +5,10 @@ import { getStateInitials } from "@/lib/utils"
 import CityPageTemplate from "@/components/CityPageTemplate"
 
 interface LocationPageProps {
-  params: {
+  params: Promise<{
     city: string
     state: string
-  }
+  }>
 }
 
 function parseName(slug: string): string {
@@ -24,7 +24,7 @@ function cityExists(cityName: string, stateName: string): boolean {
 }
 
 export async function generateMetadata({ params }: LocationPageProps): Promise<Metadata> {
-  const { city, state } = params
+  const { city, state } = await params
   const cityName = parseName(city)
   const stateName = parseName(state)
 
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
 
   const stateAbbr = getStateInitials(stateName)
   const title = `Frontier Fiber Internet in ${cityName}, ${stateAbbr} | Plans from $29.99/mo`
-  const description = `Get Frontier Fiber Internet in ${cityName}, ${stateName}. Plans starting at $29.99/mo with speeds up to 5 Gig, free installation, no data caps, and no contracts. Check availability today.`
+  const description = `Get Frontier Fiber Internet in ${cityName}, ${stateName}. Plans starting at $29.99/mo with speeds up to 7 Gig, free installation, no data caps, and no contracts. Check availability today.`
 
   return {
     title,
@@ -54,8 +54,8 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
   }
 }
 
-export default function LocationPage({ params }: LocationPageProps) {
-  const { city, state } = params
+export default async function LocationPage({ params }: LocationPageProps) {
+  const { city, state } = await params
   const cityName = parseName(city)
   const stateName = parseName(state)
 

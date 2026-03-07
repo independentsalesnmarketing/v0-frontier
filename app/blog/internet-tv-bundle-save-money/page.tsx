@@ -1,18 +1,21 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
-  title: "Is Bundling Internet and TV Still Worth It in 2025?",
+  title: "Is Bundling Internet and TV Still Worth It in 2026?",
   description: "Traditional cable bundles used to be the only way to save. Here's how modern fiber internet plus streaming compares to legacy bundles on price and flexibility.",
   alternates: { canonical: "https://frontier-deals.com/blog/internet-tv-bundle-save-money" },
 }
 
 export default function BundlingGuidePage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Internet & TV Bundles" }]} />
     <article className="max-w-3xl mx-auto px-4 py-12">
-      <ContentMeta date="2025-11-30" readTime={7} category="Buying Guide" />
-      <h1 className="text-4xl font-bold tracking-tight mb-6">Is Bundling Internet and TV Still Worth It in 2025?</h1>
+      <ContentMeta publishDate="2025-11-30" updateDate="2026-03-08" readTime={7} categories={["Buying Guide"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/internet-tv-bundle-save-money" />
+      <h1 className="text-4xl font-bold tracking-tight mb-6">Is Bundling Internet and TV Still Worth It in 2026?</h1>
 
       <p className="text-lg text-gray-700 leading-relaxed mb-8">
         For decades, the &quot;triple play&quot; bundle of internet, TV, and phone was the default choice. But in a streaming-first world, the math has changed. Let&apos;s break down when bundling still makes sense and when going internet-only saves you more.
@@ -48,5 +51,6 @@ export default function BundlingGuidePage() {
         </Link>
       </div>
     </article>
+    </>
   )
 }

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "What to Expect During Fiber Internet Installation | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function InstallationGuidePage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Internet Installation Guide" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">What to Expect During Fiber Internet Installation</h1>
-        <ContentMeta publishDate="2025-07-15" readTime={5} categories={["Getting Started"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-07-15" updateDate="2026-03-04" readTime={5} categories={["Getting Started"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/what-to-expect-internet-installation" />
 
         <p className="text-lg text-gray-700 leading-relaxed">Signing up is the easy part. Here is a detailed walkthrough of what happens on installation day so there are no surprises.</p>
 
@@ -52,5 +55,6 @@ export default function InstallationGuidePage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

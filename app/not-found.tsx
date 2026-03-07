@@ -62,9 +62,9 @@ export default function NotFound() {
             <Link href="/">Back to Home</Link>
           </Button>
           <p className="text-xs text-muted-foreground mt-4">
-            Need help? Contact our support team at{" "}
-            <a href="tel:1-855-355-5555" className="text-red-600 hover:text-red-700 font-medium">
-              1-855-355-5555
+            Need help?{" "}
+            <a href="https://frontier.com/helpcenter" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-700 font-medium">
+              Contact Frontier Support
             </a>
           </p>
         </div>

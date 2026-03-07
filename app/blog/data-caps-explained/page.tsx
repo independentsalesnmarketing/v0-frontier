@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "What Are Data Caps and Why Do ISPs Have Them? | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function DataCapsExplainedPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Data Caps Explained" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">What Are Data Caps and Why Do ISPs Have Them?</h1>
-        <ContentMeta publishDate="2025-09-22" readTime={5} categories={["Buying Guide"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-09-22" updateDate="2026-03-03" readTime={5} categories={["Buying Guide"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/data-caps-explained" />
 
         <p className="text-lg text-gray-700 leading-relaxed">A data cap is a monthly limit on how much data you can upload and download. Go over it, and your ISP may charge overage fees (typically $10 per 50 GB) or throttle your speed. Here is what you need to know.</p>
 
@@ -50,5 +53,6 @@ export default function DataCapsExplainedPage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

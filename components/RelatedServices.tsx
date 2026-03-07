@@ -11,7 +11,7 @@ interface ServiceLink {
 const allServices: ServiceLink[] = [
   {
     title: "Fiber Internet",
-    description: "Symmetrical speeds up to 5 Gig with no data caps. Plans from $29.99/mo.",
+    description: "Symmetrical speeds up to 7 Gig with no data caps. Plans from $29.99/mo.",
     href: "/internet",
     icon: "internet",
   },

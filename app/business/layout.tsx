@@ -2,16 +2,16 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Frontier Business | Enterprise-Grade Fiber Internet & Communication Solutions",
+  title: "Business Fiber Internet Plans | Frontier Authorized Retailer",
   description:
-    "Empower your business with Frontier's high-speed fiber internet, reliable phone systems, and advanced technology solutions. Tailored for businesses of all sizes with 99.9% uptime guarantee.",
+    "Get enterprise-grade Frontier fiber internet for your business. Symmetrical speeds, 99.9% uptime guarantee, dedicated support, and plans for businesses of all sizes.",
   keywords:
     "business internet, fiber internet, business phone, managed IT services, enterprise solutions, static IP, business VoIP, Frontier Business",
   alternates: { canonical: "/business" },
   openGraph: {
-    title: "Frontier Business | Enterprise-Grade Fiber Internet & Communication Solutions",
+    title: "Business Fiber Internet Plans | Frontier Authorized Retailer",
     description:
-      "Empower your business with Frontier's high-speed fiber internet, reliable phone systems, and advanced technology solutions.",
+      "Enterprise-grade Frontier fiber internet for businesses of all sizes. Symmetrical speeds, 99.9% uptime, dedicated support.",
     url: "https://frontier-deals.com/business",
     siteName: "Frontier Deals",
     images: [

@@ -7,8 +7,8 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import RelatedServices from "@/components/RelatedServices"
 
 export const metadata: Metadata = {
-  title: "Frontier Internet & Phone Bundles | Save with Bundle Deals",
-  description: "Bundle Frontier fiber internet with home phone service and save. Compare bundle deals with unlimited calling and high-speed internet starting at $34.99/mo.",
+  title: "Frontier Bundles 2026: Internet + Phone Deals from $54.99/mo",
+  description: "Bundle Frontier Fiber internet with home phone service and save up to $120/year. Compare all bundle deals — Fiber 500 to 7 Gig — with free routers, unlimited calling, and no contracts.",
   alternates: { canonical: "/bundles" },
   openGraph: {
     title: "Frontier Internet & Phone Bundles | Save with Bundle Deals",
@@ -30,23 +30,26 @@ export const metadata: Metadata = {
   },
   keywords: [
     "frontier bundle deals",
-    "internet phone bundle",
+    "frontier internet and phone bundle",
     "frontier fiber bundles",
-    "home phone service",
-    "digital voice service",
-    "bundled internet phone",
-    "save on bundles",
+    "frontier home phone service",
+    "frontier digital voice service",
+    "frontier internet phone package",
+    "frontier bundle pricing 2026",
     "frontier package deals",
-    "internet voice combo",
-    "home connectivity bundle"
+    "frontier internet voice combo",
+    "frontier communications bundles",
+    "frontier bundle discount",
+    "cheap frontier bundles",
   ],
 }
 
 const bundles = [
   {
     name: "Fiber 500 + Digital Voice",
+    planKey: "fiber-500",
     internetSpeed: "500/500 Mbps",
-    internetPrice: 39.99,
+    internetPrice: 29.99,
     voicePrice: 25,
     features: [
       "No data caps or throttling",
@@ -57,8 +60,9 @@ const bundles = [
   },
   {
     name: "Fiber 1 Gig + Digital Voice",
+    planKey: "fiber-1-gig",
     internetSpeed: "1000/1000 Mbps",
-    internetPrice: 59.99,
+    internetPrice: 49.99,
     voicePrice: 25,
     features: [
       "No data caps or throttling",
@@ -69,8 +73,9 @@ const bundles = [
   },
   {
     name: "Fiber 2 Gig + Digital Voice",
+    planKey: "fiber-2-gig",
     internetSpeed: "2000/2000 Mbps",
-    internetPrice: 99.99,
+    internetPrice: 64.99,
     voicePrice: 25,
     bestValue: true,
     features: [
@@ -81,9 +86,10 @@ const bundles = [
     ],
   },
   {
-    name: "Fiber 5 Gig + Digital Voice",
-    internetSpeed: "5000/5000 Mbps",
-    internetPrice: 149.99,
+    name: "Fiber 7 Gig + Digital Voice",
+    planKey: "fiber-7-gig",
+    internetSpeed: "7000/7000 Mbps",
+    internetPrice: 109.99,
     voicePrice: 25,
     features: [
       "No data caps or throttling",
@@ -156,14 +162,14 @@ function BundleCard({ bundle }: { bundle: typeof bundles[number] }) {
           </li>
         ))}
       </ul>
-<PageOrderButton planName={bundle.name} className="w-full bg-[#da202c] hover:bg-[#b71c1c] text-white">
+<PageOrderButton planName={bundle.planKey} defaultDigitalVoice className="w-full bg-[#da202c] hover:bg-[#b71c1c] text-white">
           Order Now
         </PageOrderButton>
     </div>
   )
 }
 
-function TestimonialCard({ testimonial }) {
+function TestimonialCard({ testimonial }: { testimonial: { name: string; location: string; rating: number; text: string } }) {
   return (
     <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-gray-700">
       <div className="flex items-center mb-4">
@@ -200,7 +206,7 @@ function ComparisonTable() {
         <tbody>
           <tr className="border-b border-gray-700">
             <td className="p-4">Internet Speed</td>
-            <td className="p-4 text-[#00b7c3]">Symmetrical speeds up to 5 Gig</td>
+            <td className="p-4 text-[#00b7c3]">Symmetrical speeds up to 7 Gig</td>
             <td className="p-4">Asymmetrical speeds with slower uploads</td>
           </tr>
           <tr className="border-b border-gray-700">
@@ -276,14 +282,11 @@ export default function Bundles() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-            <PageOrderButton
-              size="lg"
-              className="bg-[#da202c] hover:bg-[#b71c1c] text-white"
-            >
-              Check Availability
-            </PageOrderButton>
+            <Button size="lg" className="bg-[#da202c] hover:bg-[#b71c1c] text-white" asChild>
+              <Link href="/internet">View Plans</Link>
+            </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent" asChild>
-              <a href="#plans">View Plans</a>
+              <a href="#plans">Choose a Bundle</a>
             </Button>
           </div>
 
@@ -342,7 +345,7 @@ export default function Bundles() {
             Select from our range of high-speed internet and voice bundles designed to fit your needs and budget. All
             bundles include our 99.9% uptime guarantee.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {bundles.map((bundle, index) => (
               <BundleCard key={index} bundle={bundle} />
             ))}
@@ -372,7 +375,7 @@ export default function Bundles() {
               <h3 className="text-xl font-semibold mb-2">Lightning-Fast Internet</h3>
               <p className="text-white/80">
                 Enjoy seamless streaming, gaming, and browsing with our high-speed Frontier Fiber internet with speeds
-                up to 5 Gig.
+                up to 7 Gig.
               </p>
             </div>
             <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-lg border border-gray-700 transition-all duration-300 hover:shadow-lg hover:shadow-[#00b7c3]/20 hover:-translate-y-1">
@@ -407,6 +410,53 @@ export default function Bundles() {
               <TestimonialCard key={index} testimonial={testimonial} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Cord-Cutting Bundle Section */}
+      <section className="py-16 bg-[#0A1E3C]/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4">The Modern Cord-Cutter&apos;s Bundle</h2>
+          <p className="text-center text-white/80 max-w-2xl mx-auto mb-12">
+            Ditch expensive cable TV. Pair Frontier Fiber with your favorite streaming services for a better experience at a fraction of the cost.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-gray-700">
+              <div className="text-3xl font-bold text-[#00b7c3] mb-2">$30–$50<span className="text-sm text-gray-400 font-normal">/mo</span></div>
+              <h3 className="text-lg font-semibold mb-3">Basic Streaming Setup</h3>
+              <ul className="space-y-2 text-sm text-white/80">
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Frontier Fiber 500 ($29.99/mo)</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Netflix Standard ($17.99/mo)</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Free eero Wi-Fi 6 router</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> HD streaming on 3+ devices</li>
+              </ul>
+              <p className="text-xs text-gray-400 mt-4">vs. $130+/mo for cable TV + internet</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-[#00b7c3] relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#00b7c3] text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</div>
+              <div className="text-3xl font-bold text-[#00b7c3] mb-2">$65–$90<span className="text-sm text-gray-400 font-normal">/mo</span></div>
+              <h3 className="text-lg font-semibold mb-3">Full Replacement Setup</h3>
+              <ul className="space-y-2 text-sm text-white/80">
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Frontier Fiber 1 Gig ($49.99/mo)</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> YouTube TV for live sports ($72.99/mo)</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Free eero Pro 6E router</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> 4K on every screen, zero buffering</li>
+              </ul>
+              <p className="text-xs text-gray-400 mt-4">vs. $200+/mo for cable bundle</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-gray-700">
+              <div className="text-3xl font-bold text-[#00b7c3] mb-2">$100–$130<span className="text-sm text-gray-400 font-normal">/mo</span></div>
+              <h3 className="text-lg font-semibold mb-3">Premium Everything Setup</h3>
+              <ul className="space-y-2 text-sm text-white/80">
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Frontier Fiber 2 Gig ($64.99/mo)</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Netflix + Disney+ + Max (~$40/mo)</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Free eero Pro 6E router</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Whole-home 4K, gaming, smart home</li>
+              </ul>
+              <p className="text-xs text-gray-400 mt-4">vs. $250+/mo for premium cable</p>
+            </div>
+          </div>
+          <p className="text-center text-xs text-gray-400 mt-6">Streaming service prices are approximate and set by each provider independently.</p>
         </div>
       </section>
 
@@ -481,8 +531,8 @@ export default function Bundles() {
             >
               Get Started
             </PageOrderButton>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
-              <Link href="/contact">Contact Sales</Link>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent" asChild>
+              <Link href="/internet">View All Plans</Link>
             </Button>
           </div>
           <p className="mt-6 text-sm max-w-lg mx-auto">

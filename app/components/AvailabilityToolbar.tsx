@@ -39,7 +39,7 @@ export default function AvailabilityToolbar() {
   }
 
   return (
-    <div className="bg-[#0A1E3C] py-2 fixed top-[55px] md:top-[59px] left-0 right-0 w-full z-40 shadow-[0_1px_0_0_#0A1E3C,0_-1px_0_0_#0A1E3C]">
+    <div className="bg-[#0A1E3C] py-2 fixed top-14 left-0 right-0 w-full z-40 shadow-[0_1px_0_0_#0A1E3C,0_-1px_0_0_#0A1E3C]">
       <div className="container mx-auto px-4">
         <form onSubmit={handleSubmit} className="flex items-center justify-center md:justify-between">
           <div className="flex items-center text-white mr-4">

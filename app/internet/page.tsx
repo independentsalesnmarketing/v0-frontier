@@ -8,12 +8,12 @@ import RelatedServices from "@/components/RelatedServices"
 import { UrgencyCountdown } from "@/components/UrgencyCountdown"
 
 export const metadata: Metadata = {
-  title: "Frontier Fiber Internet Plans | Speeds Up to 7 Gbps from $29.99/mo",
-  description: "Compare Frontier fiber internet plans with speeds from 200 Mbps to 7 Gbps. No contracts, unlimited data, free installation. Find the perfect plan for your home.",
+  title: "Fiber Internet Plans from $29.99/mo | Frontier Deals",
+  description: "Compare Frontier fiber internet plans from 500 Mbps to 7 Gbps. Unlimited data, no contracts, free installation, free eero router. Order online from an authorized retailer.",
   alternates: { canonical: "/internet" },
   openGraph: {
-    title: "Frontier Fiber Internet Plans | Speeds Up to 7 Gbps from $29.99/mo",
-    description: "Compare Frontier fiber internet plans with speeds from 200 Mbps to 7 Gbps. No contracts, unlimited data, free installation.",
+    title: "Fiber Internet Plans from $29.99/mo | Frontier Deals",
+    description: "Compare Frontier fiber internet plans from 500 Mbps to 7 Gbps. Unlimited data, no contracts, free installation, free eero router. Order online from an authorized retailer.",
     images: [
       {
         url: "/images/og-frontier-internet.jpg",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Frontier Fiber Internet Plans | Speeds Up to 7 Gbps from $29.99/mo",
-    description: "Compare Frontier fiber internet plans with speeds from 200 Mbps to 7 Gbps. No contracts, unlimited data, free installation.",
+    title: "Fiber Internet Plans from $29.99/mo | Frontier Deals",
+    description: "Compare Frontier fiber internet plans from 500 Mbps to 7 Gbps. Unlimited data, no contracts, free installation.",
     images: ["/images/og-frontier-internet.jpg"],
   },
   keywords: [
@@ -48,42 +48,16 @@ const productSchema = {
   "@type": "Product",
   name: "Frontier Fiber Internet",
   description: "High-speed fiber internet with symmetrical speeds up to 7 Gbps, unlimited data, and no contracts.",
-  image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/android-chrome-192x192%20(6)-OXl8LEh2N7JM8QRjGplNWnLk4qOjZu.png",
+  image: "https://frontier-deals.com/images/og-frontier-internet.jpg",
   brand: { "@type": "Brand", name: "Frontier Communications" },
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "USD",
     lowPrice: "29.99",
     highPrice: "109.99",
-    offerCount: "6",
+    offerCount: "5",
     url: "https://frontier-deals.com/internet",
     availability: "https://schema.org/InStock",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    bestRating: "5",
-    worstRating: "1",
-    ratingCount: "12847",
-  },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "4.8",
-      bestRating: "5",
-    },
-    author: {
-      "@type": "Person",
-      name: "Dr. Michael Chen",
-    },
-    reviewBody:
-      "Frontier Fiber offers exceptional performance with true symmetrical speeds up to 7 Gbps. Their network reliability is outstanding, with 99.9% uptime in our 6-month testing period.",
-    datePublished: "2025-03-15",
-    publisher: {
-      "@type": "Organization",
-      name: "Broadband Technology Review",
-    },
   },
 }
 
@@ -154,208 +128,169 @@ export default function InternetPlans() {
             </p>
           </div>
 
-          {/* ===== FEATURED: 1 GIG PLAN ===== */}
-          <div className="max-w-4xl mx-auto mb-8">
-            <div className="relative bg-white border-2 border-[#D97706] rounded-2xl overflow-hidden shadow-xl">
-              {/* Top Banner */}
-              <div className="bg-gradient-to-r from-[#D97706] to-[#B45309] text-white text-center py-2.5 px-4 text-sm font-black tracking-wide flex items-center justify-center gap-2">
-                <Star className="h-4 w-4 fill-white" />
-                MOST POPULAR PLAN
-                <Star className="h-4 w-4 fill-white" />
+          {/* ===== FEATURED PLANS: 1 Gig & 2 Gig ===== */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
+            {/* Fiber 1 Gig — Best Value */}
+            <div id="fiber-1-gig" className="bg-white border-2 border-[#00b7c3] rounded-2xl flex flex-col relative overflow-hidden shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-[#00b7c3] text-white text-center py-2 px-4 text-xs font-black tracking-wide">
+                BEST VALUE
               </div>
-
-              <div className="p-6 md:p-8">
-                <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
-                  {/* Left: Plan Info */}
-                  <div className="flex-1">
-                    <div className="flex flex-col gap-2 mb-4">
-                      <h2 className="text-4xl md:text-5xl font-black text-[#0A1E3C] leading-tight">Fiber 1 Gig</h2>
-                      <span className="bg-[#D97706]/15 text-[#D97706] text-xs font-bold px-3 py-1.5 rounded-full w-fit">BEST VALUE</span>
-                    </div>
-
-                    <p className="text-sm text-gray-500 mb-4">1000/1000 Mbps symmetrical speeds</p>
-
-                    <div className="grid grid-cols-2 gap-3 mb-4">
-                      <div className="flex items-center gap-2">
-                        <Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" />
-                        <span className="text-sm text-[#333333]">20-30 devices</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" />
-                        <span className="text-sm text-[#333333]">eero Pro 7 router</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" />
-                        <span className="text-sm text-[#333333]">Unlimited data</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" />
-                        <span className="text-sm text-[#333333]">Free installation</span>
-                      </div>
-                    </div>
-
-                    <p className="text-sm text-gray-600">
-                      Perfect for families, remote work, 4K streaming, and smart home devices.
-                    </p>
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="mb-4">
+                  <h2 className="text-3xl font-black text-[#0A1E3C] mb-1">Fiber 1 Gig</h2>
+                  <p className="text-sm text-gray-500">1,000/1,000 Mbps symmetrical</p>
+                </div>
+                <div className="mb-4 pb-4 border-b border-gray-100">
+                  <p className="text-xs text-gray-400 line-through">$59.99/mo</p>
+                  <div className="flex items-baseline gap-0.5">
+                    <span className="text-sm font-bold text-[#0A1E3C]">$</span>
+                    <span className="text-5xl font-black text-[#0A1E3C] leading-none">49</span>
+                    <span className="text-xl font-black text-[#0A1E3C]">.99</span>
+                    <span className="text-sm text-gray-500 ml-1">/mo</span>
                   </div>
-
-                  {/* Right: Price + CTA */}
-                  <div className="md:text-right flex flex-col items-start md:items-end gap-3 md:min-w-[200px]">
-                    <div>
-                      <p className="text-sm text-gray-500 line-through">${"74.99"}/mo</p>
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-5xl md:text-6xl font-black text-[#0A1E3C]">$49</span>
-                        <span className="text-2xl font-black text-[#0A1E3C]">.99</span>
-                        <span className="text-lg text-gray-500">/mo</span>
-                      </div>
-                      <p className="text-xs text-gray-500">12 months w/ Auto Pay</p>
-                      <p className="text-sm font-bold text-[#D97706] mt-1">Save $25/mo</p>
-                    </div>
-                    <PageOrderButton
-                      size="lg"
-                      className="bg-gradient-to-r from-[#D97706] to-[#B45309] hover:from-[#B45309] hover:to-[#92400e] text-white font-bold px-8 py-3 rounded-xl text-lg w-full md:w-auto shadow-lg"
-                      planName="fiber-1-gig"
-                    >
-                      Get This Plan
-                    </PageOrderButton>
+                  <p className="text-[11px] text-gray-400 mt-1">w/ Auto Pay &amp; paperless billing</p>
+                </div>
+                <p className="text-sm text-gray-600 mb-4">The sweet spot for most households. Stream 4K on every screen, game lag-free, and work from home all at the same time.</p>
+                <div className="space-y-2.5 mb-5 flex-grow">
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" /><span className="text-sm text-gray-700">5-10 devices simultaneously</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" /><span className="text-sm text-gray-700">eero Pro 6E router included</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" /><span className="text-sm text-gray-700">Unlimited data</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" /><span className="text-sm text-gray-700">Free installation</span></div>
+                  <div className="flex items-center gap-2 bg-[#DA202C]/5 px-3 py-2 rounded-lg">
+                    <Gift className="h-4 w-4 text-[#DA202C] flex-shrink-0" /><span className="text-xs font-bold text-[#0A1E3C]">$100 Visa® Reward Card</span>
                   </div>
                 </div>
+                <PageOrderButton className="w-full bg-[#00b7c3] hover:bg-[#00a0b0] text-white font-bold py-3 rounded-xl text-sm transition-all shadow-md" planName="fiber-1-gig">
+                  Get Best Value Plan
+                </PageOrderButton>
+              </div>
+            </div>
+
+            {/* Fiber 2 Gig — Most Popular */}
+            <div id="fiber-2-gig" className="bg-white border-2 border-[#DA202C] rounded-2xl flex flex-col relative overflow-hidden shadow-lg hover:shadow-xl transition-all ring-1 ring-[#DA202C]/20">
+              <div className="bg-gradient-to-r from-[#DA202C] to-[#b71c1c] text-white text-center py-2 px-4 text-xs font-black tracking-wide flex items-center justify-center gap-2">
+                <Star className="h-3.5 w-3.5 fill-white" />
+                MOST POPULAR
+                <Star className="h-3.5 w-3.5 fill-white" />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="mb-4">
+                  <h2 className="text-3xl font-black text-[#0A1E3C] mb-1">Fiber 2 Gig</h2>
+                  <p className="text-sm text-gray-500">2,000/2,000 Mbps symmetrical</p>
+                </div>
+                <div className="mb-4 pb-4 border-b border-gray-100">
+                  <p className="text-xs text-gray-400 line-through">$74.99/mo</p>
+                  <div className="flex items-baseline gap-0.5">
+                    <span className="text-sm font-bold text-[#0A1E3C]">$</span>
+                    <span className="text-5xl font-black text-[#0A1E3C] leading-none">64</span>
+                    <span className="text-xl font-black text-[#0A1E3C]">.99</span>
+                    <span className="text-sm text-gray-500 ml-1">/mo</span>
+                  </div>
+                  <p className="text-[11px] text-gray-400 mt-1">w/ Auto Pay &amp; paperless billing</p>
+                </div>
+                <p className="text-sm text-gray-600 mb-4">Built for large households, 4K/8K streaming, competitive gaming, and smart homes with dozens of connected devices.</p>
+                <div className="space-y-2.5 mb-5 flex-grow">
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" /><span className="text-sm text-gray-700">30-50+ devices simultaneously</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" /><span className="text-sm text-gray-700">eero Pro 6E router included</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" /><span className="text-sm text-gray-700">Unlimited data</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" /><span className="text-sm text-gray-700">Free installation</span></div>
+                  <div className="flex items-center gap-2 bg-[#DA202C]/5 px-3 py-2 rounded-lg">
+                    <Gift className="h-4 w-4 text-[#DA202C] flex-shrink-0" /><span className="text-xs font-bold text-[#0A1E3C]">$150 Visa® Reward Card</span>
+                  </div>
+                </div>
+                <PageOrderButton className="w-full bg-gradient-to-r from-[#DA202C] to-[#b71c1c] hover:from-[#b71c1c] hover:to-[#92120e] text-white font-bold py-3 rounded-xl text-sm transition-all shadow-lg" planName="fiber-2-gig">
+                  Get Most Popular Plan
+                </PageOrderButton>
               </div>
             </div>
           </div>
 
-          {/* ===== OTHER MAIN PLANS: 5-column grid ===== */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 max-w-7xl mx-auto">
-            {[
-              {
-                name: "Fiber 200",
-                speed: "200",
-                speedUnit: "Mbps",
-                speedFull: "200/200 Mbps",
-                price: 29.99,
-                regularPrice: 39.99,
-                bestFor: "1-2 people",
-                router: "eero Pro 6E",
-                id: "fiber-200",
-              },
-              {
-                name: "Fiber 500",
-                speed: "500",
-                speedUnit: "Mbps",
-                speedFull: "500/500 Mbps",
-                price: 39.99,
-                regularPrice: 54.99,
-                bestFor: "3-4 people",
-                router: "eero Pro 7",
-                id: "fiber-500",
-              },
-              {
-                name: "Fiber 2 Gig",
-                speed: "2",
-                speedUnit: "Gig",
-                speedFull: "2000/2000 Mbps",
-                price: 64.99,
-                regularPrice: 109.99,
-                bestFor: "Large homes",
-                router: "eero Pro 7",
-                savings: 45,
-                id: "fiber-2-gig",
-              },
-              {
-                name: "Fiber 5 Gig",
-                speed: "5",
-                speedUnit: "Gig",
-                speedFull: "5000/5000 Mbps",
-                price: 99.99,
-                regularPrice: 139.99,
-                bestFor: "Power users",
-                router: "eero Max 7",
-                savings: 40,
-                rewardCard: 200,
-                id: "fiber-5-gig",
-              },
-              {
-                name: "Fiber 7 Gig",
-                speed: "7",
-                speedUnit: "Gig",
-                speedFull: "7000/7000 Mbps",
-                price: 109.99,
-                regularPrice: 309.99,
-                bestFor: "Max performance",
-                router: "2x eero Max 7",
-                savings: 200,
-                isNew: true,
-                id: "fiber-7-gig",
-              },
-            ].map((plan) => (
-              <div
-                key={plan.id}
-                id={plan.id}
-                className="bg-white border border-gray-200 rounded-2xl flex flex-col hover:shadow-xl hover:border-[#0A1E3C]/30 transition-all relative group overflow-hidden shadow-sm"
-              >
-                {plan.isNew && (
-                  <span className="absolute top-4 right-4 bg-[#0A1E3C] text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider z-10">
-                    New
-                  </span>
-                )}
-
-                {/* Speed Header */}
-                <div className="bg-[#0A1E3C] text-white px-5 pt-6 pb-5 text-center">
-                  <p className="text-[11px] uppercase tracking-widest text-white/50 font-semibold mb-2">{plan.name}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-5xl font-black leading-none">{plan.speed}</span>
-                    <span className="text-lg font-bold text-white/80">{plan.speedUnit}</span>
-                  </div>
-                  <p className="text-[11px] text-white/40 mt-2">{plan.speedFull} symmetrical</p>
-                </div>
-
-                {/* Price */}
-                <div className="px-5 pt-5 pb-4 text-center border-b border-gray-100">
-                  <p className="text-xs text-gray-400 line-through mb-0.5">${plan.regularPrice}/mo</p>
-                  <div className="flex items-baseline justify-center gap-0.5">
-                    <span className="text-sm font-bold text-[#0A1E3C]">$</span>
-                    <span className="text-4xl font-black text-[#0A1E3C] leading-none">{String(plan.price).split('.')[0]}</span>
-                    <span className="text-lg font-black text-[#0A1E3C]">.{String(plan.price).split('.')[1]}</span>
-                    <span className="text-sm text-gray-500 ml-0.5">/mo</span>
-                  </div>
-                  {plan.savings && (
-                    <p className="text-xs font-bold text-[#da202c] mt-1.5">Save ${plan.savings}/mo</p>
-                  )}
-                </div>
-
-                {/* Features */}
-                <div className="px-5 pt-4 pb-5 space-y-3 flex-grow">
-                  <div className="flex items-center gap-2.5">
-                    <Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" />
-                    <span className="text-sm text-gray-700">{plan.bestFor}</span>
-                  </div>
-                  <div className="flex items-center gap-2.5">
-                    <Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" />
-                    <span className="text-sm text-gray-700">{plan.router}</span>
-                  </div>
-                  <div className="flex items-center gap-2.5">
-                    <Check className="h-4 w-4 text-[#00b7c3] flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Unlimited data</span>
-                  </div>
-                  {plan.rewardCard && (
-                    <div className="flex items-center gap-2.5 bg-[#0A1E3C]/5 px-3 py-2 rounded-lg">
-                      <Gift className="h-4 w-4 text-[#D97706] flex-shrink-0" />
-                      <span className="text-xs font-bold text-[#0A1E3C]">${plan.rewardCard} Reward Card</span>
-                    </div>
-                  )}
-                </div>
-
-                {/* CTA */}
-                <div className="px-5 pb-5">
-                  <PageOrderButton
-                    className="w-full bg-[#da202c] hover:bg-[#b91c1c] text-white font-bold py-3 rounded-lg text-sm transition-all"
-                    planName={plan.name.toLowerCase().replace(" ", "-")}
-                  >
-                    Select Plan
-                  </PageOrderButton>
+          {/* ===== STARTER: Fiber 500 ===== */}
+          <div className="max-w-4xl mx-auto mb-6">
+            <div id="fiber-500" className="bg-white border border-gray-200 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4 sm:gap-8 hover:shadow-md transition-all">
+              <div className="flex-1 text-center sm:text-left">
+                <h3 className="text-lg font-black text-[#0A1E3C]">Fiber 500</h3>
+                <p className="text-xs text-gray-500">500/500 Mbps symmetrical</p>
+              </div>
+              <div className="text-center">
+                <p className="text-xs text-gray-400 line-through">$39.99/mo</p>
+                <div className="flex items-baseline gap-0.5 justify-center">
+                  <span className="text-sm font-bold text-[#0A1E3C]">$</span>
+                  <span className="text-3xl font-black text-[#0A1E3C] leading-none">29</span>
+                  <span className="text-base font-black text-[#0A1E3C]">.99</span>
+                  <span className="text-sm text-gray-500 ml-1">/mo</span>
                 </div>
               </div>
-            ))}
+              <div className="flex items-center gap-3 text-xs text-gray-600">
+                <span className="flex items-center gap-1"><Check className="h-3.5 w-3.5 text-[#00b7c3]" />2-4 people</span>
+                <span className="flex items-center gap-1"><Check className="h-3.5 w-3.5 text-[#00b7c3]" />eero Wi-Fi 6</span>
+                <span className="flex items-center gap-1"><Gift className="h-3.5 w-3.5 text-[#DA202C]" />$50 Visa® Card</span>
+              </div>
+              <PageOrderButton className="bg-[#0A1E3C] hover:bg-[#162d52] text-white font-bold py-2.5 px-6 rounded-lg text-sm transition-all whitespace-nowrap" planName="fiber-500">
+                Select Plan
+              </PageOrderButton>
+            </div>
+          </div>
+
+          {/* ===== PREMIUM TIER: 5 Gig & 7 Gig ===== */}
+          <div className="max-w-4xl mx-auto mt-10 mb-6">
+            <div className="text-center mb-6">
+              <span className="inline-flex items-center gap-2 bg-[#0A1E3C]/5 text-[#0A1E3C] text-xs font-black px-4 py-2 rounded-full uppercase tracking-wide">
+                <Zap className="h-3.5 w-3.5" /> Premium Multi-Gig Plans
+              </span>
+              <p className="text-sm text-gray-500 mt-2">For power users, content creators, and future-proof performance</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {/* 5 Gig */}
+              <div id="fiber-5-gig" className="bg-gradient-to-br from-[#0A1E3C] to-[#1D3461] rounded-2xl p-6 text-white flex flex-col hover:shadow-xl transition-all">
+                <div className="mb-4">
+                  <h3 className="text-2xl font-black mb-1">Fiber 5 Gig</h3>
+                  <p className="text-xs text-white/50">5,000/5,000 Mbps symmetrical</p>
+                </div>
+                <div className="mb-4 pb-4 border-b border-white/10">
+                  <p className="text-xs text-white/40 line-through">$99.99/mo</p>
+                  <div className="flex items-baseline gap-0.5">
+                    <span className="text-sm font-bold">$</span>
+                    <span className="text-4xl font-black leading-none">89</span>
+                    <span className="text-lg font-black">.99</span>
+                    <span className="text-sm text-white/60 ml-1">/mo</span>
+                  </div>
+                </div>
+                <div className="space-y-2 mb-5 flex-grow">
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#64ffda] flex-shrink-0" /><span className="text-sm text-white/80">eero Max 7 (Wi-Fi 7)</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#64ffda] flex-shrink-0" /><span className="text-sm text-white/80">$200 Visa® Reward Card</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#64ffda] flex-shrink-0" /><span className="text-sm text-white/80">Ideal for content creators</span></div>
+                </div>
+                <PageOrderButton className="w-full bg-white text-[#0A1E3C] font-bold py-3 rounded-xl text-sm hover:bg-gray-100 transition-all" planName="fiber-5-gig">
+                  Select 5 Gig
+                </PageOrderButton>
+              </div>
+              {/* 7 Gig */}
+              <div id="fiber-7-gig" className="bg-gradient-to-br from-[#0A1E3C] to-[#1D3461] rounded-2xl p-6 text-white flex flex-col relative hover:shadow-xl transition-all">
+                <span className="absolute top-4 right-4 bg-[#DA202C] text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">New</span>
+                <div className="mb-4">
+                  <h3 className="text-2xl font-black mb-1">Fiber 7 Gig</h3>
+                  <p className="text-xs text-white/50">7,000/7,000 Mbps symmetrical</p>
+                </div>
+                <div className="mb-4 pb-4 border-b border-white/10">
+                  <p className="text-xs text-white/40 line-through">$154.99/mo</p>
+                  <div className="flex items-baseline gap-0.5">
+                    <span className="text-sm font-bold">$</span>
+                    <span className="text-4xl font-black leading-none">109</span>
+                    <span className="text-lg font-black">.99</span>
+                    <span className="text-sm text-white/60 ml-1">/mo</span>
+                  </div>
+                </div>
+                <div className="space-y-2 mb-5 flex-grow">
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#64ffda] flex-shrink-0" /><span className="text-sm text-white/80">2x eero Max 7 (Wi-Fi 7)</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#64ffda] flex-shrink-0" /><span className="text-sm text-white/80">$200 Visa® Reward Card</span></div>
+                  <div className="flex items-center gap-2"><Check className="h-4 w-4 text-[#64ffda] flex-shrink-0" /><span className="text-sm text-white/80">Maximum performance</span></div>
+                </div>
+                <PageOrderButton className="w-full bg-white text-[#0A1E3C] font-bold py-3 rounded-xl text-sm hover:bg-gray-100 transition-all" planName="fiber-7-gig">
+                  Select 7 Gig
+                </PageOrderButton>
+              </div>
+            </div>
           </div>
 
           {/* All Plans Include */}
@@ -555,28 +490,32 @@ export default function InternetPlans() {
                   <h4 className="text-xl font-semibold mb-3 text-[#0A1E3C]">Remote Workers</h4>
                   <p>
                     With symmetrical speeds, you can upload large files and participate in video conferences without
-                    interruption. Our Fiber 1 Gig plan or higher is ideal for professionals working from home.
+                    interruption. Our Fiber 1 Gig plan or higher is ideal for professionals working from home.{" "}
+                    <Link href="/blog/work-from-home-internet-guide" className="text-[#00b7c3] hover:underline font-medium">Read our remote work guide →</Link>
                   </p>
                 </div>
                 <div className="border border-gray-200 rounded-lg p-5">
                   <h4 className="text-xl font-semibold mb-3 text-[#0A1E3C]">Gamers</h4>
                   <p>
                     Low latency and high-speed connections ensure minimal lag and faster download times for game
-                    updates. Our Fiber 2 Gig plan provides the performance serious gamers demand.
+                    updates. Our Fiber 2 Gig plan provides the performance serious gamers demand.{" "}
+                    <Link href="/blog/gaming-internet-guide" className="text-[#00b7c3] hover:underline font-medium">Read our gaming guide →</Link>
                   </p>
                 </div>
                 <div className="border border-gray-200 rounded-lg p-5">
                   <h4 className="text-xl font-semibold mb-3 text-[#0A1E3C]">Streaming Enthusiasts</h4>
                   <p>
                     Stream 4K and even 8K content without buffering on multiple devices simultaneously. Our Fiber 500
-                    plan and above support high-quality streaming throughout your home.
+                    plan and above support high-quality streaming throughout your home.{" "}
+                    <Link href="/blog/streaming-internet-requirements" className="text-[#00b7c3] hover:underline font-medium">Streaming speed requirements →</Link>
                   </p>
                 </div>
                 <div className="border border-gray-200 rounded-lg p-5">
                   <h4 className="text-xl font-semibold mb-3 text-[#0A1E3C]">Smart Homes</h4>
                   <p>
                     Connect dozens of smart devices with bandwidth to spare. Our Fiber 1 Gig and higher plans provide
-                    the capacity needed for the modern connected home.
+                    the capacity needed for the modern connected home.{" "}
+                    <Link href="/blog/smart-home-internet-guide" className="text-[#00b7c3] hover:underline font-medium">Smart home internet guide →</Link>
                   </p>
                 </div>
               </div>
@@ -654,7 +593,8 @@ export default function InternetPlans() {
                 <p className="mb-4">
                   One of the most significant advantages of Frontier Fiber is symmetrical upload speeds. While cable
                   internet typically offers upload speeds that are just a fraction of download speeds, Frontier Fiber
-                  provides equal upload and download speeds.
+                  provides equal upload and download speeds. Learn more in our guide to{" "}
+                  <Link href="/blog/symmetrical-vs-asymmetrical-speeds" className="text-[#00b7c3] hover:underline font-medium">symmetrical vs asymmetrical speeds</Link>.
                 </p>
                 <p>This symmetrical connection is increasingly important for:</p>
                 <ul className="list-disc pl-6 mt-2 space-y-1">
@@ -712,7 +652,7 @@ export default function InternetPlans() {
                   <ul className="space-y-2">
                     <li className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-[#00B7C3] mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Expanding to 10 million locations by 2025</span>
+                      <span>Expanding to 10 million locations by 2026</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-[#00B7C3] mr-2 mt-0.5 flex-shrink-0" />
@@ -739,7 +679,7 @@ export default function InternetPlans() {
                 <div className="border border-gray-200 rounded-lg p-5">
                   <h4 className="text-xl font-semibold mb-3 text-[#0A1E3C]">Wi-Fi 6E</h4>
                   <p>
-                    Included with our Fiber 200, 500, 1 Gig, and 2 Gig plans, Wi-Fi 6E technology offers improved
+                    Included with our Fiber 500, 1 Gig, and 2 Gig plans, Wi-Fi 6E technology offers improved
                     performance in congested areas and supports more connected devices.
                   </p>
                 </div>
@@ -871,6 +811,40 @@ export default function InternetPlans() {
             >
               <h3 className="font-bold text-[#0A1E3C] mb-1">Fiber vs Cable vs DSL</h3>
               <p className="text-sm text-gray-600">Complete comparison of all three technologies.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Helpful Resources — Internal Linking for SEO */}
+      <section className="py-14 bg-white px-4">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-2xl md:text-3xl font-black text-center text-[#0A1E3C] mb-3">Helpful Internet Resources</h2>
+          <p className="text-center text-gray-600 mb-10 max-w-xl mx-auto">Explore our guides to make the most of your internet connection.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <Link href="/blog/how-much-internet-speed-do-i-need" className="group block p-5 rounded-xl border border-gray-100 hover:border-[#00b7c3] hover:shadow-md transition-all">
+              <h3 className="font-bold text-[#0A1E3C] mb-1 group-hover:text-[#00b7c3] transition-colors">How Much Speed Do I Need?</h3>
+              <p className="text-sm text-gray-500">Find the right plan for your household size and habits.</p>
+            </Link>
+            <Link href="/blog/what-is-fiber-internet" className="group block p-5 rounded-xl border border-gray-100 hover:border-[#00b7c3] hover:shadow-md transition-all">
+              <h3 className="font-bold text-[#0A1E3C] mb-1 group-hover:text-[#00b7c3] transition-colors">What Is Fiber Internet?</h3>
+              <p className="text-sm text-gray-500">A plain-English explainer of fiber optic technology.</p>
+            </Link>
+            <Link href="/blog/symmetrical-vs-asymmetrical-speeds" className="group block p-5 rounded-xl border border-gray-100 hover:border-[#00b7c3] hover:shadow-md transition-all">
+              <h3 className="font-bold text-[#0A1E3C] mb-1 group-hover:text-[#00b7c3] transition-colors">Upload vs Download Speed</h3>
+              <p className="text-sm text-gray-500">Why symmetrical internet speeds matter more than ever.</p>
+            </Link>
+            <Link href="/blog/multi-gig-internet-worth-it" className="group block p-5 rounded-xl border border-gray-100 hover:border-[#00b7c3] hover:shadow-md transition-all">
+              <h3 className="font-bold text-[#0A1E3C] mb-1 group-hover:text-[#00b7c3] transition-colors">Is Multi-Gig Internet Worth It?</h3>
+              <p className="text-sm text-gray-500">Who actually needs 2 Gig or 5 Gig speeds.</p>
+            </Link>
+            <Link href="/internet-speed-test" className="group block p-5 rounded-xl border border-gray-100 hover:border-[#00b7c3] hover:shadow-md transition-all">
+              <h3 className="font-bold text-[#0A1E3C] mb-1 group-hover:text-[#00b7c3] transition-colors">Test Your Internet Speed</h3>
+              <p className="text-sm text-gray-500">Run a free speed test and see how your connection performs.</p>
+            </Link>
+            <Link href="/blog/home-network-setup-guide" className="group block p-5 rounded-xl border border-gray-100 hover:border-[#00b7c3] hover:shadow-md transition-all">
+              <h3 className="font-bold text-[#0A1E3C] mb-1 group-hover:text-[#00b7c3] transition-colors">Home Network Setup Guide</h3>
+              <p className="text-sm text-gray-500">Router placement, Ethernet, and mesh Wi-Fi tips.</p>
             </Link>
           </div>
         </div>

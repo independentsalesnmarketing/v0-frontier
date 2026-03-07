@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "10 Home Internet Security Tips Every Family Should Follow",
@@ -10,8 +11,10 @@ export const metadata: Metadata = {
 
 export default function InternetSecurityTipsPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Internet Security Tips" }]} />
     <article className="max-w-3xl mx-auto px-4 py-12">
-      <ContentMeta date="2026-01-08" readTime={8} category="Security" />
+      <ContentMeta publishDate="2026-01-08" updateDate="2026-03-05" readTime={8} categories={["Security"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/home-internet-security-tips" />
       <h1 className="text-4xl font-bold tracking-tight mb-6">10 Home Internet Security Tips Every Family Should Follow</h1>
 
       <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -91,5 +94,6 @@ export default function InternetSecurityTipsPage() {
         </Link>
       </div>
     </article>
+    </>
   )
 }

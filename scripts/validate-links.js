@@ -23,7 +23,6 @@ const VALID_ROUTES = [
   "/business/internet",
   "/business/phone",
   "/business/managed-services",
-  "/contact",
   "/terms",
   "/privacy",
   "/blog",

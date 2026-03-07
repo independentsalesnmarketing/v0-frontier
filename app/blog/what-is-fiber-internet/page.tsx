@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "What Is Fiber Internet? A Plain-English Explainer | Frontier",
@@ -10,13 +11,15 @@ export const metadata: Metadata = {
 
 export default function WhatIsFiberPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "What Is Fiber Internet?" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
           What Is Fiber Internet? A Plain-English Explainer
         </h1>
 
-        <ContentMeta publishDate="2025-04-02" readTime={6} categories={["Internet Technology"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-04-02" updateDate="2026-03-10" readTime={6} categories={["Internet Technology"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/what-is-fiber-internet" />
 
         <p className="text-lg text-gray-700 leading-relaxed">
           If you have been shopping for internet service, you have probably seen "fiber" marketed as the fastest, most reliable option. But what does that actually mean? How is it different from the cable or DSL connection you might already have? This guide breaks it down without the jargon.
@@ -91,7 +94,7 @@ export default function WhatIsFiberPage() {
           Fiber availability depends on whether your provider has run fiber-optic cables to your neighborhood. This infrastructure is expanding rapidly. Frontier alone has added fiber to millions of new homes since 2021, with expansion ongoing across the country.
         </p>
         <p>
-          The fastest way to check is to enter your address on your provider's website or call their local team. Frontier customers can check availability at <Link href="/order" className="text-blue-600 hover:underline">frontier-deals.com/order</Link> or by calling (800) 921-8101.
+          The fastest way to check is to enter your address on your provider's website. Frontier customers can check availability at <Link href="/check-availability" className="text-blue-600 hover:underline">frontier-deals.com/check-availability</Link>.
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4">Bottom Line</h2>
@@ -109,5 +112,6 @@ export default function WhatIsFiberPage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

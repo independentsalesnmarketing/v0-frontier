@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Upload vs Download Speed: Why Symmetrical Internet Matters | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function SymmetricalSpeedsPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Symmetrical vs Asymmetrical Speeds" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Upload vs Download Speed: Why Symmetrical Internet Matters</h1>
-        <ContentMeta publishDate="2025-08-01" readTime={6} categories={["Internet Technology"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-08-01" updateDate="2026-03-14" readTime={6} categories={["Internet Technology"]} factChecked={true} factChecker="Technical Review Team" author="Marcus Chen" pageSlug="/blog/symmetrical-vs-asymmetrical-speeds" />
 
         <p className="text-lg text-gray-700 leading-relaxed">When ISPs advertise "up to 500 Mbps," they almost always mean download speed. The upload speed, buried in the fine print, is often just 10-20 Mbps. Here is why that gap matters more than most people realize.</p>
 
@@ -49,5 +52,6 @@ export default function SymmetricalSpeedsPage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

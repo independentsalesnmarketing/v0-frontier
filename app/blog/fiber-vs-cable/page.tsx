@@ -6,18 +6,19 @@ import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
-  title: "Fiber vs Cable Internet: A Comprehensive Comparison | Frontier Communications",
+  title: "Fiber vs Cable Internet: A Comprehensive Comparison | Frontier Deals",
   description:
     "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses.",
+  alternates: { canonical: "/blog/fiber-vs-cable" },
   openGraph: {
-    title: "Fiber vs Cable Internet: A Comprehensive Comparison | Frontier Communications",
+    title: "Fiber vs Cable Internet: A Comprehensive Comparison",
     description:
       "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses.",
     images: ["/images/fiber-vs-cable-comparison.jpg"],
     type: "article",
     publishedTime: "2025-03-15T08:00:00Z",
     modifiedTime: "2025-03-20T10:30:00Z",
-    authors: ["https://www.frontier.com/authors/sarah-johnson"],
+    authors: ["https://frontier-deals.com/about#sarah-johnson"],
   },
   twitter: {
     card: "summary_large_image",
@@ -35,25 +36,23 @@ export default function FiberVsCablePage() {
     headline: "Fiber vs Cable Internet: A Comprehensive Comparison",
     description:
       "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses.",
-    image: "https://www.frontier.com/images/fiber-vs-cable-comparison.jpg",
+    url: "https://frontier-deals.com/blog/fiber-vs-cable",
+    image: "https://frontier-deals.com/images/fiber-vs-cable-comparison.jpg",
     datePublished: "2025-03-15T08:00:00Z",
     dateModified: "2025-03-20T10:30:00Z",
     author: {
       "@type": "Person",
       name: "Sarah Johnson",
-      jobTitle: "Internet Technology Writer",
-      organization: {
-        "@type": "Organization",
-        name: "Frontier Communications",
-        url: "https://www.frontier.com",
-      },
+      jobTitle: "Senior Technology Writer",
+      url: "https://frontier-deals.com/about#sarah-johnson",
     },
     publisher: {
       "@type": "Organization",
-      name: "Frontier Communications",
+      name: "Frontier Deals",
+      url: "https://frontier-deals.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.frontier.com/logo.png",
+        url: "https://frontier-deals.com/android-chrome-192x192.png",
       },
     },
   }
@@ -70,11 +69,13 @@ export default function FiberVsCablePage() {
 
         <ContentMeta
           publishDate="2025-03-15"
-          updateDate="2025-03-20"
+          updateDate="2026-03-15"
           readTime={8}
           categories={["Internet Technology", "Fiber Internet", "Home Connectivity"]}
           factChecked={true}
           factChecker="Technical Review Team"
+          author="Sarah Johnson"
+          pageSlug="/blog/fiber-vs-cable"
         />
 
         <div className="my-8">
@@ -85,7 +86,7 @@ export default function FiberVsCablePage() {
               </div>
               <p className="font-bold text-lg">Fiber Optic</p>
               <p className="text-sm text-gray-500">Light signals</p>
-              <p className="text-sm text-gray-500">Up to 5 Gbps</p>
+              <p className="text-sm text-gray-500">Up to 7 Gbps</p>
             </div>
             <div className="text-3xl font-bold text-gray-300">vs</div>
             <div className="text-center">
@@ -107,7 +108,7 @@ export default function FiberVsCablePage() {
           <h2 className="text-xl font-semibold mb-3">Key Takeaways</h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Fiber internet delivers symmetrical speeds up to 5 Gbps, while cable typically offers asymmetrical speeds
+              Fiber internet delivers symmetrical speeds up to 7 Gbps, while cable typically offers asymmetrical speeds
               up to 1 Gbps download and much lower upload speeds.
             </li>
             <li>Fiber optic technology is more reliable with 99.9% uptime compared to cable's 98.5% average uptime.</li>
@@ -455,7 +456,7 @@ export default function FiberVsCablePage() {
             <div className="p-4">
               <h4 className="font-bold mb-2">Frontier Fiber Internet Plans</h4>
               <p className="text-gray-600 text-sm mb-3">
-                Explore Frontier's full range of fiber internet plans with speeds up to 5 Gig and find the right fit.
+                Explore Frontier's full range of fiber internet plans with speeds up to 7 Gig and find the right fit.
               </p>
               <Link href="/internet" className="text-blue-600 hover:underline text-sm font-medium">
                 Read Article →

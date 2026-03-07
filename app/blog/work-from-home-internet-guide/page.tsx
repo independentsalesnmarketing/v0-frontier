@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "The Remote Worker's Guide to Home Internet | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function WorkFromHomePage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Work From Home Internet Guide" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">The Remote Worker's Guide to Home Internet</h1>
-        <ContentMeta publishDate="2025-05-05" readTime={9} categories={["Home Office"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-05-05" updateDate="2026-03-08" readTime={9} categories={["Home Office"]} factChecked={true} factChecker="Technical Review Team" author="Sarah Johnson" pageSlug="/blog/work-from-home-internet-guide" />
 
         <p className="text-lg text-gray-700 leading-relaxed">Working from home puts your internet connection to a different kind of test than streaming or browsing. Here is what actually matters for a reliable home office, and why the upload number on your plan might be more important than the download.</p>
 
@@ -53,5 +56,6 @@ export default function WorkFromHomePage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

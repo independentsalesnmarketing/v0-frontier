@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "How Much Internet Speed Do I Actually Need? | Frontier",
@@ -10,13 +11,15 @@ export const metadata: Metadata = {
 
 export default function HowMuchSpeedPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "How Much Speed Do I Need?" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
           How Much Internet Speed Do I Actually Need?
         </h1>
 
-        <ContentMeta publishDate="2025-04-18" readTime={7} categories={["Buying Guide"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-04-18" updateDate="2026-03-12" readTime={7} categories={["Buying Guide"]} factChecked={true} factChecker="Technical Review Team" author="Marcus Chen" pageSlug="/blog/how-much-internet-speed-do-i-need" />
 
         <p className="text-lg text-gray-700 leading-relaxed">
           ISPs love to market headline speeds. But how much do you actually need? The answer depends on two things: what you do online and how many people are doing it at the same time.
@@ -84,5 +87,6 @@ export default function HowMuchSpeedPage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

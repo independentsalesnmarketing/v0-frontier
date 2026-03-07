@@ -12,25 +12,11 @@ export const metadata: Metadata = {
 
 const bundles = [
   {
-    name: "Fiber 200 + Netflix",
-    internetSpeed: "200/200 Mbps",
-    internetPrice: 29.99,
-    netflixPrice: 30.0,
-    totalPrice: 59.99,
-    features: [
-      "200 Mbps symmetrical internet",
-      "Netflix Standard with ads subscription",
-      "Frontier Provided eero Router included",
-      "Wi-Fi Security",
-      "Whole-Home Wi-Fi",
-    ],
-  },
-  {
     name: "Fiber 500 + Netflix",
     internetSpeed: "500/500 Mbps",
-    internetPrice: 44.99,
-    netflixPrice: 30.0,
-    totalPrice: 74.99,
+    internetPrice: 29.99,
+    netflixPrice: 7.99,
+    totalPrice: 37.98,
     features: [
       "500 Mbps symmetrical internet",
       "Netflix Standard with ads subscription",
@@ -42,9 +28,9 @@ const bundles = [
   {
     name: "Fiber 1 Gig + Netflix",
     internetSpeed: "1000/1000 Mbps",
-    internetPrice: 59.99,
-    netflixPrice: 30.0,
-    totalPrice: 89.99,
+    internetPrice: 49.99,
+    netflixPrice: 7.99,
+    totalPrice: 57.98,
     features: [
       "1 Gbps symmetrical internet",
       "Netflix Standard with ads subscription",
@@ -57,9 +43,9 @@ const bundles = [
   {
     name: "Fiber 2 Gig + Netflix",
     internetSpeed: "2000/2000 Mbps",
-    internetPrice: 89.99,
-    netflixPrice: 30.0,
-    totalPrice: 119.99,
+    internetPrice: 64.99,
+    netflixPrice: 7.99,
+    totalPrice: 72.98,
     features: [
       "2 Gbps symmetrical internet",
       "Netflix Standard with ads subscription",
@@ -71,9 +57,9 @@ const bundles = [
   {
     name: "Fiber 5 Gig + Netflix",
     internetSpeed: "5000/5000 Mbps",
-    internetPrice: 99.99,
-    netflixPrice: 30.0,
-    totalPrice: 129.99,
+    internetPrice: 89.99,
+    netflixPrice: 7.99,
+    totalPrice: 97.98,
     features: [
       "5 Gbps symmetrical internet",
       "Netflix Standard with ads subscription",
@@ -130,7 +116,7 @@ function BundleCard({ bundle }: { bundle: typeof bundles[number] }) {
   )
 }
 
-function AdditionalOptionCard({ option }) {
+function AdditionalOptionCard({ option }: { option: { name: string; price: number; description: string } }) {
   return (
     <div className="border border-gray-300 rounded-lg p-4 bg-white shadow-md">
       <h4 className="text-lg font-semibold mb-2 text-[#0A1E3C]">{option.name}</h4>
@@ -147,7 +133,7 @@ const productSchema = {
   description: "Experience the best of streaming entertainment with Frontier Fiber Internet and Netflix bundled together.",
   image: "https://frontier-deals.com/android-chrome-192x192.png",
   brand: { "@type": "Brand", name: "Frontier Communications" },
-  offers: { "@type": "AggregateOffer", lowPrice: "59.99", highPrice: "129.99", priceCurrency: "USD", offerCount: "4" },
+  offers: { "@type": "AggregateOffer", lowPrice: "37.98", highPrice: "97.98", priceCurrency: "USD", offerCount: "4" },
   aggregateRating: { "@type": "AggregateRating", ratingValue: "4.6", bestRating: "5", worstRating: "1", ratingCount: "3421" },
 }
 
@@ -386,7 +372,7 @@ export default function TVAndBundles() {
                       <tbody>
                         <tr>
                           <td className="border border-gray-200 px-4 py-2 text-gray-700">Starting Price</td>
-                          <td className="border border-gray-200 px-4 py-2 text-center text-gray-700">$6.99/mo</td>
+                          <td className="border border-gray-200 px-4 py-2 text-center text-gray-700">$7.99/mo</td>
                           <td className="border border-gray-200 px-4 py-2 text-center text-gray-700">$7.99/mo</td>
                           <td className="border border-gray-200 px-4 py-2 text-center text-gray-700">$7.99/mo</td>
                         </tr>

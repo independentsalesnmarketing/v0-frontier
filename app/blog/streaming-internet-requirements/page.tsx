@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Internet Speeds for Streaming: Netflix, YouTube, and Beyond | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function StreamingGuidePage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Streaming Internet Requirements" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Internet Speeds for Streaming: Netflix, YouTube, and Beyond</h1>
-        <ContentMeta publishDate="2025-05-22" readTime={6} categories={["Streaming"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-05-22" updateDate="2026-03-05" readTime={6} categories={["Streaming"]} factChecked={true} factChecker="Technical Review Team" author="Marcus Chen" pageSlug="/blog/streaming-internet-requirements" />
 
         <p className="text-lg text-gray-700 leading-relaxed">Streaming is the single largest consumer of household bandwidth. Understanding how much each service actually uses helps you choose the right plan and troubleshoot buffering when it happens.</p>
 
@@ -65,5 +68,6 @@ export default function StreamingGuidePage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

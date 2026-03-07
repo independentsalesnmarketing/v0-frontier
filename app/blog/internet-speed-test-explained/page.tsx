@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import ContentMeta from "@/components/ContentMeta"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Internet Speed Tests: What Your Results Actually Mean | Frontier",
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function SpeedTestExplainedPage() {
   return (
+    <>
+    <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Speed Tests Explained" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Internet Speed Tests: What Your Results Actually Mean</h1>
-        <ContentMeta publishDate="2025-09-05" readTime={6} categories={["Internet Technology"]} factChecked={true} factChecker="Technical Review Team" />
+        <ContentMeta publishDate="2025-09-05" updateDate="2026-03-09" readTime={6} categories={["Internet Technology"]} factChecked={true} factChecker="Technical Review Team" author="Marcus Chen" pageSlug="/blog/internet-speed-test-explained" />
 
         <p className="text-lg text-gray-700 leading-relaxed">Speed tests are the first thing most people run when their internet feels slow. But the numbers they produce -- download, upload, ping, jitter -- are meaningless without context. Here is how to get accurate results and what to do with them.</p>
 
@@ -54,5 +57,6 @@ export default function SpeedTestExplainedPage() {
         </div>
       </article>
     </main>
+    </>
   )
 }

@@ -74,7 +74,7 @@ export const majorCityData: Record<string, MajorCityInfo> = {
   "New York City__New York": {
     tagline: "Multi-gig fiber for the city that never sleeps",
     intro:
-      "New York apartments and brownstones deserve more than decades-old coaxial. Frontier Fiber delivers symmetrical speeds up to 5 Gig over a dedicated line to your unit -- so your upload is as fast as your download, and your neighbors' Netflix binge doesn't slow your Zoom call.",
+      "New York apartments and brownstones deserve more than decades-old coaxial. Frontier Fiber delivers symmetrical speeds up to 7 Gig over a dedicated line to your unit -- so your upload is as fast as your download, and your neighbors' Netflix binge doesn't slow your Zoom call.",
     neighborhoodsServed: [
       "Brooklyn Heights",
       "Astoria",
@@ -112,7 +112,7 @@ export const majorCityData: Record<string, MajorCityInfo> = {
   "Houston__Texas": {
     tagline: "Space City speeds for Texas-sized households",
     intro:
-      "Houston sprawls, and so do its internet needs. From Montrose bungalows to Katy-area family homes, Frontier Fiber delivers a dedicated fiber line to your door with symmetrical speeds up to 5 Gig. No data caps means your smart home, home office, and streaming setup all run full speed, all the time.",
+      "Houston sprawls, and so do its internet needs. From Montrose bungalows to Katy-area family homes, Frontier Fiber delivers a dedicated fiber line to your door with symmetrical speeds up to 7 Gig. No data caps means your smart home, home office, and streaming setup all run full speed, all the time.",
     neighborhoodsServed: [
       "Montrose",
       "The Heights",
@@ -184,6 +184,101 @@ export const majorCityData: Record<string, MajorCityInfo> = {
     localCompetitors: ["Spectrum", "AT&T"],
     whyFiber:
       "Charlotte's finance sector requires low-latency, high-reliability connections. Fiber's dedicated line architecture delivers exactly that, with none of the peak-hour congestion that plagues shared cable networks.",
+  },
+  "San Angelo__Texas": {
+    tagline: "Fast fiber for the heart of West Texas",
+    intro:
+      "San Angelo is growing fast, and so are its internet needs. Whether you're working remotely from the Concho River district or streaming Friday-night football highlights, Frontier Fiber delivers symmetrical speeds that West Texas cable providers simply cannot match. No data caps, no throttling -- just reliable fiber to your door.",
+    neighborhoodsServed: [
+      "Downtown",
+      "Lake Nasworthy",
+      "Bentwood",
+      "Southland",
+      "Rio Vista",
+      "College Hills",
+      "Santa Rita",
+      "Bluffs",
+    ],
+    population: 101612,
+    localCompetitors: ["Suddenlink", "AT&T"],
+    whyFiber:
+      "West Texas summers push families indoors, and cable networks in San Angelo often buckle under shared-node congestion. Frontier's dedicated fiber line gives every household its own bandwidth -- no slowdowns at peak hours.",
+  },
+  "Fort Wayne__Indiana": {
+    tagline: "Fiber-powered internet for Indiana's second city",
+    intro:
+      "Fort Wayne's thriving tech corridor and growing remote workforce demand more than legacy DSL or overloaded cable. Frontier Fiber connects neighborhoods across Allen County with true symmetrical speeds, making uploads just as fast as downloads -- ideal for video calls, cloud backups, and game streaming.",
+    neighborhoodsServed: [
+      "Downtown",
+      "Aboite",
+      "Southwest",
+      "North Highlands",
+      "Georgetown",
+      "Waynedale",
+      "New Haven",
+      "Huntertown",
+    ],
+    population: 263886,
+    localCompetitors: ["Xfinity", "Spectrum"],
+    whyFiber:
+      "Fort Wayne's cold winters mean heavy indoor media consumption. Fiber's dedicated architecture prevents the speed dips cable subscribers experience when everyone on the block is streaming at once.",
+  },
+  "Denton__Texas": {
+    tagline: "College-town speeds without college-town lag",
+    intro:
+      "Home to UNT and TWU, Denton is packed with students, creators, and young professionals who depend on fast internet. Frontier Fiber gives Denton households and apartments symmetrical gig speeds with no data caps -- perfect for dorms gone remote, Twitch streams, and group study sessions.",
+    neighborhoodsServed: [
+      "Downtown Square",
+      "Robson Ranch",
+      "Rayzor Ranch",
+      "Corinth",
+      "Argyle",
+      "Highland Village",
+      "Lantana",
+      "Lake Dallas",
+    ],
+    population: 148146,
+    localCompetitors: ["Spectrum", "AT&T Fiber"],
+    whyFiber:
+      "Two major universities plus a booming creative scene mean Denton's cable infrastructure is stretched thin. Fiber gives every user a dedicated line, so your speed never drops during finals week or Friday-night gaming marathons.",
+  },
+  "New Haven__Connecticut": {
+    tagline: "Ivy-league internet for the Elm City",
+    intro:
+      "New Haven is a city of research labs, startups, and world-class pizza shops that all need one thing: fast, reliable internet. Frontier Fiber delivers symmetrical multi-gig speeds across Greater New Haven, from Wooster Square to East Rock, with no data caps and no annual contracts required.",
+    neighborhoodsServed: [
+      "East Rock",
+      "Wooster Square",
+      "Westville",
+      "Fair Haven",
+      "Edgewood",
+      "Prospect Hill",
+      "Amity",
+      "Hamden Border",
+    ],
+    population: 134023,
+    localCompetitors: ["Xfinity", "Optimum"],
+    whyFiber:
+      "New Haven's dense housing and tech-forward population create peak-hour congestion on shared cable networks. A dedicated fiber connection eliminates that bottleneck entirely, keeping speeds consistent 24/7.",
+  },
+  "Norwalk__Connecticut": {
+    tagline: "Commuter-fast fiber for coastal Connecticut",
+    intro:
+      "Norwalk's mix of NYC commuters, maritime businesses, and growing creative studios demand serious bandwidth. Frontier Fiber serves neighborhoods from SoNo to Cranbury with symmetrical speeds that make working from home feel faster than the office -- and keep the whole family streaming without a hitch.",
+    neighborhoodsServed: [
+      "SoNo (South Norwalk)",
+      "Rowayton",
+      "Cranbury",
+      "Silvermine",
+      "East Norwalk",
+      "West Norwalk",
+      "Broad River",
+      "Wolfpit",
+    ],
+    population: 91184,
+    localCompetitors: ["Xfinity", "Optimum"],
+    whyFiber:
+      "Coastal Connecticut's aging cable infrastructure struggles during nor'easters and summer storms. Fiber's glass-core technology is immune to electromagnetic interference and delivers reliable speeds year-round.",
   },
   "Minneapolis__Minnesota": {
     tagline: "Fiber that performs in every Minnesota season",

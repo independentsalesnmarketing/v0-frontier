@@ -25,7 +25,7 @@ export default function BusinessInternet() {
               <Wifi className="w-6 h-6 mr-2 text-[#64ffda] flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold">High-Speed Fiber Internet</h3>
-                <p>Get blazing-fast speeds up to 5 Gbps for seamless business operations.</p>
+                <p>Get blazing-fast speeds up to 7 Gbps for seamless business operations.</p>
               </div>
             </li>
             <li className="flex items-start">

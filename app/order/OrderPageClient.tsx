@@ -71,7 +71,6 @@ export default function OrderPageClient() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    console.log("Form submission started")
 
     try {
       // Create a hidden form to submit to Google Apps Script
@@ -129,11 +128,8 @@ export default function OrderPageClient() {
       // Add the form to the document and submit it
       document.body.appendChild(form)
       form.submit()
-      console.log("Form submitted to Google Apps Script")
 
-      // Always show thank you message after a fixed delay
       setTimeout(() => {
-        console.log("Showing thank you message")
         setIsSubmitting(false)
         setShowThankYou(true)
 
@@ -169,9 +165,7 @@ export default function OrderPageClient() {
         })
         setStep(1)
 
-        // Close the thank you message after 5 seconds
         setTimeout(() => {
-          console.log("Closing thank you message")
           setShowThankYou(false)
 
           // Clean up the form and iframe
@@ -486,12 +480,6 @@ export default function OrderPageClient() {
                               <SelectValue placeholder="Select a plan" />
                             </SelectTrigger>
                             <SelectContent className="bg-[#0a1e3c] border-[#2a4580] text-white">
-                              <SelectItem value="fiber200">
-                                <div className="flex justify-between items-center w-full">
-                                  <span>Fiber 200 (200/200 Mbps)</span>
-                                  <span className="text-[#00b7c3] font-bold">$29.99/mo</span>
-                                </div>
-                              </SelectItem>
                               <SelectItem value="fiber500">
                                 <div className="flex justify-between items-center w-full">
                                   <span>Fiber 500 (500/500 Mbps)</span>
@@ -532,7 +520,6 @@ export default function OrderPageClient() {
                               <div className="text-2xl font-bold text-[#00b7c3] mt-1">
                                 $
                                 {{
-                                  fiber200: "29.99",
                                   fiber500: "39.99",
                                   fiber1gig: "49.99",
                                   fiber2gig: "64.99",
@@ -543,7 +530,6 @@ export default function OrderPageClient() {
                               </div>
                               <div className="text-sm text-gray-400 mt-1">
                                 {{
-                                  fiber200: "200/200 Mbps",
                                   fiber500: "500/500 Mbps",
                                   fiber1gig: "1000/1000 Mbps",
                                   fiber2gig: "2000/2000 Mbps",
@@ -561,7 +547,6 @@ export default function OrderPageClient() {
                           className="grid gap-4 md:grid-cols-2 lg:grid-cols-3"
                         >
                           {[
-                            { id: "fiber200", name: "Fiber 200", speed: "200/200 Mbps", price: 29.99 },
                             { id: "fiber500", name: "Fiber 500", speed: "500/500 Mbps", price: 39.99 },
                             { id: "fiber1gig", name: "Fiber 1 Gig", speed: "1000/1000 Mbps", price: 49.99 },
                             { id: "fiber2gig", name: "Fiber 2 Gig", speed: "2000/2000 Mbps", price: 64.99 },
@@ -980,7 +965,6 @@ export default function OrderPageClient() {
                             <span className="text-white">
                               $
                               {{
-                                fiber200: "29.99",
                                 fiber500: "39.99",
                                 fiber1gig: "49.99",
                                 fiber2gig: "64.99",
@@ -1060,7 +1044,6 @@ export default function OrderPageClient() {
                               (formData.internetPlan
                                 ? Number.parseFloat(
                                     {
-                                      fiber200: "29.99",
                                       fiber500: "39.99",
                                       fiber1gig: "49.99",
                                       fiber2gig: "64.99",
@@ -1127,6 +1110,11 @@ export default function OrderPageClient() {
                     </Button>
                   )}
                 </div>
+                <p className="text-xs text-gray-500 leading-relaxed mt-4">
+                  By submitting this form, you agree to our{" "}
+                  <a href="/terms" className="underline hover:text-gray-700">Terms of Service</a> and{" "}
+                  <a href="/privacy" className="underline hover:text-gray-700">Privacy Policy</a>, and you consent to be contacted by an authorized Frontier representative by phone, email, or text message at the number and address provided for the purpose of completing your service order. Message and data rates may apply. You may opt out at any time by contacting us.
+                </p>
               </form>
             </div>
           </div>

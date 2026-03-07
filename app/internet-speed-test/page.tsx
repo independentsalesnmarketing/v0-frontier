@@ -1,129 +1,111 @@
-"use client"
+import type { Metadata } from "next"
+import Link from "next/link"
+import { ArrowRight, Gauge, Wifi, Zap, ExternalLink } from "lucide-react"
+import Breadcrumbs from "@/components/Breadcrumbs"
+import { SpeedTestTool } from "@/components/SpeedTestTool"
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
-import { ArrowRight, Download, Upload } from "lucide-react"
+export const metadata: Metadata = {
+  title: "Internet Speed Test | Check Your Connection | Frontier Deals",
+  description: "Test your internet speed with trusted tools and see how Frontier Fiber compares. Symmetrical speeds from 500 Mbps to 7 Gig with no data caps.",
+  alternates: { canonical: "/internet-speed-test" },
+  openGraph: {
+    title: "Internet Speed Test — Check Your Connection Speed",
+    description: "Test your current internet speed and discover if Frontier Fiber can deliver faster, more reliable performance.",
+    type: "website",
+  },
+}
 
-const TOTAL_TEST_DURATION = 20000 // 20 seconds
-const UPDATE_INTERVAL = 100 // 100ms
-const TEST_DATA_SIZE = 100 * 1024 * 1024 // 100 MB
+const speedTests = [
+  { name: "Fast.com by Netflix", url: "https://fast.com", desc: "Quick, minimal speed test powered by Netflix." },
+  { name: "Speedtest by Ookla", url: "https://www.speedtest.net", desc: "The industry standard for internet speed testing." },
+  { name: "Cloudflare Speed Test", url: "https://speed.cloudflare.com", desc: "Detailed test with latency, jitter, and download/upload metrics." },
+]
 
-export default function InternetSpeedTest() {
-  const [isTestRunning, setIsTestRunning] = useState(false)
-  const [downloadSpeed, setDownloadSpeed] = useState(0)
-  const [uploadSpeed, setUploadSpeed] = useState(0)
-  const [testProgress, setTestProgress] = useState(0)
-  const [currentTest, setCurrentTest] = useState<"download" | "upload" | null>(null)
-
-  const simulateSpeedTest = (testType: "download" | "upload") => {
-    const startTime = Date.now()
-    let dataTransferred = 0
-    const maxSpeed = testType === "download" ? 100 : 50 // Max 100 Mbps down, 50 Mbps up
-
-    const updateTest = () => {
-      const elapsedTime = Date.now() - startTime
-      const progress = (elapsedTime / (TOTAL_TEST_DURATION / 2)) * 100
-
-      // Simulate network conditions and throttling
-      const randomFactor = 0.7 + Math.random() * 0.3 // 70% to 100% of max speed
-      const instantSpeed = maxSpeed * randomFactor
-      dataTransferred += (instantSpeed * 1024 * 1024) / 8 / (1000 / UPDATE_INTERVAL)
-
-      const averageSpeed = (dataTransferred * 8) / (1024 * 1024) / (elapsedTime / 1000)
-
-      if (testType === "download") {
-        setDownloadSpeed(averageSpeed)
-      } else {
-        setUploadSpeed(averageSpeed)
-      }
-
-      setTestProgress(progress)
-
-      if (progress < 100) {
-        setTimeout(updateTest, UPDATE_INTERVAL)
-      } else {
-        if (testType === "download") {
-          setCurrentTest("upload")
-          simulateSpeedTest("upload")
-        } else {
-          setIsTestRunning(false)
-          setCurrentTest(null)
-        }
-      }
-    }
-
-    updateTest()
-  }
-
-  const runSpeedTest = () => {
-    setIsTestRunning(true)
-    setTestProgress(0)
-    setDownloadSpeed(0)
-    setUploadSpeed(0)
-    setCurrentTest("download")
-    simulateSpeedTest("download")
-  }
-
+export default function InternetSpeedTestPage() {
   return (
-    <div className="container mx-auto px-4 py-12 bg-[#0a192f] text-white">
-      <h1 className="text-4xl font-bold mb-8 text-center">Frontier Internet Speed Test</h1>
+    <>
+      <Breadcrumbs items={[{ label: "Internet Speed Test" }]} />
 
-      <div className="max-w-md mx-auto bg-[#1d2d50] p-6 rounded-lg shadow-md">
-        <p className="mb-4 text-center">Test your current internet speed with our quick and easy speed test tool.</p>
-
-        {!isTestRunning && (
-          <Button onClick={runSpeedTest} className="bg-[#e10600] hover:bg-[#ff6b6b] text-white w-full mb-4">
-            Start Speed Test
-            <ArrowRight className="ml-2" />
-          </Button>
-        )}
-
-        {isTestRunning && (
-          <div className="space-y-4">
-            <Progress value={testProgress} className="w-full" />
-            <p className="text-center text-sm text-gray-600">
-              {currentTest === "download" ? "Testing download speed..." : "Testing upload speed..."}
-            </p>
+      <section className="bg-[#0A1E3C] text-white py-12 md:py-16">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <div className="w-16 h-16 rounded-full bg-[#DA202C]/20 text-[#DA202C] flex items-center justify-center mx-auto mb-6">
+            <Gauge className="h-8 w-8" />
           </div>
-        )}
+          <h1 className="text-3xl md:text-5xl font-black mb-4">Internet Speed Test</h1>
+          <p className="text-white/60 text-lg max-w-2xl mx-auto mb-10">
+            Test your current internet speed instantly, then see how Frontier Fiber stacks up.
+          </p>
+          <SpeedTestTool />
+        </div>
+      </section>
 
-        <div className="mt-8 grid grid-cols-2 gap-4">
-          <div className="text-center">
-            <Download className="w-8 h-8 mx-auto mb-2 text-[#64ffda]" />
-            <p className="font-semibold">Download Speed</p>
-            <p className="text-2xl font-bold">
-              {downloadSpeed.toFixed(2)} <span className="text-sm font-normal">Mbps</span>
-            </p>
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-2xl font-black text-[#0A1E3C] mb-8 text-center">Alternative Speed Tests</h2>
+          <div className="grid gap-4">
+            {speedTests.map((test) => (
+              <a
+                key={test.name}
+                href={test.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-5 border border-gray-200 rounded-xl hover:border-[#00b7c3] hover:shadow-md transition-all group"
+              >
+                <div>
+                  <h3 className="font-bold text-[#0A1E3C] group-hover:text-[#00b7c3] transition-colors">{test.name}</h3>
+                  <p className="text-sm text-gray-500">{test.desc}</p>
+                </div>
+                <ExternalLink className="h-5 w-5 text-gray-400 group-hover:text-[#00b7c3] flex-shrink-0 ml-4" />
+              </a>
+            ))}
           </div>
-          <div className="text-center">
-            <Upload className="w-8 h-8 mx-auto mb-2 text-[#ff6b6b]" />
-            <p className="font-semibold">Upload Speed</p>
-            <p className="text-2xl font-bold">
-              {uploadSpeed.toFixed(2)} <span className="text-sm font-normal">Mbps</span>
-            </p>
+          <p className="text-xs text-gray-400 text-center mt-4">
+            For the most accurate results, use a wired connection, close other apps, and run the test multiple times.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-12 bg-[#f5f7fa]">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-black text-[#0A1E3C] mb-8 text-center">How Frontier Fiber Compares</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm text-center">
+              <Zap className="h-8 w-8 text-[#DA202C] mx-auto mb-3" />
+              <h3 className="font-bold text-[#0A1E3C] mb-2">Symmetrical Speeds</h3>
+              <p className="text-sm text-gray-500">Upload matches download — unlike cable where upload is a fraction of download speed.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm text-center">
+              <Wifi className="h-8 w-8 text-[#00b7c3] mx-auto mb-3" />
+              <h3 className="font-bold text-[#0A1E3C] mb-2">No Data Caps</h3>
+              <p className="text-sm text-gray-500">Unlimited data on every plan. No throttling, no overage charges, no surprises.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm text-center">
+              <Gauge className="h-8 w-8 text-[#64ffda] mx-auto mb-3" />
+              <h3 className="font-bold text-[#0A1E3C] mb-2">Up to 7 Gbps</h3>
+              <p className="text-sm text-gray-500">Plans from 500 Mbps to 7 Gig. The fastest residential internet available.</p>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/internet" className="inline-flex items-center bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
+              View Frontier Fiber Plans <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="mt-12 text-center bg-[#f8f9fa] text-[#0a192f]">
-        <h2 className="text-2xl font-semibold mb-4">Not satisfied with your speed?</h2>
-        <p className="mb-4">Upgrade to Frontier Fiber for lightning-fast internet speeds!</p>
-        <Button asChild className="bg-[#e10600] hover:bg-[#ff6b6b] text-white">
-          <a href="/internet">Explore Frontier Fiber Plans</a>
-        </Button>
-      </div>
-
-      <div className="mt-12 bg-[#1d2d50] p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">About Our Speed Test</h2>
-        <p>
-          The Frontier Internet Speed Test provides an estimate of your current internet connection's performance. It
-          measures both download and upload speeds by simulating data transfer over a 20-second period. Keep in mind
-          that results may vary based on factors such as network congestion, time of day, and the number of devices
-          connected to your network. For the most accurate results, we recommend running the test multiple times at
-          different times of the day.
-        </p>
-      </div>
-    </div>
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-2xl font-black text-[#0A1E3C] mb-6">Understanding Your Speed Test Results</h2>
+          <div className="prose prose-gray max-w-none">
+            <h3>Download Speed</h3>
+            <p>How fast data travels from the internet to your device. Affects streaming, web browsing, and file downloads. Netflix 4K requires about 25 Mbps per stream.</p>
+            <h3>Upload Speed</h3>
+            <p>How fast data travels from your device to the internet. Critical for video calls, cloud backups, and streaming to Twitch or YouTube. With cable internet, upload is typically 5-10x slower than download. With Frontier Fiber, upload equals download.</p>
+            <h3>Latency (Ping)</h3>
+            <p>The time it takes for data to make a round trip. Lower is better — especially for gaming and video calls. Fiber typically delivers 5-15ms latency vs 15-40ms for cable.</p>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
