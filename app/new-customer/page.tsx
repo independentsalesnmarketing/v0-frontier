@@ -5,12 +5,12 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
 
 export const metadata: Metadata = {
-  title: "New Customer Offers | Frontier Fiber Internet from $29.99/mo",
+  title: "Frontier New Customer Deals 2026 | Fiber Internet from $29.99/mo",
   description:
     "Exclusive Frontier new customer deals: fiber internet from $29.99/mo, free installation, free eero WiFi router, and Visa reward cards up to $200. Switch to Frontier today.",
   alternates: { canonical: "/new-customer" },
   openGraph: {
-    title: "New Customer Offers — Frontier Fiber Internet",
+    title: "Frontier New Customer Deals 2026 — Fiber from $29.99/mo",
     description: "Switch to Frontier Fiber and save. Plans from $29.99/mo, free installation, and Visa reward cards for new customers.",
     type: "website",
   },
@@ -22,6 +22,22 @@ export const metadata: Metadata = {
     "frontier sign up",
     "frontier first time customer",
     "frontier internet new service",
+    "frontier internet new customer",
+    "frontier communications new customer",
+    "frontier communications new service",
+    "frontier new service",
+    "get frontier internet",
+    "frontier new customer deals",
+    "frontier internet specials",
+    "frontier internet deals for new customers",
+    "frontier internet promotions",
+    "frontier internet discounts",
+    "frontier internet offers",
+    "frontier visa reward card",
+    "frontier new haven",
+    "frontier internet sales",
+    "frontier internet special offers",
+    "frontier internet promo",
   ],
 }
 

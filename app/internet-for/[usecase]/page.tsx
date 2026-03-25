@@ -328,12 +328,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const uc = useCases[usecase]
   if (!uc) return {}
   return {
-    title: `Best ${uc.title} Plans 2026 | Frontier Fiber Deals`,
-    description: `Find the best Frontier Fiber plan for ${usecase.replace(/-/g, " ")}. We recommend ${uc.recPlan} (${uc.recSpeed}) at $${uc.recPrice}/mo. Free router, unlimited data, no contracts.`,
+    title: `Frontier Fiber for ${uc.title} | Best Plans 2026 from $${uc.recPrice}/mo`,
+    description: `Best Frontier Fiber plan for ${usecase.replace(/-/g, " ")}: ${uc.recPlan} (${uc.recSpeed}) at $${uc.recPrice}/mo. Free router, unlimited data, no contracts. Order online today.`,
     alternates: { canonical: `/internet-for/${usecase}` },
     openGraph: {
-      title: `Best Frontier Fiber Plan for ${usecase.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}`,
-      description: `${uc.recSpeed} symmetrical speeds starting at $${uc.recPrice}/mo.`,
+      title: `Frontier Fiber for ${usecase.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())} — From $${uc.recPrice}/mo`,
+      description: `${uc.recSpeed} symmetrical fiber speeds from $${uc.recPrice}/mo. Free installation, unlimited data, no contracts.`,
       type: "website",
     },
   }

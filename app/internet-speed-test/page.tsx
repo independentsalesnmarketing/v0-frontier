@@ -5,14 +5,31 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import { SpeedTestTool } from "@/components/SpeedTestTool"
 
 export const metadata: Metadata = {
-  title: "Internet Speed Test | Check Your Connection | Frontier Deals",
+  title: "Frontier Internet Speed Test | Free — Check Your Connection Speed",
   description: "Test your internet speed with trusted tools and see how Frontier Fiber compares. Symmetrical speeds from 500 Mbps to 7 Gig with no data caps.",
   alternates: { canonical: "/internet-speed-test" },
   openGraph: {
-    title: "Internet Speed Test — Check Your Connection Speed",
+    title: "Frontier Internet Speed Test — Free Speed Check",
     description: "Test your current internet speed and discover if Frontier Fiber can deliver faster, more reliable performance.",
     type: "website",
   },
+  keywords: [
+    "frontier internet speed test",
+    "frontier check internet speed",
+    "frontier test internet speed",
+    "frontier internet test speed",
+    "frontier internet test",
+    "speed test internet frontier",
+    "internet speed test",
+    "check internet speed",
+    "frontier speed test",
+    "download speed test",
+    "upload speed test",
+    "internet connection speed test",
+    "mbps speed test",
+    "what is my internet speed",
+    "wifi speed test",
+  ],
 }
 
 const speedTests = [

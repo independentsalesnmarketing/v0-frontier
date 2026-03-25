@@ -4,7 +4,7 @@ import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
-  title: "Best Internet for Large Families: How to Keep Everyone Connected",
+  title: "Best Internet for Large Families 2026 | Frontier Fiber Deals",
   description: "When 5+ people share one internet connection, bandwidth battles are real. Here's how to choose the right plan and set up your network for a busy household.",
   alternates: { canonical: "https://frontier-deals.com/blog/best-internet-for-large-families" },
 }

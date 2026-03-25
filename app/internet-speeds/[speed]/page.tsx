@@ -280,10 +280,10 @@ export async function generateMetadata({ params }: { params: Promise<{ speed: st
   const data = speedData[speed]
   if (!data) return {}
   return {
-    title: `${data.title} — Is It Fast Enough? | Frontier Deals`,
+    title: `${data.title} — Fast Enough in 2026? | Frontier Deals`,
     description: data.description,
     alternates: { canonical: `/internet-speeds/${speed}` },
-    openGraph: { title: `${data.title}: Speed Guide`, description: data.description },
+    openGraph: { title: `${data.title} Speed Guide — Is It Fast Enough?`, description: data.description },
   }
 }
 

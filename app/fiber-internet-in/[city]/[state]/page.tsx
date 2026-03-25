@@ -61,10 +61,19 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
       title,
       description,
       url: `https://frontier-deals.com/fiber-internet-in/${city}/${state}`,
-      siteName: "Frontier Communications",
+      siteName: "Frontier Deals",
       locale: "en_US",
       type: "website",
     },
+    keywords: [
+      `frontier internet ${cityName.toLowerCase()}`,
+      `frontier fiber ${cityName.toLowerCase()}`,
+      `internet providers ${cityName.toLowerCase()}`,
+      `fiber internet ${cityName.toLowerCase()} ${stateAbbr.toLowerCase()}`,
+      `frontier ${cityName.toLowerCase()} plans`,
+      `best internet ${cityName.toLowerCase()}`,
+      `frontier internet ${stateName.toLowerCase()}`,
+    ],
   }
 }
 

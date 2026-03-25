@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import RelatedServices from "@/components/RelatedServices"
 
 export const metadata: Metadata = {
-  title: "Home Phone Service from $9.99/mo | Frontier Deals",
+  title: "Frontier Home Phone Service from $9.99/mo | Unlimited Calling",
   description: "Frontier Digital Unlimited Voice: unlimited local & long-distance calling, HD voice quality, 20+ features. Bundle with fiber internet and save $25/mo.",
   keywords: [
     "frontier home phone service",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/home-phone" },
   openGraph: {
-    title: "Home Phone Service from $9.99/mo | Frontier Deals",
+    title: "Frontier Home Phone Service from $9.99/mo | Unlimited Calling",
     description: "Frontier Digital Unlimited Voice: unlimited calling, HD quality, 20+ features. Bundle with fiber and save $25/mo.",
     url: "https://frontier-deals.com/home-phone",
     siteName: "Frontier Deals",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Home Phone Service from $9.99/mo | Frontier Deals",
+    title: "Frontier Home Phone Service from $9.99/mo | Unlimited Calling",
     description: "Unlimited local & long-distance calling. Bundle with Frontier fiber and save $25/mo.",
     images: ["/images/og-frontier-internet.jpg"],
   },

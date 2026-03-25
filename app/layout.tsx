@@ -4,13 +4,14 @@ import "./globals.css"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { StickyPromoBar } from "@/components/StickyPromoBar"
+import { sitewideCoreKeywords } from "@/lib/seo-keywords"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
 
 export const metadata = {
   title: "Frontier Fiber Internet: Best Deals from $29.99/mo | Frontier Deals",
   description:
-    "Get the best Frontier fiber internet deals through an authorized retailer. Plans from $29.99/mo with unlimited data, free eero router, and free installation. Order online today.",
+    "Frontier fiber internet plans from $29.99/mo — unlimited data, no contracts, free eero router, and free installation. Authorized Frontier retailer. Order today.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -37,16 +38,7 @@ export const metadata = {
       "Best Frontier fiber internet deals from $29.99/mo. Unlimited data, free eero router, free installation.",
     images: ["/images/og-frontier-hero.jpg"],
   },
-  keywords: [
-    "frontier fiber internet",
-    "frontier authorized retailer",
-    "frontier internet deals",
-    "fiber internet plans",
-    "frontier internet service",
-    "high speed internet",
-    "internet service provider",
-    "frontier fiber deals",
-  ],
+  keywords: sitewideCoreKeywords,
   metadataBase: new URL("https://frontier-deals.com"),
 }
 

@@ -7,12 +7,12 @@ import SeoFreshnessNote from "@/components/SeoFreshnessNote"
 import KeyFacts from "@/components/KeyFacts"
 
 export const metadata: Metadata = {
-  title: "Frontier Deals & Promotions March 2026 | Save on Fiber Internet",
+  title: "Frontier Internet Deals 2026 | Fiber from $29.99/mo — Save Today",
   description:
     "Current Frontier internet deals: fiber plans from $29.99/mo, free installation, free eero router, and Visa reward cards up to $200. Limited-time promotions for new customers.",
   alternates: { canonical: "/deals" },
   openGraph: {
-    title: "Frontier Deals & Promotions — March 2026",
+    title: "Frontier Internet Deals 2026 — Fiber from $29.99/mo",
     description:
       "Save on Frontier Fiber internet. Plans from $29.99/mo with free installation, free router, and Visa reward cards.",
     type: "website",
@@ -26,6 +26,22 @@ export const metadata: Metadata = {
     "frontier discount",
     "frontier internet offers",
     "frontier new customer deals",
+    "frontier internet discounts",
+    "frontier internet specials",
+    "frontier high speed internet deals",
+    "frontier internet deals for new customers",
+    "frontier internet deals for existing customers",
+    "frontier new customer offers",
+    "frontier cable deals",
+    "frontier internet promotions",
+    "frontier internet special offers",
+    "frontier communications deals",
+    "frontier communications internet deals",
+    "frontier visa reward card",
+    "frontier fiber cost",
+    "frontier internet prices",
+    "frontier internet rates",
+    "frontier plans and pricing",
   ],
 }
 

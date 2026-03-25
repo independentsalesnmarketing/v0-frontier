@@ -4,7 +4,7 @@ import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
-  title: "Is Multi-Gig Internet Worth It? Who Actually Needs 2 Gig or 5 Gig Speeds",
+  title: "Is Multi-Gig Internet Worth It? 2 Gig vs 5 Gig Explained | Frontier Deals",
   description: "Multi-gig internet plans are now available to homes. Here's who actually benefits from 2 Gig or 5 Gig speeds, and who's better off with a standard gig plan.",
   alternates: { canonical: "https://frontier-deals.com/blog/multi-gig-internet-worth-it" },
 }

@@ -4,7 +4,7 @@ import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
-  title: "Rural Internet Options in 2026: Fiber, Fixed Wireless, Satellite, and More",
+  title: "Rural Internet Options in 2026: Fiber, Fixed Wireless & Satellite | Frontier Deals",
   description: "If you live outside a major metro area, your internet options are different. Here's an honest comparison of every rural internet technology available today.",
   alternates: { canonical: "https://frontier-deals.com/blog/rural-internet-options" },
 }

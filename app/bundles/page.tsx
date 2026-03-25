@@ -41,6 +41,13 @@ export const metadata: Metadata = {
     "frontier communications bundles",
     "frontier bundle discount",
     "cheap frontier bundles",
+    "frontier cable and internet bundles",
+    "frontier cable and internet packages",
+    "frontier phone and internet bundle",
+    "frontier home phone and internet",
+    "frontier internet and phone bundle prices",
+    "frontier tv and internet bundles",
+    "frontier internet bundles",
   ],
 }
 

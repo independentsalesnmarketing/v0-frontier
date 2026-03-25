@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
 
 export const metadata: Metadata = {
-  title: "Frontier Vantage — Streaming TV Service for Fiber Customers",
+  title: "Frontier Vantage 2026 | Streaming TV + Fiber Internet | No Cable Box",
   description: "Frontier Vantage is Frontier's streaming TV service for fiber internet customers. Access live TV, on-demand content, and premium channels — no cable box required. Bundled with Frontier Fiber for one simple bill.",
   alternates: { canonical: "/vantage" },
   keywords: [

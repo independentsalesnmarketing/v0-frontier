@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import React from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -23,6 +24,19 @@ import SeoFreshnessNote from "@/components/SeoFreshnessNote"
 import KeyFacts from "@/components/KeyFacts"
 import GlossaryTerms from "@/components/GlossaryTerms"
 import { fiberInternetTerms, buyingGuideTerms } from "@/lib/glossary-data"
+
+export const metadata: Metadata = {
+  title: "Frontier Internet Plans 2026 | Fiber from $29.99/mo | Frontier Deals",
+  description:
+    "Frontier Communications fiber internet from $29.99/mo. Unlimited data, no contracts, free eero router, free installation. Check availability and order today.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Frontier Internet Plans 2026 | Fiber from $29.99/mo",
+    description:
+      "Shop Frontier Communications fiber internet plans from $29.99/mo. Unlimited data, free router, free installation. Check availability now.",
+    url: "https://frontier-deals.com",
+  },
+}
 
 // Structured data for SEO
 const structuredData = {

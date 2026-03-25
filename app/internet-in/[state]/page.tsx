@@ -26,12 +26,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!stateName) return {}
   const cityCount = frontierCoverage[stateName]?.length || 0
   return {
-    title: `Frontier Fiber Internet in ${stateName} | ${cityCount}+ Cities Covered`,
-    description: `Frontier Fiber Internet is available in ${cityCount}+ cities across ${stateName}. Plans from $29.99/mo with unlimited data, free installation, and no contracts. Check availability in your area.`,
+    title: `Frontier Fiber Internet in ${stateName} | Plans from $29.99/mo`,
+    description: `Frontier Fiber Internet is available in ${cityCount}+ cities across ${stateName}. Plans from $29.99/mo — unlimited data, free installation, no contracts. Check availability at your address.`,
     alternates: { canonical: `/internet-in/${state}` },
     openGraph: {
-      title: `Frontier Fiber Internet in ${stateName}`,
-      description: `Compare Frontier Fiber plans in ${stateName}. ${cityCount}+ cities covered. From $29.99/mo.`,
+      title: `Frontier Fiber in ${stateName} — Plans from $29.99/mo`,
+      description: `Check Frontier Fiber availability in ${stateName}. ${cityCount}+ cities covered. Unlimited data, free installation, no contracts.`,
       type: "website",
     },
     keywords: [

@@ -5,17 +5,18 @@ import { Router, PenTool as Tool, CreditCard, Infinity, FileText, BookOpen, Gift
 import { PageOrderButton, FaqAccordion, ContentTabs } from "@/components/PageInteractions"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import SeoFreshnessNote from "@/components/SeoFreshnessNote"
+import { coreBrandKeywords, plansPricingKeywords, speedTierKeywords, availabilityKeywords } from "@/lib/seo-keywords"
 import KeyFacts from "@/components/KeyFacts"
 import RelatedServices from "@/components/RelatedServices"
 import { UrgencyCountdown } from "@/components/UrgencyCountdown"
 
 export const metadata: Metadata = {
-  title: "Fiber Internet Plans from $29.99/mo | Frontier Deals",
-  description: "Compare Frontier fiber internet plans from 500 Mbps to 7 Gbps. Unlimited data, no contracts, free installation, free eero router. Order online from an authorized retailer.",
+  title: "Frontier Internet Plans & Packages 2026 | Fiber from $29.99/mo",
+  description: "Compare Frontier Communications fiber internet plans — 500 Mbps to 7 Gig. Unlimited data, no contracts, free eero router, and free installation. Order online today.",
   alternates: { canonical: "/internet" },
   openGraph: {
-    title: "Fiber Internet Plans from $29.99/mo | Frontier Deals",
-    description: "Compare Frontier fiber internet plans from 500 Mbps to 7 Gbps. Unlimited data, no contracts, free installation, free eero router. Order online from an authorized retailer.",
+    title: "Frontier Internet Plans & Packages 2026 | Fiber from $29.99/mo",
+    description: "Compare Frontier Communications fiber internet plans — 500 Mbps to 7 Gig. Unlimited data, no contracts, free eero router, and free installation. Order online today.",
     images: [
       {
         url: "/images/og-frontier-internet.jpg",
@@ -32,16 +33,20 @@ export const metadata: Metadata = {
     images: ["/images/og-frontier-internet.jpg"],
   },
   keywords: [
-    "frontier fiber internet plans",
+    ...coreBrandKeywords,
+    ...plansPricingKeywords,
+    ...speedTierKeywords,
+    ...availabilityKeywords,
     "fiber internet speed",
     "7 gbps internet",
-    "gigabit internet",
     "symmetrical internet",
     "unlimited data internet",
     "no contract internet",
-    "frontier internet pricing",
     "fiber optic plans",
-    "high speed internet deals"
+    "high speed internet deals",
+    "frontier fiber internet 2026",
+    "best fiber internet provider",
+    "fiber internet near me",
   ],
 }
 
