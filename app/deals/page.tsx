@@ -5,6 +5,10 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
 import SeoFreshnessNote from "@/components/SeoFreshnessNote"
 import KeyFacts from "@/components/KeyFacts"
+import { getCurrentMonthYear, getEndOfCurrentMonthIso } from "@/lib/seo-dates"
+
+const currentMonthYear = getCurrentMonthYear()
+const priceValidUntil = getEndOfCurrentMonthIso()
 
 export const metadata: Metadata = {
   title: "Frontier Internet Deals 2026 | Fiber from $29.99/mo — Save Today",
@@ -59,7 +63,7 @@ const dealsFaqSchema = {
 const offerSchema = {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
-  name: "Frontier Fiber Internet Deals — March 2026",
+  name: `Frontier Fiber Internet Deals — ${currentMonthYear}`,
   description: "Current promotional offers for Frontier Fiber Internet through an authorized retailer.",
   url: "https://frontier-deals.com/deals",
   numberOfItems: 4,
@@ -71,7 +75,7 @@ const offerSchema = {
       price: "29.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      priceValidUntil: "2026-04-30",
+      priceValidUntil,
     },
     {
       "@type": "Offer",
@@ -80,7 +84,7 @@ const offerSchema = {
       price: "49.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      priceValidUntil: "2026-04-30",
+      priceValidUntil,
     },
     {
       "@type": "Offer",
@@ -89,7 +93,7 @@ const offerSchema = {
       price: "64.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      priceValidUntil: "2026-04-30",
+      priceValidUntil,
     },
     {
       "@type": "Offer",
@@ -98,7 +102,7 @@ const offerSchema = {
       price: "89.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      priceValidUntil: "2026-04-30",
+      priceValidUntil,
     },
   ],
 }
@@ -164,7 +168,7 @@ export default function DealsPage() {
           <h1 className="text-4xl md:text-6xl font-black mb-6">
             Frontier Fiber Deals
             <br />
-            <span className="text-[#64ffda]">March 2026</span>
+            <span className="text-[#64ffda]">{currentMonthYear}</span>
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto mb-8">
             Save on fiber internet with exclusive promotions. Free installation, free router, Visa® reward cards, and prices starting at just $29.99/mo.
@@ -185,9 +189,9 @@ export default function DealsPage() {
         <div className="container mx-auto px-4 space-y-4 max-w-4xl">
           <SeoFreshnessNote />
           <KeyFacts
-            title="Frontier Fiber Deals — March 2026"
+            title={`Frontier Fiber Deals — ${currentMonthYear}`}
             facts={[
-              { label: "Promotional Period", value: "March 2026 — limited time" },
+              { label: "Promotional Period", value: `${currentMonthYear} — limited time` },
               { label: "Visa Reward Card Range", value: "$50 (500 Mbps) to $200 (5 Gig)" },
               { label: "Installation Fee", value: "$0 — included on all plans" },
               { label: "Starting Price", value: "$29.99/mo with AutoPay" },

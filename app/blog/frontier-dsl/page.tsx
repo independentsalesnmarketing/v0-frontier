@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowRight, Check, X, ChevronRight, Zap, AlertTriangle } from "lucide-react"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import AuthorBio from "@/components/AuthorBio"
+import { getCurrentMonthYear } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Frontier DSL Plans & Internet: What You Need to Know in 2026",
@@ -127,7 +128,7 @@ export default function FrontierDslPage() {
         <div className="container mx-auto max-w-3xl">
           <div className="flex items-center gap-2 mb-6">
             <span className="bg-[#DA202C] text-white text-xs font-bold px-3 py-1 rounded-full">Guide</span>
-            <span className="text-white/50 text-xs">Updated January 2026</span>
+            <span className="text-white/50 text-xs">Updated {getCurrentMonthYear()}</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
             Frontier DSL Internet: Plans, Speeds & Why It's Time to Upgrade

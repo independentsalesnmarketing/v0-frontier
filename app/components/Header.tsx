@@ -16,7 +16,7 @@ const navLinks = [
   { href: "/deals", label: "Deals" },
   { href: "/bundles", label: "Bundles" },
   { href: "/check-availability", label: "Check Availability" },
-  { href: "/blog", label: "Blog" },
+  { href: "/internet-speed-test", label: "Speed Test" },
   { href: "/business", label: "Business" },
 ]
 

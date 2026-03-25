@@ -56,36 +56,46 @@ export default function BusinessSolutions() {
   return (
     <div className="bg-[#0A1E3C] text-white">
       {/* Hero Section */}
-      <section
-        className="relative bg-cover bg-center py-24 md:py-32"
-        style={{
-          backgroundImage:
-            'url("/images/hero-family-internet.jpg")',
-        }}
-      >
-        <div className="absolute inset-0 bg-[#0A1E3C]/80" /> {/* Dark overlay with brand navy */}
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Frontier Business Solutions
-              <span className="block mt-2 text-[#00B7C3]">Built for What's Next</span>
+      <section className="bg-gradient-to-br from-[#0A1E3C] via-[#0A1E3C] to-[#00B7C3]/20 text-white py-24 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-[#00B7C3]/15 border border-[#00B7C3]/30 rounded-full px-4 py-1.5 mb-8">
+              <Building2 className="w-4 h-4 text-[#00B7C3]" />
+              <span className="text-sm font-bold text-[#00B7C3] uppercase tracking-wide">Frontier Business Solutions</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+              Fiber Internet Built
+              <span className="block text-[#00B7C3]">for Business</span>
             </h1>
-            <p className="text-xl mb-8 text-gray-200 max-w-2xl">
-              Empower your business with enterprise-grade fiber internet, advanced communication tools, and technology
-              solutions designed for today's digital workplace.
+            <p className="text-xl mb-10 text-white/70 max-w-2xl">
+              Symmetrical speeds, 99.9% uptime SLA, and 24/7 dedicated support — fiber internet that keeps your business running at full speed from $49.99/mo, no contracts.
             </p>
+            <div className="grid grid-cols-3 gap-6 mb-10 max-w-sm">
+              <div className="text-center">
+                <p className="text-2xl font-black text-[#00B7C3]">99.9%</p>
+                <p className="text-xs text-white/50 mt-0.5">Uptime SLA</p>
+              </div>
+              <div className="text-center border-x border-white/10">
+                <p className="text-2xl font-black text-[#00B7C3]">24/7</p>
+                <p className="text-xs text-white/50 mt-0.5">Business Support</p>
+              </div>
+              <div className="text-center">
+                <p className="text-2xl font-black text-[#00B7C3]">7 Gbps</p>
+                <p className="text-xs text-white/50 mt-0.5">Max Speed</p>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
                 className="bg-[#DA202C] hover:bg-[#c41c27] text-white border-none"
                 onClick={() => openOrderForm("Business Fiber")}
               >
-                Get Started Today
+                Get a Business Quote
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white/10 bg-transparent"
+                className="border-white/30 text-white hover:bg-white/10 bg-transparent"
                 onClick={scrollToPlans}
               >
                 View Business Plans

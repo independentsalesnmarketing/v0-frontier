@@ -5,6 +5,7 @@ import { CheckCircle2, XCircle, ArrowRight, Phone } from "lucide-react"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
 import { competitors, getCompetitorBySlug, getAllCompetitorSlugs } from "@/lib/competitor-data"
+import { getCurrentMonthYear } from "@/lib/seo-dates"
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -104,7 +105,7 @@ export default async function CompetitorPage({ params }: Props) {
             Frontier Fiber vs. {comp.shortName}
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto mb-8">
-            An honest, side-by-side comparison to help you choose the right internet provider. Updated March 2026.
+            An honest, side-by-side comparison to help you choose the right internet provider. Updated {getCurrentMonthYear()}.
           </p>
           <PageOrderButton className="inline-flex items-center justify-center bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold h-12 px-8 rounded-xl">
             Switch to Frontier

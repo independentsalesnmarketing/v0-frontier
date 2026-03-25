@@ -17,7 +17,6 @@ export default function SeoFreshnessNote({
         <span className="font-semibold">{label}:</span>{" "}
         <time dateTime={resolvedUpdatedDate}>{formatDisplayDate(resolvedUpdatedDate)}</time>
       </p>
-      <p className="text-xs text-gray-500 mt-1">This page is refreshed monthly on production deploys.</p>
     </div>
   )
 }

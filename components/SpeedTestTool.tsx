@@ -338,6 +338,8 @@ export function SpeedTestTool() {
           </Button>
         )}
       </div>
+      {/* ── Conversion panel ── */}
+      {phase === "complete" && <ConversionBlock results={results} />}
     </div>
   )
 }
@@ -351,6 +353,80 @@ function Stat({ icon, label, value }: { icon: ReactNode; label: string; value: s
         <span className="text-[10px] uppercase tracking-wider text-white/40">{label}</span>
       </div>
       <p className="text-white font-bold text-xs leading-tight">{value}</p>
+    </div>
+  )
+}
+
+/* ── Conversion panel shown after test completes ── */
+function ConversionBlock({ results }: { results: Results }) {
+  const dl = results.download
+  const ul = results.upload
+  const lacksSymmetry = ul > 0 && ul < dl * 0.7
+
+  let tag = "", headline = "", body = "", plan = "", speed = "", price = "", href = ""
+
+  if (dl < 100) {
+    tag = "You\'re missing 5–20× faster speeds"
+    headline = "Your connection is holding you back"
+    body = `At ${fmtStr(dl)} download, a single 4K stream eats up to 25% of your bandwidth — leaving almost nothing for calls, gaming, or backups. Frontier Fiber 500 is 5–20× faster from $29.99/mo.`
+    plan = "Frontier Fiber 500"; speed = "500/500 Mbps"; price = "$29.99/mo"; href = "/internet/fiber-500"
+  } else if (dl < 500) {
+    plan = "Frontier Fiber 500"; speed = "500/500 Mbps"; price = "$29.99/mo"; href = "/internet/fiber-500"
+    if (lacksSymmetry) {
+      tag = "Cable throttles your upload — fiber doesn\'t"
+      headline = `Upload: ${fmtStr(ul)} — that\'s the cable tax`
+      body = `Your upload is ${Math.round((ul / dl) * 100)}% of your download. Cable ISPs deliberately cap uploads. Frontier Fiber is symmetrical: upload equals download, every time.`
+    } else {
+      tag = "Faster + likely cheaper — check availability"
+      headline = "You\'re on mid-tier. Here\'s what you\'re missing."
+      body = `Frontier Fiber 500 delivers 500 Mbps symmetrically — no data caps, no contracts, free installation — from $29.99/mo. Good chance it costs less than you\'re paying now.`
+    }
+  } else if (dl < 1000) {
+    plan = "Frontier Fiber 1 Gig"; speed = "1,000/1,000 Mbps"; price = "$49.99/mo"; href = "/internet/fiber-1-gig"
+    if (lacksSymmetry) {
+      tag = "Equal upload + download — only on fiber"
+      headline = `Download ${fmtStr(dl)}, upload ${fmtStr(ul)} — that gap costs you`
+      body = `Video calls, cloud sync, and remote work all run on upload speed. Your download is fast; your upload isn\'t. Frontier Fiber delivers the same speed both directions — no throttle, no excuses.`
+    } else {
+      tag = "Shared cable network vs. dedicated fiber line"
+      headline = "Good speed — but you\'re competing with your whole block"
+      body = `Cable internet is a shared medium. Speeds drop at peak hours. Frontier Fiber is a dedicated line — you get your full speed even at 6pm on a busy weeknight.`
+    }
+  } else {
+    if (lacksSymmetry) {
+      tag = "True symmetric gigabit — upload = download"
+      headline = `${fmtStr(dl)} down, ${fmtStr(ul)} up — still not balanced`
+      body = `Even at ${fmtStr(dl)}, your upload is lagging. Zoom, Twitch, and cloud backups all depend on upload speed. Frontier Fiber 1 Gig gives you 1,000 Mbps both ways for $49.99/mo.`
+      plan = "Frontier Fiber 1 Gig"; speed = "1,000/1,000 Mbps"; price = "$49.99/mo"; href = "/internet/fiber-1-gig"
+    } else {
+      tag = "Fast and symmetric — can you go further?"
+      headline = "Strong result — see if you can pay less or go faster"
+      body = `You\'re in great shape. If you\'re not on Frontier Fiber, compare pricing — 1 Gig starts at $49.99/mo. Ready to future-proof? The 2 Gig plan handles everything you can throw at it.`
+      plan = "Frontier Fiber 2 Gig"; speed = "2,000/2,000 Mbps"; price = "$64.99/mo"; href = "/internet/fiber-2-gig"
+    }
+  }
+
+  return (
+    <div className="mt-5 rounded-2xl border border-white/[0.08] bg-white/[0.04] p-5 text-left">
+      <p className="text-[10px] uppercase tracking-widest text-[#64ffda] font-bold mb-2">{tag}</p>
+      <p className="text-white font-extrabold text-base leading-tight mb-2">{headline}</p>
+      <p className="text-white/50 text-xs leading-relaxed mb-4">{body}</p>
+      <a
+        href={href}
+        className="flex items-center justify-between w-full bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold px-4 py-3 rounded-xl transition-colors text-sm"
+      >
+        <div>
+          <span className="block text-[10px] text-white/60 font-normal uppercase tracking-wide">Recommended</span>
+          <span>{plan} — {price}</span>
+        </div>
+        <div className="text-right">
+          <span className="block text-[10px] text-white/60 font-normal uppercase tracking-wide">Symmetrical</span>
+          <span>{speed}</span>
+        </div>
+      </a>
+      <a href="/check-availability" className="block text-center text-[11px] text-white/30 hover:text-white/60 mt-3 transition-colors">
+        Check if Frontier is available at your address →
+      </a>
     </div>
   )
 }
