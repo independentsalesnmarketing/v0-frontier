@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/internet`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/internet/pricing`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/tv-netflix`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/tv-and-bundles`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/bundles`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/home-phone`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/wifi`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
@@ -28,8 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/coverage`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/order`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE_URL}/support`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${BASE_URL}/support/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/business`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/business/internet`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/business/phone`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
@@ -45,6 +44,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/new-customer`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/check-availability`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/reviews`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/fios`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/mobile`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/vantage`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   ]
 
   // Competitor comparison pages
@@ -65,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Use-case pages
-  const useCaseSlugs = ["gaming", "streaming", "work-from-home", "smart-home", "large-families", "seniors", "existing-customers", "rural"]
+  const useCaseSlugs = ["gaming", "streaming", "work-from-home", "smart-home", "large-families", "seniors", "existing-customers", "rural", "single-person", "multiple-devices"]
   const useCasePages: MetadataRoute.Sitemap = useCaseSlugs.map((slug) => ({
     url: `${BASE_URL}/internet-for/${slug}`,
     lastModified: now,
@@ -114,7 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   // Internet speed guide pages
-  const speedGuideSlugs = ["25", "50", "100", "200", "300", "500", "1000", "2000", "5000"]
+  const speedGuideSlugs = ["25", "50", "100", "150", "200", "250", "300", "400", "500", "600", "1000", "2000", "5000"]
   const speedGuidePages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/internet-speeds`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
     ...speedGuideSlugs.map((s) => ({

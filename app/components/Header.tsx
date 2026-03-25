@@ -9,13 +9,15 @@ import { Button } from "@/components/ui/button"
 import { OrderForm } from "@/components/OrderForm"
 import { OrderTypePopup } from "@/components/OrderTypePopup"
 import { BusinessOrderForm } from "@/components/BusinessOrderForm"
+import SiteSearch from "@/components/SiteSearch"
 
 const navLinks = [
   { href: "/internet", label: "Internet Plans" },
+  { href: "/deals", label: "Deals" },
   { href: "/bundles", label: "Bundles" },
   { href: "/check-availability", label: "Check Availability" },
+  { href: "/blog", label: "Blog" },
   { href: "/business", label: "Business" },
-  { href: "/internet-speed-test", label: "Speed Test" },
 ]
 
 export default function Header() {
@@ -63,7 +65,7 @@ export default function Header() {
             <Link href="/" className="flex items-center flex-shrink-0">
               <Image
                 src="/images/frontier-logo-design.png"
-                alt="Frontier Deals - Authorized Retailer"
+                alt="Frontier Deals logo — authorized retailer of Frontier Communications fiber internet plans, offering residential and business internet service across 25+ US states with no-contract, symmetrical fiber speeds from 500 Mbps to 7 Gig."
                 width={110}
                 height={36}
                 priority
@@ -89,6 +91,7 @@ export default function Header() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
+              <SiteSearch />
               <Button
                 onClick={openOrderTypePopup}
                 size="sm"
@@ -115,6 +118,10 @@ export default function Header() {
       {isMenuOpen && (
         <div className="lg:hidden fixed inset-x-0 top-14 bottom-0 bg-[#0A1E3C] z-40 overflow-y-auto">
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
+            {/* Mobile search */}
+            <div className="mb-4">
+              <SiteSearch />
+            </div>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -128,13 +135,6 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/blog"
-              className="px-4 py-3 rounded-lg text-base font-medium text-white/80 hover:bg-white/5 hover:text-white transition-colors"
-            >
-              Blog
-            </Link>
-
             <div className="border-t border-white/10 my-4" />
 
             <Button

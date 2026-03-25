@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Router, PenTool as Tool, CreditCard, Infinity, FileText, BookOpen, Gift, DollarSign, Zap, CheckCircle, Star, ArrowRight, MapPin, Check, Shield, Clock, Wifi, ChevronRight, Users, Monitor, Gamepad2, Home } from "lucide-react"
 import { PageOrderButton, FaqAccordion, ContentTabs } from "@/components/PageInteractions"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import SeoFreshnessNote from "@/components/SeoFreshnessNote"
+import KeyFacts from "@/components/KeyFacts"
 import RelatedServices from "@/components/RelatedServices"
 import { UrgencyCountdown } from "@/components/UrgencyCountdown"
 
@@ -127,7 +129,20 @@ export default function InternetPlans() {
               Unlimited data. No contracts. Free router & installation.
             </p>
           </div>
-
+          <div className="max-w-4xl mx-auto mb-10 space-y-4">
+            <SeoFreshnessNote />
+            <KeyFacts
+              title="Frontier Fiber Internet — Quick Facts"
+              facts={[
+                { label: "Speed Range", value: "500 Mbps to 7 Gbps symmetrical" },
+                { label: "Starting Price", value: "$29.99/mo with AutoPay" },
+                { label: "Data Policy", value: "Unlimited — no caps or throttling" },
+                { label: "Contract", value: "None required — cancel anytime" },
+                { label: "Installation", value: "Free professional in-home setup" },
+                { label: "Router", value: "Free eero Wi-Fi 6/6E/7 included" },
+              ]}
+            />
+          </div>
           {/* ===== FEATURED PLANS: 1 Gig & 2 Gig ===== */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
             {/* Fiber 1 Gig — Best Value */}

@@ -1,11 +1,11 @@
 import Link from "next/link"
-import { Wifi, Tv, Phone, Package, ArrowRight } from "lucide-react"
+import { Wifi, Tv, Phone, Package, ArrowRight, DollarSign, MapPin } from "lucide-react"
 
 interface ServiceLink {
   title: string
   description: string
   href: string
-  icon: "internet" | "tv" | "phone" | "bundles"
+  icon: "internet" | "tv" | "phone" | "bundles" | "deals" | "availability"
 }
 
 const allServices: ServiceLink[] = [
@@ -14,6 +14,12 @@ const allServices: ServiceLink[] = [
     description: "Symmetrical speeds up to 7 Gig with no data caps. Plans from $29.99/mo.",
     href: "/internet",
     icon: "internet",
+  },
+  {
+    title: "Current Deals",
+    description: "New customer offers including up to $200 Visa Reward Card and free installation.",
+    href: "/deals",
+    icon: "deals",
   },
   {
     title: "TV & Netflix",
@@ -33,6 +39,12 @@ const allServices: ServiceLink[] = [
     href: "/bundles",
     icon: "bundles",
   },
+  {
+    title: "Check Availability",
+    description: "See which Frontier Fiber plans and speeds are available at your address.",
+    href: "/check-availability",
+    icon: "availability",
+  },
 ]
 
 const iconMap = {
@@ -40,6 +52,8 @@ const iconMap = {
   tv: Tv,
   phone: Phone,
   bundles: Package,
+  deals: DollarSign,
+  availability: MapPin,
 }
 
 interface RelatedServicesProps {
@@ -60,7 +74,7 @@ export default function RelatedServices({ currentPath, heading = "Explore More F
         <h2 className={`text-2xl md:text-3xl font-bold text-center mb-10 ${dark ? "text-white" : "text-[#0A1E3C]"}`}>
           {heading}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {related.map((service) => {
             const Icon = iconMap[service.icon]
             return (

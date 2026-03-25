@@ -30,11 +30,6 @@ export function middleware(request: NextRequest) {
     }
   }
 
-  // Redirect /tv-and-bundles -> /bundles (301)
-  if (pathname === "/tv-and-bundles") {
-    return NextResponse.redirect(new URL("/bundles", request.url), 301)
-  }
-
   // Redirect dead plan pages
   if (pathname === "/internet/pricing" || pathname === "/internet/fiber-200") {
     return NextResponse.redirect(new URL("/internet", request.url), 301)

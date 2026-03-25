@@ -7,8 +7,17 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Frontier Fiber Installation Guide 2026: What to Expect Step by Step | Frontier Deals",
-  description: "Complete guide to Frontier Fiber installation. What happens before, during, and after the technician visit. Timeline, preparation tips, and what's included.",
+  description: "Complete guide to Frontier Fiber installation. What happens before, during, and after the technician visit. Timeline, preparation tips, and what's included. Free installation on all plans.",
   alternates: { canonical: "/blog/frontier-installation-guide-2025" },
+  keywords: [
+    "frontier fiber installation",
+    "frontier internet installation",
+    "frontier fiber optic installation",
+    "frontier communications installation",
+    "frontier fiber optic cable installation",
+    "how long does frontier installation take",
+    "frontier installation process",
+  ],
   openGraph: { title: "Frontier Fiber Installation Guide 2026", description: "Step-by-step walkthrough of what happens during Frontier Fiber installation.", type: "article", publishedTime: "2025-08-05T08:00:00Z" },
 }
 

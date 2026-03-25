@@ -1,4 +1,28 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Frontier Existing Customer Deals 2026 | Upgrade & Save",
+  description: "Already a Frontier customer? Get exclusive upgrade deals — faster speeds, better routers, and no fees to switch plans. Frontier internet deals for existing customers from $29.99/mo.",
+  alternates: { canonical: "/existing-customers" },
+  keywords: [
+    "frontier internet deals for existing customers",
+    "frontier internet plans for existing customers",
+    "frontier upgrade internet",
+    "frontier internet upgrade",
+    "upgrade frontier internet",
+    "frontier existing customer deals",
+    "frontier new customer deals",
+    "frontier plans and pricing",
+    "frontier specials",
+  ],
+  openGraph: {
+    title: "Frontier Existing Customer Deals 2026 | Upgrade Your Plan",
+    description: "Exclusive upgrade deals for Frontier customers. Faster speeds, better routers, same low price.",
+    type: "website",
+  },
+}
+
 import { ArrowRight, Check, Zap, Shield, Wifi, Star, RefreshCw, TrendingUp, Gift, ChevronRight } from "lucide-react"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"

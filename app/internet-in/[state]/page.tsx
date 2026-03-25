@@ -64,8 +64,6 @@ export default async function StateLandingPage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-
       <Breadcrumbs items={[
         { label: "Coverage", href: "/coverage" },
         { label: stateName },

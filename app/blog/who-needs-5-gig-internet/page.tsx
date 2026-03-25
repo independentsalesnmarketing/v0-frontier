@@ -4,6 +4,7 @@ import { CheckCircle2, XCircle, Users, Gamepad2, Monitor, Briefcase } from "luci
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Who Actually Needs 5 Gig Internet? Use Cases & Honest Advice | Frontier Deals",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Who Actually Needs 5 Gig Internet?", datePublished: "2025-07-25", author: { "@type": "Person", name: "Sarah Johnson" } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Who Actually Needs 5 Gig Internet?", description: "5 Gig internet sounds impressive, but do you really need it? Honest breakdown of who benefits and who should save money.", url: "https://frontier-deals.com/blog/who-needs-5-gig-internet", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-07-25", dateModified: getResolvedMonthlyUpdatedDate("2026-03-11"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

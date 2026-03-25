@@ -4,62 +4,38 @@ import { Wifi, Zap, Globe } from "lucide-react"
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
-export const metadata: Metadata = {
-  title: "Fiber vs Cable Internet: A Comprehensive Comparison | Frontier Deals",
-  description:
-    "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses.",
-  alternates: { canonical: "/blog/fiber-vs-cable" },
-  openGraph: {
-    title: "Fiber vs Cable Internet: A Comprehensive Comparison",
+export function generateMetadata(): Metadata {
+  const modifiedTime = new Date(getResolvedMonthlyUpdatedDate("2026-03-15")).toISOString()
+  return {
+    title: "Fiber vs Cable Internet: A Comprehensive Comparison | Frontier Deals",
     description:
       "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses.",
-    images: ["/images/fiber-vs-cable-comparison.jpg"],
-    type: "article",
-    publishedTime: "2025-03-15T08:00:00Z",
-    modifiedTime: "2025-03-20T10:30:00Z",
-    authors: ["https://frontier-deals.com/about#sarah-johnson"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Fiber vs Cable Internet: A Comprehensive Comparison",
-    description:
-      "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance.",
-    images: ["/images/fiber-vs-cable-comparison.jpg"],
-  },
+    alternates: { canonical: "/blog/fiber-vs-cable" },
+    openGraph: {
+      title: "Fiber vs Cable Internet: A Comprehensive Comparison",
+      description:
+        "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses.",
+      images: ["/images/fiber-vs-cable-comparison.jpg"],
+      type: "article",
+      publishedTime: "2025-03-15T08:00:00Z",
+      modifiedTime,
+      authors: ["https://frontier-deals.com/about#sarah-johnson"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Fiber vs Cable Internet: A Comprehensive Comparison",
+      description:
+        "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance.",
+      images: ["/images/fiber-vs-cable-comparison.jpg"],
+    },
+  }
 }
 
 export default function FiberVsCablePage() {
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Fiber vs Cable Internet: A Comprehensive Comparison",
-    description:
-      "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses.",
-    url: "https://frontier-deals.com/blog/fiber-vs-cable",
-    image: "https://frontier-deals.com/images/fiber-vs-cable-comparison.jpg",
-    datePublished: "2025-03-15T08:00:00Z",
-    dateModified: "2025-03-20T10:30:00Z",
-    author: {
-      "@type": "Person",
-      name: "Sarah Johnson",
-      jobTitle: "Senior Technology Writer",
-      url: "https://frontier-deals.com/about#sarah-johnson",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Frontier Deals",
-      url: "https://frontier-deals.com",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://frontier-deals.com/android-chrome-192x192.png",
-      },
-    },
-  }
-
   return (
     <>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
     <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Fiber vs Cable" }]} />
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <article className="prose lg:prose-xl max-w-none">
@@ -75,6 +51,8 @@ export default function FiberVsCablePage() {
           factChecked={true}
           factChecker="Technical Review Team"
           author="Sarah Johnson"
+          pageTitle="Fiber vs Cable Internet: A Comprehensive Comparison"
+          pageDescription="Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses."
           pageSlug="/blog/fiber-vs-cable"
         />
 
@@ -406,12 +384,11 @@ export default function FiberVsCablePage() {
           "Technical Writing Association Fellow",
         ]}
         socialLinks={[
-          { platform: "LinkedIn", url: "https://linkedin.com/in/sarahjohnson" },
-          { platform: "Twitter", url: "https://twitter.com/sarahtechwriter" },
+          { platform: "LinkedIn", url: "https://www.linkedin.com/in/sarah-johnson-mv/" },
         ]}
         publications={[
-          { title: "The Evolution of Home Networking", url: "/blog/home-networking-evolution" },
-          { title: "5G vs. Fiber: Complementary Technologies", url: "/blog/5g-vs-fiber" },
+          { title: "Frontier Fiber vs. Cable Providers", url: "/blog/frontier-vs-cable-providers" },
+          { title: "How Much Internet Speed Do You Need?", url: "/blog/how-much-internet-speed-do-i-need" },
         ]}
       />
 
@@ -466,39 +443,6 @@ export default function FiberVsCablePage() {
         </div>
       </div>
 
-      {/* Schema.org JSON-LD structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: "Fiber vs Cable Internet: A Comprehensive Comparison",
-            description:
-              "Compare fiber and cable internet technologies, speeds, reliability, and costs. Learn why fiber optic internet offers superior performance for modern homes and businesses.",
-            image: "https://www.frontier.com/images/fiber-vs-cable-comparison.jpg",
-            datePublished: "2025-03-15T08:00:00Z",
-            dateModified: "2025-03-20T10:30:00Z",
-            author: {
-              "@type": "Person",
-              name: "Sarah Johnson",
-              url: "https://www.frontier.com/authors/sarah-johnson",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Frontier Communications",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://www.frontier.com/logo.png",
-              },
-            },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://www.frontier.com/blog/fiber-vs-cable",
-            },
-          }),
-        }}
-      />
     </main>
     </>
   )

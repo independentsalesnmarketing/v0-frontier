@@ -253,6 +253,66 @@ const useCases: Record<string, {
       { q: "How does Frontier Fiber compare to satellite internet?", a: "Fiber is vastly superior: 500 Mbps vs 25-100 Mbps, no data caps vs 15-100 GB caps, 5ms latency vs 600ms latency, and $29.99/mo vs $50-150/mo. There's no comparison." },
     ],
   },
+  "single-person": {
+    title: "Internet for One Person",
+    subtitle: "Fast, Affordable Fiber Just for You.",
+    icon: <Heart className="h-8 w-8" />,
+    heroDesc: "Living alone doesn't mean settling for slow internet. Frontier Fiber 500 at $29.99/mo gives a single person more speed than they'll ever need — at a price that beats cable.",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    whyMatters: [
+      { title: "Massive Overkill (In a Good Way)", desc: "500 Mbps is far more than a single person needs — which means zero slowdowns, ever, regardless of what you're doing.", icon: <Zap className="h-6 w-6" /> },
+      { title: "Best Price per Mbps", desc: "At $29.99/mo for 500 Mbps, Frontier Fiber delivers the best price-per-megabit of any major ISP.", icon: <Shield className="h-6 w-6" /> },
+      { title: "No Contract Flexibility", desc: "Moving soon? No problem. Frontier has no annual contracts — cancel or pause anytime without fees.", icon: <Wifi className="h-6 w-6" /> },
+    ],
+    requirements: [
+      { activity: "Streaming Netflix / YouTube", minSpeed: "5 Mbps", recommended: "50 Mbps" },
+      { activity: "Video calls (Zoom, FaceTime)", minSpeed: "3 Mbps", recommended: "50 Mbps" },
+      { activity: "Online gaming", minSpeed: "15 Mbps", recommended: "200 Mbps" },
+      { activity: "Working from home", minSpeed: "25 Mbps", recommended: "200 Mbps" },
+      { activity: "4K streaming + gaming simultaneously", minSpeed: "50 Mbps", recommended: "200 Mbps" },
+    ],
+    tips: [
+      "For a single person, even 100 Mbps is overkill — Frontier Fiber 500 gives you extreme headroom",
+      "The free eero router is great for an apartment or small home",
+      "No data caps means you can stream as much as you want with no overage charges",
+      "Frontier's no-contract policy is perfect if you're renting or planning to move",
+    ],
+    faq: [
+      { q: "What internet speed does one person need?", a: "A single person typically only needs 25-100 Mbps for comfortable browsing, streaming, and gaming. Frontier Fiber 500 at $29.99/mo gives you 5x that minimum, ensuring you're never limited." },
+      { q: "Is 500 Mbps too much for one person?", a: "In terms of what you actively use at once — yes, one person won't use 500 Mbps simultaneously. But having extra headroom means you'll never experience slowdowns, and you get symmetrical upload speed for video calls and backups." },
+      { q: "What's the cheapest Frontier plan for a single person?", a: "Frontier Fiber 500 at $29.99/mo is the entry-level plan and more than sufficient for one person. There's no reason to spend more unless you're a heavy gamer or content creator who uploads large files." },
+    ],
+  },
+  "multiple-devices": {
+    title: "Internet for Multiple Devices",
+    subtitle: "One Network. Every Device. Zero Slowdowns.",
+    icon: <Wifi className="h-8 w-8" />,
+    heroDesc: "Phones, laptops, tablets, smart TVs, cameras, thermostats, speakers — the modern home has 15-30 connected devices. Frontier Fiber handles them all without breaking a sweat.",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    whyMatters: [
+      { title: "Bandwidth for All Devices", desc: "500 Mbps divided across 30 devices gives every device 16 Mbps — enough for 4K streaming on every screen simultaneously.", icon: <Wifi className="h-6 w-6" /> },
+      { title: "eero Handles the Load", desc: "The free eero Wi-Fi 6 router is built for dense device environments. It uses OFDMA to efficiently serve many devices at once.", icon: <Zap className="h-6 w-6" /> },
+      { title: "No Network Congestion", desc: "Unlike cable, which shares neighborhood bandwidth, fiber is a dedicated line. More devices on YOUR network doesn't mean slow speeds.", icon: <Shield className="h-6 w-6" /> },
+    ],
+    requirements: [
+      { activity: "5-10 devices (typical starter home)", minSpeed: "100 Mbps", recommended: "200 Mbps" },
+      { activity: "10-20 devices (active household)", minSpeed: "200 Mbps", recommended: "500 Mbps" },
+      { activity: "20-30 devices (smart home + family)", minSpeed: "300 Mbps", recommended: "500 Mbps" },
+      { activity: "30-50 devices (power user / home office)", minSpeed: "500 Mbps", recommended: "1 Gig" },
+      { activity: "50+ devices (tech enthusiast / business)", minSpeed: "1 Gig", recommended: "2 Gig" },
+    ],
+    tips: [
+      "Count your devices: phones, laptops, tablets, smart TVs, game consoles, cameras, smart speakers, smart lights, thermostats, doorbells",
+      "eero routers handle 32+ simultaneous devices per node — add eero pods for larger homes",
+      "Use the 5 GHz band for bandwidth-heavy devices (streaming, gaming) and 2.4 GHz for IoT devices",
+      "Frontier Fiber's 500 Mbps upload means your security cameras and cloud backups don't slow everyone else down",
+    ],
+    faq: [
+      { q: "How many devices can 500 Mbps handle?", a: "500 Mbps can comfortably support 30+ simultaneous devices. In practice, most devices use bursts of bandwidth rather than constant streams, so 500 Mbps handles far more than 30 devices in real-world use." },
+      { q: "Does having more devices slow down my internet?", a: "Only if your total bandwidth is being fully consumed. With 500 Mbps, it would take dozens of devices all simultaneously streaming 4K to run into the limit. The free eero router also helps manage traffic efficiently." },
+      { q: "What internet speed do I need for 20 devices?", a: "We recommend at least 300-500 Mbps for 20 devices to ensure all devices get adequate bandwidth even when used simultaneously. Frontier Fiber 500 at $29.99/mo statisfies this comfortably." },
+    ],
+  },
 }
 
 const slugs = Object.keys(useCases)

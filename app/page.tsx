@@ -19,6 +19,10 @@ import Hero from "./components/Hero"
 import CityStateAccordion from "./components/CityStateAccordion"
 import { FaqItem } from "@/components/HomePageClient"
 import { PageOrderButton } from "@/components/PageInteractions"
+import SeoFreshnessNote from "@/components/SeoFreshnessNote"
+import KeyFacts from "@/components/KeyFacts"
+import GlossaryTerms from "@/components/GlossaryTerms"
+import { fiberInternetTerms, buyingGuideTerms } from "@/lib/glossary-data"
 
 // Structured data for SEO
 const structuredData = {
@@ -41,6 +45,11 @@ const structuredData = {
     "Illinois","Georgia","Arizona","Nevada","Iowa","Nebraska","Tennessee",
   ].map((state) => ({ "@type": "State", name: state })),
   priceRange: "$29.99-$109.99",
+  sameAs: [
+    "https://en.wikipedia.org/wiki/Frontier_Communications",
+    "https://frontier.com",
+    "https://www.bbb.org/us/ct/norwalk/profile/telecommunications/frontier-communications-0611-90000001",
+  ],
 }
 
 const websiteSchema = {
@@ -123,6 +132,28 @@ const productSchema = {
     url: "https://frontier-deals.com/internet",
     availability: "https://schema.org/InStock",
   },
+  additionalProperty: [
+    { "@type": "PropertyValue", name: "Internet Type", value: "Fiber Optic (FTTP)" },
+    { "@type": "PropertyValue", name: "Maximum Download Speed", value: "7,000 Mbps" },
+    { "@type": "PropertyValue", name: "Maximum Upload Speed", value: "7,000 Mbps" },
+    { "@type": "PropertyValue", name: "Speed Symmetry", value: "Symmetrical (equal upload and download)" },
+    { "@type": "PropertyValue", name: "Data Cap", value: "None — Unlimited" },
+    { "@type": "PropertyValue", name: "Contract Required", value: "No" },
+    { "@type": "PropertyValue", name: "Installation Fee", value: "$0" },
+    { "@type": "PropertyValue", name: "Equipment Fee", value: "$0 — free eero router included" },
+    { "@type": "PropertyValue", name: "AutoPay Discount", value: "$10/month" },
+    { "@type": "PropertyValue", name: "Starting Price", value: "$29.99/month" },
+  ],
+}
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://frontier-deals.com/#webpage",
+  speakableSpecification: {
+    "@type": "SpeakableSpecification",
+    cssSelector: [".faq-section", "h1", ".hero-description"],
+  },
 }
 
 export default function IndexPage() {
@@ -132,10 +163,34 @@ export default function IndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <AvailabilityToolbar />
       <div className="pt-12">
         <Hero />
+
+        <section className="py-8 bg-white border-t border-gray-100">
+          <div className="container mx-auto px-4 space-y-4">
+            <SeoFreshnessNote />
+            <KeyFacts
+              title="Frontier Fiber Key Facts"
+              facts={[
+                { label: "Provider", value: "Frontier Communications" },
+                { label: "Service Type", value: "Fiber-optic internet (FTTP)" },
+                { label: "Speed Range", value: "500 Mbps to 7 Gig" },
+                { label: "Data Policy", value: "Unlimited data, no caps" },
+                { label: "Contract", value: "No annual contract required" },
+                { label: "Starting Price", value: "$29.99/month with AutoPay" },
+              ]}
+            />
+            <div className="text-sm text-gray-700 flex flex-wrap gap-x-4 gap-y-1">
+              <span className="font-semibold text-[#0A1E3C]">Related guides:</span>
+              <Link href="/internet" className="text-[#0A1E3C] hover:underline">Internet plans</Link>
+              <Link href="/coverage" className="text-[#0A1E3C] hover:underline">Coverage and availability</Link>
+              <Link href="/blog/how-much-internet-speed-do-i-need" className="text-[#0A1E3C] hover:underline">Speed guide</Link>
+            </div>
+          </div>
+        </section>
 
         {/* Stats Bar */}
         <section className="py-8 bg-[#04111f]">
@@ -386,7 +441,7 @@ export default function IndexPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-20 bg-gray-50" id="faq">
+        <section className="faq-section py-20 bg-gray-50" id="faq">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-black text-[#0A1E3C] mb-3">Frequently Asked Questions</h2>
@@ -457,6 +512,14 @@ export default function IndexPage() {
                   <p className="text-xs text-gray-400 mt-1">{desc}</p>
                 </Link>
               ))}
+            </div>
+
+            {/* Entity glossary for semantic coverage on the homepage */}
+            <div className="max-w-5xl mx-auto mt-10">
+              <GlossaryTerms
+                terms={[...fiberInternetTerms, ...buyingGuideTerms]}
+                heading="Understanding Frontier Fiber Internet"
+              />
             </div>
           </div>
         </section>

@@ -1,6 +1,9 @@
 import Link from "next/link"
-import { Phone } from "lucide-react"
 import { frontierCoverage } from "@/lib/coverage-data"
+
+function slugify(text: string): string {
+  return text.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "")
+}
 
 const topCities = [
   { city: "Dallas", state: "Texas" },
@@ -22,35 +25,52 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       {/* Main footer content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {/* Internet Plans */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Internet Plans</h3>
             <ul className="space-y-2.5">
               <li><Link href="/internet" className="text-sm hover:text-white transition-colors">Fiber Internet</Link></li>
-              <li><Link href="/bundles" className="text-sm hover:text-white transition-colors">Internet & Phone Bundles</Link></li>
-              <li><Link href="/tv-netflix" className="text-sm hover:text-white transition-colors">TV & Netflix</Link></li>
-              <li><Link href="/home-phone" className="text-sm hover:text-white transition-colors">Home Phone</Link></li>
-              <li><Link href="/wifi" className="text-sm hover:text-white transition-colors">Whole-Home WiFi</Link></li>
-              <li><Link href="/internet-speed-test" className="text-sm hover:text-white transition-colors">Speed Test</Link></li>
-              <li><Link href="/coverage" className="text-sm hover:text-white transition-colors">Coverage Map</Link></li>
+              <li><Link href="/internet/pricing" className="text-sm hover:text-white transition-colors">Plans & Pricing</Link></li>
+              <li><Link href="/internet/fiber-500" className="text-sm hover:text-white transition-colors">Fiber 500 Mbps</Link></li>
+              <li><Link href="/internet/fiber-1-gig" className="text-sm hover:text-white transition-colors">Fiber 1 Gig</Link></li>
+              <li><Link href="/internet/fiber-2-gig" className="text-sm hover:text-white transition-colors">Fiber 2 Gig</Link></li>
+              <li><Link href="/internet-speeds" className="text-sm hover:text-white transition-colors">All Speed Tiers</Link></li>
+              <li><Link href="/fios" className="text-sm hover:text-white transition-colors">Frontier Fios</Link></li>
+              <li><Link href="/check-availability" className="text-sm hover:text-white transition-colors">Check Availability</Link></li>
             </ul>
           </div>
 
-          {/* Business */}
+          {/* Deals & Services */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Business</h3>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Deals & Services</h3>
             <ul className="space-y-2.5">
-              <li><Link href="/business" className="text-sm hover:text-white transition-colors">Business Solutions</Link></li>
-              <li><Link href="/business/internet" className="text-sm hover:text-white transition-colors">Business Internet</Link></li>
-              <li><Link href="/business/phone" className="text-sm hover:text-white transition-colors">Business Phone</Link></li>
+              <li><Link href="/deals" className="text-sm hover:text-white transition-colors">Current Deals</Link></li>
+              <li><Link href="/new-customer" className="text-sm hover:text-white transition-colors">New Customer Offers</Link></li>
+              <li><Link href="/existing-customers" className="text-sm hover:text-white transition-colors">Existing Customers</Link></li>
+              <li><Link href="/bundles" className="text-sm hover:text-white transition-colors">Internet & Phone Bundles</Link></li>
+              <li><Link href="/tv-and-bundles" className="text-sm hover:text-white transition-colors">TV & Bundles</Link></li>
+              <li><Link href="/tv-netflix" className="text-sm hover:text-white transition-colors">TV & Netflix</Link></li>
+              <li><Link href="/home-phone" className="text-sm hover:text-white transition-colors">Home Phone</Link></li>
+              <li><Link href="/wifi" className="text-sm hover:text-white transition-colors">Whole-Home WiFi</Link></li>
+              <li><Link href="/mobile" className="text-sm hover:text-white transition-colors">Frontier Mobile</Link></li>
+              <li><Link href="/vantage" className="text-sm hover:text-white transition-colors">Frontier Vantage TV</Link></li>
             </ul>
+          </div>
 
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mt-8 mb-4">Quick Links</h3>
+          {/* Compare Providers */}
+          <div>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Compare Providers</h3>
             <ul className="space-y-2.5">
-              <li><Link href="/check-availability" className="text-sm hover:text-white transition-colors">Check Availability</Link></li>
-              <li><Link href="/reviews" className="text-sm hover:text-white transition-colors">Customer Reviews</Link></li>
-              <li><a href="https://frontier.com/helpcenter" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors">Support</a></li>
+              <li><Link href="/compare/fiber-vs-cable" className="text-sm hover:text-white transition-colors">Fiber vs Cable</Link></li>
+              <li><Link href="/compare/fiber-vs-cable-vs-dsl" className="text-sm hover:text-white transition-colors">Fiber vs Cable vs DSL</Link></li>
+              <li><Link href="/compare/frontier-vs-xfinity" className="text-sm hover:text-white transition-colors">Frontier vs Xfinity</Link></li>
+              <li><Link href="/compare/frontier-vs-att" className="text-sm hover:text-white transition-colors">Frontier vs AT&T</Link></li>
+              <li><Link href="/compare/frontier-vs-spectrum" className="text-sm hover:text-white transition-colors">Frontier vs Spectrum</Link></li>
+              <li><Link href="/compare/frontier-vs-tmobile-home-internet" className="text-sm hover:text-white transition-colors">Frontier vs T-Mobile</Link></li>
+              <li><Link href="/compare/frontier-vs-cox" className="text-sm hover:text-white transition-colors">Frontier vs Cox</Link></li>
+              <li><Link href="/compare/frontier-vs-google-fiber" className="text-sm hover:text-white transition-colors">Frontier vs Google Fiber</Link></li>
+              <li><Link href="/compare/frontier-vs-verizon-fios" className="text-sm hover:text-white transition-colors">Frontier vs Verizon Fios</Link></li>
             </ul>
           </div>
 
@@ -59,12 +79,21 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Resources</h3>
             <ul className="space-y-2.5">
               <li><Link href="/blog" className="text-sm hover:text-white transition-colors">Blog</Link></li>
-              <li><Link href="/blog/what-is-fiber-internet" className="text-sm hover:text-white transition-colors">What Is Fiber Internet?</Link></li>
-              <li><Link href="/blog/how-much-internet-speed-do-i-need" className="text-sm hover:text-white transition-colors">How Much Speed Do I Need?</Link></li>
-              <li><Link href="/compare/fiber-vs-cable" className="text-sm hover:text-white transition-colors">Fiber vs Cable</Link></li>
-              <li><Link href="/compare/fiber-vs-cable-vs-dsl" className="text-sm hover:text-white transition-colors">Fiber vs Cable vs DSL</Link></li>
+              <li><Link href="/reviews" className="text-sm hover:text-white transition-colors">Customer Reviews</Link></li>
+              <li><Link href="/internet-speed-test" className="text-sm hover:text-white transition-colors">Speed Test</Link></li>
+              <li><Link href="/coverage" className="text-sm hover:text-white transition-colors">Coverage Map</Link></li>
+              <li><Link href="/verizon-to-frontier" className="text-sm hover:text-white transition-colors">Verizon → Frontier</Link></li>
+              <li><Link href="/blog/what-is-fiber-internet" className="text-sm hover:text-white transition-colors">What Is Fiber?</Link></li>
+              <li><Link href="/blog/how-much-internet-speed-do-i-need" className="text-sm hover:text-white transition-colors">How Much Speed?</Link></li>
+              <li><Link href="/blog/frontier-internet-review-2025" className="text-sm hover:text-white transition-colors">Frontier Review 2026</Link></li>
               <li><Link href="/blog/switching-internet-providers" className="text-sm hover:text-white transition-colors">Switching Providers Guide</Link></li>
-              <li><Link href="/blog/work-from-home-internet-guide" className="text-sm hover:text-white transition-colors">Work From Home Guide</Link></li>
+            </ul>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mt-6 mb-4">Business</h3>
+            <ul className="space-y-2.5">
+              <li><Link href="/business" className="text-sm hover:text-white transition-colors">Business Solutions</Link></li>
+              <li><Link href="/business/internet" className="text-sm hover:text-white transition-colors">Business Internet</Link></li>
+              <li><Link href="/business/dedicated-internet" className="text-sm hover:text-white transition-colors">Dedicated Internet</Link></li>
+              <li><Link href="/about" className="text-sm hover:text-white transition-colors">About Us</Link></li>
             </ul>
           </div>
 
@@ -89,7 +118,7 @@ export default function Footer() {
               {states.map((state) => (
                 <Link
                   key={state}
-                  href={`/coverage#${state.toLowerCase().replace(/\s+/g, "-")}`}
+                  href={`/internet-in/${slugify(state)}`}
                   className="text-xs text-gray-500 hover:text-white transition-colors"
                 >
                   {state}

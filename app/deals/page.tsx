@@ -3,6 +3,8 @@ import Link from "next/link"
 import { CheckCircle2, Gift, ArrowRight, Clock, Shield, Wifi, Zap, Star, Phone } from "lucide-react"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
+import SeoFreshnessNote from "@/components/SeoFreshnessNote"
+import KeyFacts from "@/components/KeyFacts"
 
 export const metadata: Metadata = {
   title: "Frontier Deals & Promotions March 2026 | Save on Fiber Internet",
@@ -159,6 +161,24 @@ export default function DealsPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Freshness + Key Facts */}
+      <section className="py-8 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4 space-y-4 max-w-4xl">
+          <SeoFreshnessNote />
+          <KeyFacts
+            title="Frontier Fiber Deals — March 2026"
+            facts={[
+              { label: "Promotional Period", value: "March 2026 — limited time" },
+              { label: "Visa Reward Card Range", value: "$50 (500 Mbps) to $200 (5 Gig)" },
+              { label: "Installation Fee", value: "$0 — included on all plans" },
+              { label: "Starting Price", value: "$29.99/mo with AutoPay" },
+              { label: "Contract Required", value: "No — cancel anytime" },
+              { label: "Router", value: "Free eero Wi-Fi router on every plan" },
+            ]}
+          />
         </div>
       </section>
 

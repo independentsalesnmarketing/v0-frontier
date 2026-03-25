@@ -4,6 +4,7 @@ import { DollarSign, Shield, Phone, CheckCircle2, AlertCircle } from "lucide-rea
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "ACP Ended: What Replaced It & How to Get Affordable Internet in 2026 | Frontier Deals",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "ACP Replacement 2026: Affordable Internet After ACP", datePublished: "2025-09-15", author: { "@type": "Person", name: "Sarah Johnson" } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "ACP Ended: How to Get Affordable Internet in 2026", description: "The FCC's ACP ended in 2024. Here's what replaced it and how to get affordable internet now.", url: "https://frontier-deals.com/blog/frontier-acp-replacement-2025", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-09-15", dateModified: getResolvedMonthlyUpdatedDate("2026-03-10"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

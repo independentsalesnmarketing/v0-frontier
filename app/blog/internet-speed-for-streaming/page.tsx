@@ -4,6 +4,7 @@ import { ArrowRight, Tv, Wifi, Check, Zap } from "lucide-react"
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Internet Speed for Streaming: Netflix, 4K, and Multi-Screen Guide | Frontier Deals",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Internet Speed for Streaming: Netflix, 4K, and Multi-Screen Guide", author: { "@type": "Person", name: "Marcus Chen" }, datePublished: "2026-03-01", dateModified: "2026-03-06" }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Internet Speed for Streaming: How Much Do You Really Need?", description: "From Netflix to YouTube TV, every streaming service has different bandwidth needs. Here's exactly how much internet speed you need for buffer-free streaming.", url: "https://frontier-deals.com/blog/internet-speed-for-streaming", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-03-01", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
 
   return (
     <>

@@ -4,6 +4,7 @@ import { ArrowRight, ArrowRightLeft, Check, X, AlertTriangle, DollarSign, Clock,
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Frontier vs Cable Internet: Why Fiber Wins in 2026 | Frontier Deals",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Frontier vs Cable Internet: Why Fiber Wins in 2026", author: { "@type": "Person", name: "Sarah Johnson" }, datePublished: "2026-03-02", dateModified: "2026-03-06" }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Frontier Fiber vs Cable Internet: Which Is Better in 2026?", description: "Frontier Fiber vs Xfinity, Spectrum, Cox, and other cable providers. Speed, price, reliability, and contract comparison.", url: "https://frontier-deals.com/blog/frontier-vs-cable-providers", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-03-02", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
 
   return (
     <>

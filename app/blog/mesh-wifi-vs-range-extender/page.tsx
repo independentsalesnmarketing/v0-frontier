@@ -4,6 +4,7 @@ import { CheckCircle2, XCircle, Wifi, ArrowRight } from "lucide-react"
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Mesh WiFi vs Range Extender: Which Is Better for Your Home? | Frontier Deals",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Mesh WiFi vs Range Extender", datePublished: "2025-09-25", author: { "@type": "Person", name: "Marcus Chen" } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Mesh WiFi vs Range Extender: Which Is Better?", description: "Mesh Wi-Fi vs range extenders: which actually fixes dead zones? Performance, cost, and setup compared.", url: "https://frontier-deals.com/blog/mesh-wifi-vs-range-extender", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-09-25", dateModified: getResolvedMonthlyUpdatedDate("2026-03-03"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

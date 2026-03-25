@@ -3,6 +3,8 @@ import Link from "next/link"
 import { MapPin, ChevronRight } from "lucide-react"
 import { frontierCoverage } from "@/lib/coverage-data"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import SeoFreshnessNote from "@/components/SeoFreshnessNote"
+import KeyFacts from "@/components/KeyFacts"
 
 export const metadata: Metadata = {
   title: "Frontier Fiber Coverage Map | Find Internet in Your Area",
@@ -52,6 +54,24 @@ export default function CoveragePage() {
               <ChevronRight className="w-5 h-5 ml-1" />
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Freshness + Key Facts */}
+      <section className="py-8 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4 space-y-4 max-w-4xl">
+          <SeoFreshnessNote />
+          <KeyFacts
+            title="Frontier Fiber Coverage — Key Facts"
+            facts={[
+              { label: "States Served", value: `${states.length}+ states` },
+              { label: "Service Type", value: "Fiber-to-the-premises (FTTP)" },
+              { label: "Network Expansion", value: "Actively growing — new cities added regularly" },
+              { label: "Speed Range", value: "500 Mbps to 7 Gbps" },
+              { label: "Data Policy", value: "Unlimited — no caps" },
+              { label: "Contract", value: "None — month-to-month only" },
+            ]}
+          />
         </div>
       </section>
 

@@ -1,11 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
+import { AUTHORS } from "@/lib/authors"
 
 export interface AuthorProps {
   name: string
   role: string
   bio: string
   image: string
+  url?: string
+  sameAs?: string[]
   credentials?: string[]
   socialLinks?: {
     platform: string
@@ -22,17 +25,37 @@ export default function AuthorBio({
   role,
   bio,
   image,
+  url,
+  sameAs = [],
   credentials = [],
   socialLinks = [],
   publications = [],
 }: AuthorProps) {
+  const registryAuthor = AUTHORS[name]
+  const resolvedUrl = url ?? registryAuthor?.url ?? `https://frontier-deals.com/about#${name.toLowerCase().replace(/\s+/g, "-")}`
+  const resolvedSameAs = sameAs.length > 0 ? sameAs : (registryAuthor?.sameAs ?? [])
+
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name,
+    jobTitle: role,
+    description: bio,
+    url: resolvedUrl,
+    ...(resolvedSameAs.length > 0 && { sameAs: resolvedSameAs }),
+    ...(credentials.length > 0 && { hasCredential: credentials.map((c) => ({ "@type": "EducationalOccupationalCredential", credentialCategory: c })) }),
+    worksFor: { "@type": "Organization", name: "Frontier Deals", url: "https://frontier-deals.com" },
+  }
+
   return (
-    <div className="flex flex-col md:flex-row gap-6 p-6 bg-gray-50 rounded-lg border border-gray-200 my-8">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+      <div className="flex flex-col md:flex-row gap-6 p-6 bg-gray-50 rounded-lg border border-gray-200 my-8">
       <div className="flex-shrink-0">
         {image ? (
           <Image
             src={image}
-            alt={`${name}, ${role} at Frontier Communications`}
+            alt={`Professional headshot of ${name}, ${role} at Frontier Deals, an authorized Frontier Communications retailer. ${name} specializes in fiber internet technology, ISP comparisons, and consumer broadband guides, helping households choose the right Frontier Fiber plan for their needs.`}
             width={120}
             height={120}
             className="rounded-full object-cover"
@@ -129,5 +152,6 @@ export default function AuthorBio({
         )}
       </div>
     </div>
+    </>
   )
 }

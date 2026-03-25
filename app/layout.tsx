@@ -48,9 +48,6 @@ export const metadata = {
     "frontier fiber deals",
   ],
   metadataBase: new URL("https://frontier-deals.com"),
-  alternates: {
-    canonical: "/",
-  },
 }
 
 export const viewport = {

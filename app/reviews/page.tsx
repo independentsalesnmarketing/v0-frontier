@@ -6,13 +6,26 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
 
 export const metadata: Metadata = {
-  title: "Frontier Fiber Reviews 2026 — Real Customer Ratings | Frontier Deals",
+  title: "Frontier Internet Reviews 2026 — Real Customer Ratings | 4.8/5 Stars",
   description:
-    "Read verified Frontier Fiber customer reviews. See what real customers say about speeds, installation, pricing, and reliability. Rated 4.8/5 by real users.",
+    "Read verified Frontier Fiber internet reviews from real customers. Rated 4.8/5 stars. See what customers say about speeds, installation, price, and reliability before switching.",
   alternates: { canonical: "/reviews" },
+  keywords: [
+    "frontier internet reviews",
+    "frontier fiber reviews",
+    "frontier communications internet reviews",
+    "frontier cable reviews",
+    "frontier fiber internet reviews",
+    "frontier internet ratings",
+    "frontier fiber optic reviews",
+    "frontier fiber optic internet reviews",
+    "frontier wifi reviews",
+    "frontier high speed internet reviews",
+    "frontier communications review",
+  ],
   openGraph: {
-    title: "Frontier Fiber Customer Reviews 2026",
-    description: "Rated 4.8/5 by verified customers. Read real reviews about Frontier Fiber internet.",
+    title: "Frontier Fiber Customer Reviews 2026 | 4.8/5 Stars",
+    description: "Rated 4.8/5 by verified customers. Read real reviews about Frontier Fiber internet speeds, installation, and pricing.",
     type: "website",
   },
 }

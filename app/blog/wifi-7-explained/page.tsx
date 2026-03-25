@@ -4,6 +4,7 @@ import { Wifi, Zap, Radio } from "lucide-react"
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Wi-Fi 7 Explained: What It Is, How Fast, and Do You Need It? | Frontier Deals",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Wi-Fi 7 Explained", datePublished: "2025-07-15", author: { "@type": "Person", name: "Marcus Chen" } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Wi-Fi 7 Explained: What It Is, How Fast, and Do You Need It?", description: "Wi-Fi 7 (802.11be) is here. Learn what it does, how fast it is, which devices support it, and whether you should upgrade.", url: "https://frontier-deals.com/blog/wifi-7-explained", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-07-15", dateModified: getResolvedMonthlyUpdatedDate("2026-03-07"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

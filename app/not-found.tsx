@@ -38,16 +38,28 @@ export default function NotFound() {
               Internet Plans
             </Link>
             <Link
+              href="/check-availability"
+              className="text-sm font-medium text-red-600 hover:text-red-700 transition-colors"
+            >
+              Check Availability
+            </Link>
+            <Link
               href="/bundles"
               className="text-sm font-medium text-red-600 hover:text-red-700 transition-colors"
             >
               Bundles
             </Link>
             <Link
-              href="/tv-netflix"
+              href="/coverage"
               className="text-sm font-medium text-red-600 hover:text-red-700 transition-colors"
             >
-              TV Services
+              Coverage Map
+            </Link>
+            <Link
+              href="/blog"
+              className="text-sm font-medium text-red-600 hover:text-red-700 transition-colors"
+            >
+              Blog
             </Link>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { CalendarIcon, ClockIcon, TagIcon, CheckCircleIcon, UserIcon } from "lucide-react"
 import { AUTHORS } from "@/lib/authors"
+import { formatDisplayDate, getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export interface ContentMetaProps {
   publishDate?: string
@@ -37,15 +38,22 @@ export default function ContentMeta({
   pageSlug,
 }: ContentMetaProps) {
   const resolvedPublishDate = publishDate || date || ""
+  const resolvedUpdateDate = getResolvedMonthlyUpdatedDate(updateDate)
   const resolvedCategories = categories.length > 0 ? categories : category ? [category] : []
   const authorProfile = author ? AUTHORS[author] : undefined
 
-  const formatDate = (dateString: string) => {
-    const d = new Date(dateString)
-    return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
+  const isoDate = (dateString: string) => new Date(dateString).toISOString()
+  const slugToTitle = (slug: string) => {
+    const tail = slug.split("/").filter(Boolean).pop() || ""
+    return tail
+      .split("-")
+      .filter(Boolean)
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ")
   }
 
-  const isoDate = (dateString: string) => new Date(dateString).toISOString()
+  const resolvedTitle = pageTitle || (pageSlug ? slugToTitle(pageSlug) : undefined)
+  const resolvedDescription = pageDescription
 
   // Build Article JSON-LD when we have enough data
   const articleSchema =
@@ -53,13 +61,13 @@ export default function ContentMeta({
       ? {
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: pageTitle,
-          description: pageDescription,
+          ...(resolvedTitle ? { headline: resolvedTitle } : {}),
+          ...(resolvedDescription ? { description: resolvedDescription } : {}),
           ...(pageSlug
             ? { url: `https://frontier-deals.com${pageSlug}` }
             : {}),
           datePublished: isoDate(resolvedPublishDate),
-          ...(updateDate ? { dateModified: isoDate(updateDate) } : {}),
+          dateModified: isoDate(resolvedUpdateDate),
           author: {
             "@type": "Person",
             name: authorProfile.name,
@@ -75,6 +83,43 @@ export default function ContentMeta({
               url: "https://frontier-deals.com/android-chrome-192x192.png",
             },
           },
+          // Speakable: headline + first article paragraph are ideal for voice/AI summaries
+          speakableSpecification: {
+            "@type": "SpeakableSpecification",
+            cssSelector: ["h1", "article > p:first-of-type"],
+          },
+        }
+      : null
+
+  // Build ClaimReview JSON-LD when content has been fact-checked
+  const claimReviewSchema =
+    factChecked && pageSlug && resolvedTitle
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ClaimReview",
+          url: `https://frontier-deals.com${pageSlug}`,
+          claimReviewed: resolvedTitle,
+          reviewDate: isoDate(resolvedUpdateDate),
+          author: {
+            "@type": "Organization",
+            name: factChecker ?? "Technical Review Team",
+            url: "https://frontier-deals.com",
+          },
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: 5,
+            bestRating: 5,
+            worstRating: 1,
+            alternateName: "True",
+          },
+          itemReviewed: {
+            "@type": "CreativeWork",
+            name: resolvedTitle,
+            ...(resolvedDescription ? { description: resolvedDescription } : {}),
+            author: authorProfile
+              ? { "@type": "Person", name: authorProfile.name, url: authorProfile.url }
+              : undefined,
+          },
         }
       : null
 
@@ -84,6 +129,12 @@ export default function ContentMeta({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      )}
+      {claimReviewSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(claimReviewSchema) }}
         />
       )}
       <div className="flex flex-wrap gap-4 text-sm text-gray-600 my-4">
@@ -99,16 +150,16 @@ export default function ContentMeta({
           <div className="flex items-center gap-1">
             <CalendarIcon size={15} />
             <span>
-              Published: <time dateTime={isoDate(resolvedPublishDate)}>{formatDate(resolvedPublishDate)}</time>
+              Published: <time dateTime={isoDate(resolvedPublishDate)}>{formatDisplayDate(resolvedPublishDate)}</time>
             </span>
           </div>
         )}
 
-        {updateDate && (
+        {resolvedUpdateDate && (
           <div className="flex items-center gap-1">
             <CalendarIcon size={15} />
             <span>
-              Updated: <time dateTime={isoDate(updateDate)}>{formatDate(updateDate)}</time>
+              Updated: <time dateTime={isoDate(resolvedUpdateDate)}>{formatDisplayDate(resolvedUpdateDate)}</time>
             </span>
           </div>
         )}

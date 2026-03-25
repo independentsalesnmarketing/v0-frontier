@@ -23,6 +23,20 @@ function cityExists(cityName: string, stateName: string): boolean {
   return citiesInState.some((c) => c.toLowerCase() === cityName.toLowerCase())
 }
 
+function slugify(text: string): string {
+  return text.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "")
+}
+
+export async function generateStaticParams() {
+  const params = []
+  for (const [state, cities] of Object.entries(frontierCoverage)) {
+    for (const city of cities as string[]) {
+      params.push({ city: slugify(city), state: slugify(state) })
+    }
+  }
+  return params
+}
+
 export async function generateMetadata({ params }: LocationPageProps): Promise<Metadata> {
   const { city, state } = await params
   const cityName = parseName(city)

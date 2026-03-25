@@ -3,6 +3,8 @@ import Link from "next/link"
 import { MapPin, ArrowRight, Phone, CheckCircle2, Wifi, Shield, Zap } from "lucide-react"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
+import SeoFreshnessNote from "@/components/SeoFreshnessNote"
+import KeyFacts from "@/components/KeyFacts"
 import { ZipCodeCheck } from "@/components/ZipCodeCheck"
 import { frontierCoverage } from "@/lib/coverage-data"
 
@@ -19,11 +21,32 @@ export const metadata: Metadata = {
   keywords: [
     "frontier availability",
     "frontier internet near me",
+    "frontier communications near me",
+    "frontier in my area",
+    "frontier internet in my area",
     "is frontier available in my area",
     "frontier fiber availability",
     "frontier coverage check",
     "frontier zip code check",
     "frontier internet availability",
+    "frontier internet availability by address",
+    "frontier address check",
+    "frontier check address",
+    "frontier fiber address check",
+    "frontier internet address check",
+    "frontier internet availability check",
+    "check frontier availability",
+    "frontier service area",
+    "frontier availability map",
+    "frontier fiber availability map",
+    "frontier coverage map",
+    "frontier fiber coverage map",
+    "frontier service map",
+    "frontier fiber map",
+    "frontier internet coverage map",
+    "frontier near me",
+    "frontier location near me",
+    "frontier offices near me",
   ],
 }
 
@@ -87,6 +110,24 @@ export default function CheckAvailabilityPage() {
               <div className="text-sm text-gray-600">Monthly</div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Freshness + Key Facts */}
+      <section className="py-8 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4 space-y-4 max-w-4xl">
+          <SeoFreshnessNote />
+          <KeyFacts
+            title="Frontier Fiber Availability — Key Facts"
+            facts={[
+              { label: "States with Service", value: `${stateCount}+ states` },
+              { label: "Cities Covered", value: `${totalCities}+ cities` },
+              { label: "Service Type", value: "Fiber-to-the-premises (FTTP)" },
+              { label: "Speeds Available", value: "500 Mbps, 1 Gig, 2 Gig, 5 Gig, 7 Gig" },
+              { label: "Installation", value: "Free professional in-home setup" },
+              { label: "Data Policy", value: "Unlimited data on all plans" },
+            ]}
+          />
         </div>
       </section>
 

@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/order/confirmation"],
+        disallow: ["/api/", "/order/"],
       },
     ],
     sitemap: "https://frontier-deals.com/sitemap.xml",

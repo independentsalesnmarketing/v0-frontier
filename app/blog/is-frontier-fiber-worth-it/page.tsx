@@ -4,6 +4,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react"
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Is Frontier Fiber Worth It? Honest Pros, Cons & Who It's Best For | Frontier Deals",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Is Frontier Fiber Worth It?", datePublished: "2025-06-10", author: { "@type": "Person", name: "Sarah Johnson" } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Is Frontier Fiber Worth It? An Honest Assessment", description: "Is Frontier Fiber internet worth the money? We break down the real pros, cons, pricing, and who benefits most from Frontier's fiber plans.", url: "https://frontier-deals.com/blog/is-frontier-fiber-worth-it", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-06-10", dateModified: getResolvedMonthlyUpdatedDate("2026-03-14"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

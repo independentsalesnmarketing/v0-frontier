@@ -4,6 +4,7 @@ import { ArrowRight, Wifi, Zap, Download, Upload, Activity } from "lucide-react"
 import AuthorBio from "@/components/AuthorBio"
 import ContentMeta from "@/components/ContentMeta"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "What Does Mbps Mean? Internet Speeds Explained in Plain English | Frontier Deals",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "What Does Mbps Mean? Internet Speeds Explained in Plain English", author: { "@type": "Person", name: "Sarah Johnson" }, datePublished: "2026-02-28", dateModified: "2026-03-06" }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "What Does Mbps Mean? Internet Speed Explained Simply", description: "Mbps, Gbps, bandwidth, throughput — internet speed terminology is confusing. This plain-English guide explains what every term means and how much speed you actually need.", url: "https://frontier-deals.com/blog/mbps-explained", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-02-28", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
 
   return (
     <>

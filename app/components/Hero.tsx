@@ -8,10 +8,10 @@ export default function Hero() {
   return (
     <section className="relative min-h-[480px] md:min-h-[560px] overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 z-0">
+      <figure className="absolute inset-0 z-0">
         <Image
           src="/images/hero-family-internet.jpg"
-          alt="Family enjoying fast internet at home"
+          alt="A happy family of four seated together on a living room couch, streaming video and browsing the internet on laptops and tablets, representing the seamless whole-home connectivity delivered by Frontier Fiber high-speed internet with symmetrical upload and download speeds, no data caps, and a free Wi-Fi 6 router included with every plan."
           fill
           sizes="100vw"
           style={{ objectFit: "cover", objectPosition: "60% center" }}
@@ -21,7 +21,10 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#04111f] via-[#0A1E3C]/90 to-[#0A1E3C]/40" />
         <div className="absolute inset-0 bg-grid opacity-30" />
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-[#DA202C]/10 blur-[130px] pointer-events-none" />
-      </div>
+        <figcaption className="absolute bottom-3 right-4 text-[11px] text-white/55 bg-[#04111f]/50 border border-white/10 rounded-md px-2 py-1">
+          Family household using Frontier Fiber for streaming, video calls, and multi-device Wi-Fi.
+        </figcaption>
+      </figure>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="pt-12 md:pt-20 pb-12 md:pb-20 max-w-2xl">
@@ -40,7 +43,7 @@ export default function Hero() {
             <span className="gradient-text">from $29.99/mo</span>
           </h1>
 
-          <p className="text-base md:text-lg text-white/70 mb-8 leading-relaxed max-w-lg">
+          <p className="hero-description text-base md:text-lg text-white/70 mb-8 leading-relaxed max-w-lg">
             Symmetrical speeds up to 7 Gig. No data caps, no contracts, free
             installation — order today through your authorized Frontier retailer.
           </p>

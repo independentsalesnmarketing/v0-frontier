@@ -5,9 +5,29 @@ import Link from "next/link"
 import { PageOrderButton, ContentTabs } from "@/components/PageInteractions"
 
 export const metadata: Metadata = {
-  title: "Frontier TV & Internet Bundles | Cable TV Alternative",
-  description: "Explore Frontier TV and internet bundle packages. Get fiber internet with Netflix, YouTube TV, and premium streaming included. No contracts required.",
+  title: "Frontier TV & Internet Bundles & Packages 2026 | Best Deals",
+  description: "Frontier TV and internet bundles from $29.99/mo. Stream Netflix, YouTube TV, and 150+ channels bundled with fast fiber. Best Frontier TV and internet packages — no contracts, free installation.",
   alternates: { canonical: "/tv-and-bundles" },
+  keywords: [
+    "frontier tv and internet packages",
+    "frontier tv and internet bundles",
+    "frontier tv internet bundles",
+    "frontier tv and internet deals",
+    "frontier tv bundles",
+    "frontier tv and internet",
+    "frontier cable tv",
+    "frontier cable packages",
+    "frontier television service",
+    "frontier tv service",
+    "frontier tv customer service",
+    "frontier cable and internet packages",
+    "frontier internet tv",
+  ],
+  openGraph: {
+    title: "Frontier TV & Internet Bundles 2026 | Stream + Fiber Deals",
+    description: "Bundle Frontier Fiber internet with Netflix and live TV. Plans from $29.99/mo with no contracts and free installation.",
+    type: "website",
+  },
 }
 
 const bundles = [
