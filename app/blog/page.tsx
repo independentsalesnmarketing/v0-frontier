@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowRight, Clock, Calendar, Tag, RefreshCw } from "lucide-react"
 import { blogPosts } from "@/lib/blog-data"
 import Breadcrumbs from "@/components/Breadcrumbs"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Frontier Internet Blog | Guides, Tips & Industry News",
@@ -28,7 +29,7 @@ export default function BlogIndexPage() {
   const recent = blogPosts.filter((p) => !p.featured)
 
   const formatDate = (post: (typeof blogPosts)[0]) => {
-    const d = post.updateDate || post.publishDate
+    const d = post.updateDate ? getResolvedMonthlyUpdatedDate(post.updateDate) : post.publishDate
     return new Date(d).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
   }
 
@@ -155,7 +156,7 @@ export default function BlogIndexPage() {
       <section className="py-12 bg-[#da202c] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-3">Ready to try Frontier Fiber?</h2>
-          <p className="text-lg mb-6 opacity-90">Plans start at $29.99/mo with free installation and no contracts.</p>
+          <p className="text-lg mb-6 opacity-90">Plans start at $34.99/mo with free installation and no contracts.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/internet"

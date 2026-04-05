@@ -40,7 +40,7 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] mb-5 tracking-tight">
             <span className="text-white">Fiber Internet</span>
             <br />
-            <span className="gradient-text">from $29.99/mo</span>
+            <span className="gradient-text">from $34.99/mo</span>
           </h1>
 
           <p className="hero-description text-base md:text-lg text-white/70 mb-8 leading-relaxed max-w-lg">

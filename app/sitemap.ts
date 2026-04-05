@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next"
 import { frontierCoverage } from "@/lib/coverage-data"
 import { blogPosts } from "@/lib/blog-data"
 import { getAllCompetitorSlugs } from "@/lib/competitor-data"
+import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
 const BASE_URL = "https://frontier-deals.com"
 
@@ -86,7 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts from registry
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: post.updateDate || post.publishDate,
+    lastModified: post.updateDate ? getResolvedMonthlyUpdatedDate(post.updateDate) : post.publishDate,
     changeFrequency: "monthly" as const,
     priority: post.featured ? 0.7 : 0.6,
   }))

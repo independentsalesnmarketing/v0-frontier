@@ -66,7 +66,7 @@ const faqSchema = {
       name: "What are Frontier DSL plans and prices?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Frontier DSL plans are generally priced from $27–$50/mo depending on speed tier and location. However, Frontier Fiber 500 Mbps is available for $29.99/mo in most areas — more speed for the same or less money than DSL. If fiber isn't yet at your address, Frontier will notify you when it becomes available.",
+        text: "Frontier DSL plans are generally priced from $27–$50/mo depending on speed tier and location. However, Frontier Fiber 500 Mbps is available for $34.99/mo in most areas — more speed for the same or less money than DSL. If fiber isn't yet at your address, Frontier will notify you when it becomes available.",
       },
     },
     {
@@ -102,7 +102,7 @@ const dslVsFiber = [
   { label: "Max Upload", dsl: "1–15 Mbps", fiber: "Up to 7,000 Mbps" },
   { label: "Latency", dsl: "20–40 ms", fiber: "1–5 ms" },
   { label: "Speed consistency", dsl: "Varies by distance to CO", fiber: "Consistent regardless of distance" },
-  { label: "Entry price", dsl: "~$30–50/mo", fiber: "From $29.99/mo" },
+  { label: "Entry price", dsl: "~$30–50/mo", fiber: "From $34.99/mo" },
   { label: "Data cap", dsl: "Sometimes capped", fiber: "Unlimited" },
   { label: "Upload/download symmetry", dsl: "Heavily asymmetric", fiber: "100% symmetrical" },
   { label: "Future-proof", dsl: "Being retired", fiber: "Decades of lifespan" },
@@ -110,7 +110,7 @@ const dslVsFiber = [
 
 const upgradeSteps = [
   { step: "1", title: "Check fiber availability", desc: "Enter your address to confirm fiber is available. Over 70% of former DSL customers can already upgrade." },
-  { step: "2", title: "Choose a fiber plan", desc: "Pick Fiber 500 ($29.99/mo), Fiber 1 Gig ($49.99/mo), or faster. All include unlimited data and no contracts." },
+  { step: "2", title: "Choose a fiber plan", desc: "Pick Fiber 500 ($34.99/mo), Fiber 1 Gig ($49.99/mo), or faster. All include unlimited data and no contracts." },
   { step: "3", title: "Schedule installation", desc: "Pick a 2-hour window that works for you. A Frontier technician runs fiber to your home at no charge." },
   { step: "4", title: "Get your eero router", desc: "The tech sets up your new eero Wi-Fi 6/6E router — yours to keep, no rental fee." },
   { step: "5", title: "Start saving", desc: "Enjoy speeds 4–80x faster for the same or lower monthly price. Earn up to $100 Visa Reward Card." },
@@ -337,7 +337,7 @@ export default function FrontierDslPage() {
                 </div>
                 <div className="flex items-center gap-2 mt-1">
                   <Check className="h-4 w-4 text-[#00b7c3]" />
-                  <span className="text-sm font-bold text-[#00b7c3]">Only $29.99/mo</span>
+                  <span className="text-sm font-bold text-[#00b7c3]">Only $34.99/mo</span>
                 </div>
               </div>
             </div>

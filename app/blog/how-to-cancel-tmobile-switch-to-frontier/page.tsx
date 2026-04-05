@@ -27,7 +27,7 @@ export default function Page() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 my-8">
             <p className="text-amber-800 font-semibold flex items-center gap-2"><AlertTriangle className="h-5 w-5" /> Why Switch?</p>
-            <p className="text-amber-700">T-Mobile 5G Home Internet is $50/mo for &quot;up to 245 Mbps&quot; — but actual speeds vary wildly (33-245 Mbps) based on tower congestion, time of day, and location. Frontier Fiber 500 is $29.99/mo for <strong>consistent</strong> 500/500 Mbps. Less money, 2-15x faster, and always reliable.</p>
+            <p className="text-amber-700">T-Mobile 5G Home Internet is $50/mo for &quot;up to 245 Mbps&quot; — but actual speeds vary wildly (33-245 Mbps) based on tower congestion, time of day, and location. Frontier Fiber 500 is $34.99/mo for <strong>consistent</strong> 500/500 Mbps. Less money, 2-15x faster, and always reliable.</p>
           </div>
 
           <h2>T-Mobile vs Frontier: The Comparison</h2>
@@ -41,7 +41,7 @@ export default function Page() {
                   ["Real-World Speed", "33-245 Mbps (varies)", "480-510 Mbps (consistent) ✅"],
                   ["Upload Speed", "5-30 Mbps ❌", "500 Mbps ✅"],
                   ["Latency", "25-50 ms", "5-15 ms ✅"],
-                  ["Price", "$50/mo", "$29.99/mo ✅"],
+                  ["Price", "$50/mo", "$34.99/mo ✅"],
                   ["Data Priority", "Deprioritized during congestion ❌", "Dedicated connection ✅"],
                   ["Data Cap", "Technically unlimited*", "Truly unlimited ✅"],
                   ["Router", "$0 (gateway provided)", "Free eero (yours to keep) ✅"],
@@ -92,7 +92,7 @@ export default function Page() {
 
           <div className="not-prose bg-[#0A1E3C] text-white rounded-xl p-8 my-10 text-center">
             <h3 className="text-2xl font-bold mb-3">Upgrade from Wireless to Fiber</h3>
-            <p className="text-white/70 mb-6">Consistent speeds, lower latency, and $20/mo less than T-Mobile. Check availability now.</p>
+            <p className="text-white/70 mb-6">Consistent speeds, lower latency, and about $15/mo less than T-Mobile. Check availability now.</p>
             <Link href="/check-availability" className="inline-flex items-center bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
               Check Frontier Availability <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

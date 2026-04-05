@@ -7,7 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Frontier Internet Review 2026: Honest Assessment of Plans, Speeds & Value | Frontier Deals",
-  description: "An honest Frontier Fiber review covering plans, real-world speeds, installation experience, pricing, pros and cons. Updated for 2026 with 5 plans from $29.99-$154.99/mo.",
+  description: "An honest Frontier Fiber review covering plans, real-world speeds, installation experience, pricing, pros and cons. Updated for 2026 with 5 plans from $34.99-$154.99/mo.",
   alternates: { canonical: "/blog/frontier-internet-review-2025" },
   openGraph: { title: "Frontier Internet Review 2026: Plans, Speed Tests & Value", description: "Complete Frontier Fiber review. 5 plans from 500 Mbps to 7 Gig. Free installation, no contracts, unlimited data.", type: "article", publishedTime: "2025-06-01T08:00:00Z" },
 }
@@ -42,7 +42,7 @@ export default function Page() {
               <thead><tr className="bg-[#0A1E3C] text-white"><th className="p-3 text-left">Plan</th><th className="p-3 text-center">Speed</th><th className="p-3 text-center">Price</th><th className="p-3 text-center">Router</th><th className="p-3 text-center">Bonus</th></tr></thead>
               <tbody>
                 {[
-                  ["Fiber 500", "500/500 Mbps", "$29.99/mo", "eero Wi-Fi 6", "$50 Visa Card"],
+                  ["Fiber 500", "500/500 Mbps", "$34.99/mo", "eero Wi-Fi 6", "$50 Visa Card"],
                   ["Fiber 1 Gig", "1,000/1,000 Mbps", "$49.99/mo", "eero Pro 6", "$100 Visa Card"],
                   ["Fiber 2 Gig", "2,000/2,000 Mbps", "$64.99/mo", "eero Pro 6E", "$150 Visa Card"],
                   ["Fiber 5 Gig", "5,000/5,000 Mbps", "$89.99/mo", "eero Max 7", "$200 Visa Card"],

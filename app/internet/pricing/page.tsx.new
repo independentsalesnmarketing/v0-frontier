@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import { redirect } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "Frontier Internet Pricing | Plans from $29.99/mo",
+  title: "Frontier Internet Pricing | Plans from $34.99/mo",
   description:
-    "Compare Frontier fiber internet pricing. Plans from $29.99/mo with unlimited data, no contracts, and free installation.",
+    "Compare Frontier fiber internet pricing. Plans from $34.99/mo with unlimited data, no contracts, and free installation.",
   alternates: { canonical: "/internet" },
 }
 

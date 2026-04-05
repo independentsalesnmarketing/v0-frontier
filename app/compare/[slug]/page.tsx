@@ -36,7 +36,7 @@ const frontierData = {
   contract: "None",
   installation: "Free",
   equipment: "Free eero router",
-  startingPrice: "$29.99/mo",
+  startingPrice: "$34.99/mo",
   reliability: "99.9% uptime",
   technology: "Fiber (XGS-PON)",
 }
@@ -67,7 +67,7 @@ export default async function CompetitorPage({ params }: Props) {
         name: `Is Frontier better than ${comp.shortName}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Frontier Fiber offers symmetrical speeds up to 7 Gbps, no data caps, no contracts, and free installation starting at $29.99/mo. ${comp.competitorWeakness}`,
+          text: `Frontier Fiber offers symmetrical speeds up to 7 Gbps, no data caps, no contracts, and free installation starting at $34.99/mo. ${comp.competitorWeakness}`,
         },
       },
       {
@@ -75,7 +75,7 @@ export default async function CompetitorPage({ params }: Props) {
         name: `How do Frontier and ${comp.shortName} compare on price?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Frontier Fiber starts at $29.99/mo with Auto Pay, while ${comp.shortName} starts at ${comp.startingPrice}. Frontier also includes a free eero router, while ${comp.shortName} charges ${comp.equipment}.`,
+          text: `Frontier Fiber starts at $34.99/mo with Auto Pay, while ${comp.shortName} starts at ${comp.startingPrice}. Frontier also includes a free eero router, while ${comp.shortName} charges ${comp.equipment}.`,
         },
       },
       {
@@ -178,11 +178,11 @@ export default async function CompetitorPage({ params }: Props) {
           <div className="max-w-3xl mx-auto space-y-4">
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold text-[#0A1E3C] mb-2">Is Frontier better than {comp.shortName}?</h3>
-              <p className="text-gray-600 text-sm">Frontier Fiber offers symmetrical speeds up to 7 Gbps, no data caps, no contracts, and free installation starting at $29.99/mo. {comp.competitorWeakness}</p>
+              <p className="text-gray-600 text-sm">Frontier Fiber offers symmetrical speeds up to 7 Gbps, no data caps, no contracts, and free installation starting at $34.99/mo. {comp.competitorWeakness}</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold text-[#0A1E3C] mb-2">How do Frontier and {comp.shortName} compare on price?</h3>
-              <p className="text-gray-600 text-sm">Frontier starts at $29.99/mo with Auto Pay. {comp.shortName} starts at {comp.startingPrice}. Frontier includes a free eero router; {comp.shortName} charges {comp.equipment}.</p>
+              <p className="text-gray-600 text-sm">Frontier starts at $34.99/mo with Auto Pay. {comp.shortName} starts at {comp.startingPrice}. Frontier includes a free eero router; {comp.shortName} charges {comp.equipment}.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold text-[#0A1E3C] mb-2">Does {comp.shortName} have data caps?</h3>
@@ -221,7 +221,7 @@ export default async function CompetitorPage({ params }: Props) {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-black mb-4">Ready to Switch from {comp.shortName}?</h2>
           <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-            Get Frontier Fiber starting at $29.99/mo with free installation, a free eero router, and no data caps.
+            Get Frontier Fiber starting at $34.99/mo with free installation, a free eero router, and no data caps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <PageOrderButton className="inline-flex items-center justify-center bg-white text-[#DA202C] font-bold h-14 px-10 rounded-xl text-lg hover:bg-gray-100">

@@ -11,11 +11,11 @@ import RelatedServices from "@/components/RelatedServices"
 import { UrgencyCountdown } from "@/components/UrgencyCountdown"
 
 export const metadata: Metadata = {
-  title: "Frontier Internet Plans & Packages 2026 | Fiber from $29.99/mo",
+  title: "Frontier Internet Plans & Packages 2026 | Fiber from $34.99/mo",
   description: "Compare Frontier Communications fiber internet plans — 500 Mbps to 7 Gig. Unlimited data, no contracts, free eero router, and free installation. Order online today.",
   alternates: { canonical: "/internet" },
   openGraph: {
-    title: "Frontier Internet Plans & Packages 2026 | Fiber from $29.99/mo",
+    title: "Frontier Internet Plans & Packages 2026 | Fiber from $34.99/mo",
     description: "Compare Frontier Communications fiber internet plans — 500 Mbps to 7 Gig. Unlimited data, no contracts, free eero router, and free installation. Order online today.",
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fiber Internet Plans from $29.99/mo | Frontier Deals",
+    title: "Fiber Internet Plans from $34.99/mo | Frontier Deals",
     description: "Compare Frontier fiber internet plans from 500 Mbps to 7 Gbps. Unlimited data, no contracts, free installation.",
     images: ["/images/og-frontier-internet.jpg"],
   },
@@ -60,7 +60,7 @@ const productSchema = {
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "USD",
-    lowPrice: "29.99",
+    lowPrice: "34.99",
     highPrice: "109.99",
     offerCount: "5",
     url: "https://frontier-deals.com/internet",
@@ -140,7 +140,7 @@ export default function InternetPlans() {
               title="Frontier Fiber Internet — Quick Facts"
               facts={[
                 { label: "Speed Range", value: "500 Mbps to 7 Gbps symmetrical" },
-                { label: "Starting Price", value: "$29.99/mo with AutoPay" },
+                { label: "Starting Price", value: "$34.99/mo with AutoPay" },
                 { label: "Data Policy", value: "Unlimited — no caps or throttling" },
                 { label: "Contract", value: "None required — cancel anytime" },
                 { label: "Installation", value: "Free professional in-home setup" },

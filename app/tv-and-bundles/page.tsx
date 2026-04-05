@@ -6,7 +6,7 @@ import { PageOrderButton, ContentTabs } from "@/components/PageInteractions"
 
 export const metadata: Metadata = {
   title: "Frontier TV & Internet Bundles & Packages 2026 | Best Deals",
-  description: "Frontier TV and internet bundles from $29.99/mo. Stream Netflix, YouTube TV, and 150+ channels bundled with fast fiber. Best Frontier TV and internet packages — no contracts, free installation.",
+  description: "Frontier TV and internet bundles from $34.99/mo. Stream Netflix, YouTube TV, and 150+ channels bundled with fast fiber. Best Frontier TV and internet packages — no contracts, free installation.",
   alternates: { canonical: "/tv-and-bundles" },
   keywords: [
     "frontier tv and internet packages",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Frontier TV & Internet Bundles 2026 | Stream + Fiber Deals",
-    description: "Bundle Frontier Fiber internet with Netflix and live TV. Plans from $29.99/mo with no contracts and free installation.",
+    description: "Bundle Frontier Fiber internet with Netflix and live TV. Plans from $34.99/mo with no contracts and free installation.",
     type: "website",
   },
 }
@@ -34,7 +34,7 @@ const bundles = [
   {
     name: "Fiber 500 + Netflix",
     internetSpeed: "500/500 Mbps",
-    internetPrice: 29.99,
+    internetPrice: 34.99,
     netflixPrice: 7.99,
     totalPrice: 37.98,
     features: [

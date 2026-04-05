@@ -48,7 +48,7 @@ const useCases: Record<string, {
     subtitle: "Buffer-Free 4K on Every Screen.",
     icon: <Tv className="h-8 w-8" />,
     heroDesc: "Netflix, Disney+, YouTube TV, and more — stream in 4K on every TV in your home without buffering or quality drops.",
-    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "34.99",
     whyMatters: [
       { title: "Multi-Screen 4K", desc: "Stream 4K content on 4+ screens simultaneously with plenty of bandwidth to spare.", icon: <MonitorPlay className="h-6 w-6" /> },
       { title: "No Data Caps", desc: "Binge entire series without worrying about data limits. Truly unlimited.", icon: <Shield className="h-6 w-6" /> },
@@ -78,7 +78,7 @@ const useCases: Record<string, {
     subtitle: "Professional-Grade Internet. Home Office Ready.",
     icon: <Briefcase className="h-8 w-8" />,
     heroDesc: "Video calls, VPN, cloud storage, and file sharing — all running smoothly on symmetrical fiber that never slows down.",
-    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "34.99",
     whyMatters: [
       { title: "Symmetrical Upload", desc: "Upload speeds match download — critical for video calls, screen sharing, and cloud backups.", icon: <Globe className="h-6 w-6" /> },
       { title: "VPN Friendly", desc: "High speeds through VPN tunnels. No lag, no dropped connections, no IT tickets.", icon: <Shield className="h-6 w-6" /> },
@@ -108,7 +108,7 @@ const useCases: Record<string, {
     subtitle: "Power Every Connected Device in Your Home.",
     icon: <Home className="h-8 w-8" />,
     heroDesc: "Cameras, doorbells, thermostats, lights, speakers, locks — keep every smart device connected and responsive with fiber.",
-    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "34.99",
     whyMatters: [
       { title: "Upload for Cameras", desc: "Security cameras upload 24/7. Symmetrical fiber means crisp, real-time footage.", icon: <Shield className="h-6 w-6" /> },
       { title: "Low Latency Control", desc: "Instant response when you tap a light switch or check a camera. No delays.", icon: <Zap className="h-6 w-6" /> },
@@ -168,7 +168,7 @@ const useCases: Record<string, {
     subtitle: "Simple. Reliable. Affordable.",
     icon: <Heart className="h-8 w-8" />,
     heroDesc: "Stay connected with family through video calls, enjoy streaming entertainment, and keep your home secure — all with hassle-free fiber internet.",
-    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "34.99",
     whyMatters: [
       { title: "Easy Setup", desc: "Free professional installation — a technician handles everything. Just plug in and go.", icon: <Home className="h-6 w-6" /> },
       { title: "Video Calls", desc: "Crystal-clear FaceTime and Zoom with grandkids. Symmetrical speeds mean you look great on camera.", icon: <Users className="h-6 w-6" /> },
@@ -188,7 +188,7 @@ const useCases: Record<string, {
       "Free professional installation means you don't have to set up anything yourself",
     ],
     faq: [
-      { q: "What's the simplest plan for basic internet use?", a: "The Frontier Fiber 500 plan at $29.99/mo is perfect. It provides 500 Mbps — more than enough for video calls, streaming, email, and browsing." },
+      { q: "What's the simplest plan for basic internet use?", a: "The Frontier Fiber 500 plan at $34.99/mo is perfect. It provides 500 Mbps — more than enough for video calls, streaming, email, and browsing." },
       { q: "Do I need to set up the equipment myself?", a: "No. All Frontier plans include free professional installation. A technician will set up your router and make sure everything works before leaving." },
       { q: "Is there a contract or cancellation fee?", a: "No. Frontier Fiber plans have no annual contracts and no cancellation fees. You can change or cancel your plan at any time." },
     ],
@@ -228,7 +228,7 @@ const useCases: Record<string, {
     subtitle: "Fiber Is Expanding to Rural America.",
     icon: <Globe className="h-8 w-8" />,
     heroDesc: "Frontier is investing $10 billion to bring fiber to underserved and rural communities. If fiber isn't available yet, here's what to know about your options.",
-    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "34.99",
     whyMatters: [
       { title: "Fiber Expansion", desc: "Frontier is building fiber to 10+ million new homes and businesses, with a focus on underserved rural communities.", icon: <Globe className="h-6 w-6" /> },
       { title: "Symmetrical Speeds", desc: "Unlike satellite or DSL, fiber delivers the same speed up and down — critical for telehealth, remote work, and video calls.", icon: <Zap className="h-6 w-6" /> },
@@ -244,24 +244,24 @@ const useCases: Record<string, {
     tips: [
       "Check availability at your address — Frontier adds new fiber areas monthly",
       "If fiber isn't available yet, sign up for expansion notifications at frontier.com",
-      "Fiber 500 at $29.99/mo is significantly cheaper and faster than most satellite plans",
+      "Fiber 500 at $34.99/mo is significantly cheaper and faster than most satellite plans",
       "The free eero router provides excellent Wi-Fi coverage for larger rural properties",
     ],
     faq: [
       { q: "Is Frontier Fiber available in rural areas?", a: "It depends on your specific address. Frontier is rapidly expanding fiber to rural communities across its 25-state footprint. Check your address to see current availability — new areas are added regularly." },
       { q: "What if fiber isn't available at my address yet?", a: "Frontier's $10 billion fiber expansion plan is actively building out to underserved areas. You can check availability and sign up for notifications when fiber reaches your address." },
-      { q: "How does Frontier Fiber compare to satellite internet?", a: "Fiber is vastly superior: 500 Mbps vs 25-100 Mbps, no data caps vs 15-100 GB caps, 5ms latency vs 600ms latency, and $29.99/mo vs $50-150/mo. There's no comparison." },
+      { q: "How does Frontier Fiber compare to satellite internet?", a: "Fiber is vastly superior: 500 Mbps vs 25-100 Mbps, no data caps vs 15-100 GB caps, 5ms latency vs 600ms latency, and $34.99/mo vs $50-150/mo. There's no comparison." },
     ],
   },
   "single-person": {
     title: "Internet for One Person",
     subtitle: "Fast, Affordable Fiber Just for You.",
     icon: <Heart className="h-8 w-8" />,
-    heroDesc: "Living alone doesn't mean settling for slow internet. Frontier Fiber 500 at $29.99/mo gives a single person more speed than they'll ever need — at a price that beats cable.",
-    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    heroDesc: "Living alone doesn't mean settling for slow internet. Frontier Fiber 500 at $34.99/mo gives a single person more speed than they'll ever need — at a price that beats cable.",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "34.99",
     whyMatters: [
       { title: "Massive Overkill (In a Good Way)", desc: "500 Mbps is far more than a single person needs — which means zero slowdowns, ever, regardless of what you're doing.", icon: <Zap className="h-6 w-6" /> },
-      { title: "Best Price per Mbps", desc: "At $29.99/mo for 500 Mbps, Frontier Fiber delivers the best price-per-megabit of any major ISP.", icon: <Shield className="h-6 w-6" /> },
+      { title: "Best Price per Mbps", desc: "At $34.99/mo for 500 Mbps, Frontier Fiber delivers the best price-per-megabit of any major ISP.", icon: <Shield className="h-6 w-6" /> },
       { title: "No Contract Flexibility", desc: "Moving soon? No problem. Frontier has no annual contracts — cancel or pause anytime without fees.", icon: <Wifi className="h-6 w-6" /> },
     ],
     requirements: [
@@ -278,9 +278,9 @@ const useCases: Record<string, {
       "Frontier's no-contract policy is perfect if you're renting or planning to move",
     ],
     faq: [
-      { q: "What internet speed does one person need?", a: "A single person typically only needs 25-100 Mbps for comfortable browsing, streaming, and gaming. Frontier Fiber 500 at $29.99/mo gives you 5x that minimum, ensuring you're never limited." },
+      { q: "What internet speed does one person need?", a: "A single person typically only needs 25-100 Mbps for comfortable browsing, streaming, and gaming. Frontier Fiber 500 at $34.99/mo gives you 5x that minimum, ensuring you're never limited." },
       { q: "Is 500 Mbps too much for one person?", a: "In terms of what you actively use at once — yes, one person won't use 500 Mbps simultaneously. But having extra headroom means you'll never experience slowdowns, and you get symmetrical upload speed for video calls and backups." },
-      { q: "What's the cheapest Frontier plan for a single person?", a: "Frontier Fiber 500 at $29.99/mo is the entry-level plan and more than sufficient for one person. There's no reason to spend more unless you're a heavy gamer or content creator who uploads large files." },
+      { q: "What's the cheapest Frontier plan for a single person?", a: "Frontier Fiber 500 at $34.99/mo is the entry-level plan and more than sufficient for one person. There's no reason to spend more unless you're a heavy gamer or content creator who uploads large files." },
     ],
   },
   "multiple-devices": {
@@ -288,7 +288,7 @@ const useCases: Record<string, {
     subtitle: "One Network. Every Device. Zero Slowdowns.",
     icon: <Wifi className="h-8 w-8" />,
     heroDesc: "Phones, laptops, tablets, smart TVs, cameras, thermostats, speakers — the modern home has 15-30 connected devices. Frontier Fiber handles them all without breaking a sweat.",
-    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "29.99",
+    recPlan: "Fiber 500", recPlanKey: "fiber-500", recSpeed: "500/500 Mbps", recPrice: "34.99",
     whyMatters: [
       { title: "Bandwidth for All Devices", desc: "500 Mbps divided across 30 devices gives every device 16 Mbps — enough for 4K streaming on every screen simultaneously.", icon: <Wifi className="h-6 w-6" /> },
       { title: "eero Handles the Load", desc: "The free eero Wi-Fi 6 router is built for dense device environments. It uses OFDMA to efficiently serve many devices at once.", icon: <Zap className="h-6 w-6" /> },
@@ -310,7 +310,7 @@ const useCases: Record<string, {
     faq: [
       { q: "How many devices can 500 Mbps handle?", a: "500 Mbps can comfortably support 30+ simultaneous devices. In practice, most devices use bursts of bandwidth rather than constant streams, so 500 Mbps handles far more than 30 devices in real-world use." },
       { q: "Does having more devices slow down my internet?", a: "Only if your total bandwidth is being fully consumed. With 500 Mbps, it would take dozens of devices all simultaneously streaming 4K to run into the limit. The free eero router also helps manage traffic efficiently." },
-      { q: "What internet speed do I need for 20 devices?", a: "We recommend at least 300-500 Mbps for 20 devices to ensure all devices get adequate bandwidth even when used simultaneously. Frontier Fiber 500 at $29.99/mo statisfies this comfortably." },
+      { q: "What internet speed do I need for 20 devices?", a: "We recommend at least 300-500 Mbps for 20 devices to ensure all devices get adequate bandwidth even when used simultaneously. Frontier Fiber 500 at $34.99/mo statisfies this comfortably." },
     ],
   },
 }

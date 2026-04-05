@@ -49,7 +49,7 @@ export default function Page() {
                   ["Max Download Speed", "7,000 Mbps", "1,200 Mbps", "1,000 Mbps"],
                   ["Max Upload Speed", "7,000 Mbps", "35 Mbps", "35 Mbps"],
                   ["Starting Price (Gig)", "$49.99/mo", "$80/mo", "$89.99/mo"],
-                  ["Starting Price (500M)", "$29.99/mo", "$55/mo", "$49.99/mo"],
+                  ["Starting Price (500M)", "$34.99/mo", "$55/mo", "$49.99/mo"],
                   ["Data Caps", "None ✅", "1.2 TB ❌", "None ✅"],
                   ["Contract Required", "No ✅", "1 year ❌", "No ✅"],
                   ["Router", "Free (yours to keep) ✅", "$14/mo rental ❌", "$5/mo rental ❌"],

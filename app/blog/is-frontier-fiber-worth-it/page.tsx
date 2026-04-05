@@ -52,7 +52,7 @@ export default function Page() {
           <p>If you&apos;re streaming everything (Netflix, YouTube TV, Disney+), unlimited data with no caps is essential. Some cable providers charge $30+/mo in overage fees for heavy streaming households.</p>
 
           <h2>Who Might Not Need It</h2>
-          <p>If you live alone, only browse the web and check email, and don&apos;t work from home, the $29.99 Fiber 500 plan is more than enough — you don&apos;t need 1 Gig. But even at $29.99/mo, Frontier Fiber is still a better value than most cable plans.</p>
+          <p>If you live alone, only browse the web and check email, and don&apos;t work from home, the $34.99 Fiber 500 plan is more than enough — you don&apos;t need 1 Gig. But even at $34.99/mo, Frontier Fiber is still a better value than most cable plans.</p>
           <p>The only scenario where Frontier might not be worth it is if you already have a comparable fiber provider (like Google Fiber or Verizon Fios) at similar pricing. In that case, switching may not gain you much.</p>
 
           <h2>The Math: Frontier vs Cable Over 2 Years</h2>

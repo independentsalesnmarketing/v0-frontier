@@ -52,7 +52,7 @@ export const competitors: Record<string, CompetitorData> = {
     reliability: "~99.5% uptime",
     technology: "Fiber (GPON/XGS-PON)",
     whyFrontierWins: [
-      "Lower starting price — Frontier starts at $29.99/mo vs AT&T at $55/mo",
+      "Lower starting price — Frontier starts at $34.99/mo vs AT&T at $55/mo",
       "Free equipment — AT&T charges a $10/mo gateway fee",
       "Visa reward cards up to $200 — AT&T offers lower reward amounts",
       "Broader plan selection — 6 tiers from 200 Mbps to 7 Gig",
@@ -76,7 +76,7 @@ export const competitors: Record<string, CompetitorData> = {
     whyFrontierWins: [
       "Symmetrical speeds — Spectrum upload maxes at 35 Mbps, Frontier matches download",
       "Higher max speeds — 5 Gig vs Spectrum's 1 Gbps ceiling",
-      "Lower introductory price — $29.99/mo vs $49.99/mo",
+      "Lower introductory price — $34.99/mo vs $49.99/mo",
       "Free installation — Spectrum charges $59.99",
       "Superior WiFi hardware — Free eero vs Spectrum's basic router",
     ],
@@ -96,7 +96,7 @@ export const competitors: Record<string, CompetitorData> = {
     reliability: "~99.5% uptime",
     technology: "Fiber (GPON)",
     whyFrontierWins: [
-      "Lower starting price — $29.99/mo vs Fios at $49.99/mo",
+      "Lower starting price — $34.99/mo vs Fios at $49.99/mo",
       "Higher max speed — 5 Gig vs Fios 2.3 Gig",
       "Free router included — Fios charges $15/mo for their router",
       "Visa reward cards — Frontier offers up to $200 for new customers",
@@ -140,7 +140,7 @@ export const competitors: Record<string, CompetitorData> = {
     reliability: "~99.5% uptime",
     technology: "Fiber (XGS-PON)",
     whyFrontierWins: [
-      "Lower starting price — $29.99/mo vs Google Fiber at $70/mo",
+      "Lower starting price — $34.99/mo vs Google Fiber at $70/mo",
       "More plan options — 6 tiers vs Google's 2-3 options",
       "Much broader availability — 19+ states vs Google's ~10 metro areas",
       "Free eero router — premium mesh WiFi hardware included",
@@ -165,7 +165,7 @@ export const competitors: Record<string, CompetitorData> = {
       "Symmetrical speeds — Cox upload maxes at 100 Mbps, Frontier matches download",
       "No data caps — Cox has 1.25 TB cap with $10/50 GB overage fees",
       "No contracts — Cox typically requires 1-2 year agreements",
-      "Lower starting price — $29.99/mo vs $49.99/mo",
+      "Lower starting price — $34.99/mo vs $49.99/mo",
       "Free equipment — Cox charges $13/mo for router rental",
     ],
     competitorWeakness: "Cox relies on aging cable infrastructure with data caps, contracts, and severely limited upload speeds. Their 1.25 TB data cap can cost heavy users an extra $40-50/month in overage charges.",

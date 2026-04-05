@@ -94,7 +94,7 @@ export default function Page() {
             <table className="w-full text-sm border-collapse">
               <thead><tr className="bg-[#0A1E3C] text-white"><th className="p-3 text-left">Household</th><th className="p-3 text-center">Recommended</th><th className="p-3 text-center">Frontier Plan</th><th className="p-3 text-center">Price</th></tr></thead>
               <tbody>
-                <tr className="bg-white"><td className="p-3">1-2 people, light use</td><td className="p-3 text-center">200-500 Mbps</td><td className="p-3 text-center font-semibold">Fiber 500</td><td className="p-3 text-center">$29.99/mo</td></tr>
+                <tr className="bg-white"><td className="p-3">1-2 people, light use</td><td className="p-3 text-center">200-500 Mbps</td><td className="p-3 text-center font-semibold">Fiber 500</td><td className="p-3 text-center">$34.99/mo</td></tr>
                 <tr className="bg-gray-50"><td className="p-3">3-5 people, mixed use</td><td className="p-3 text-center">500-1,000 Mbps</td><td className="p-3 text-center font-semibold">Fiber 1 Gig</td><td className="p-3 text-center">$49.99/mo</td></tr>
                 <tr className="bg-white"><td className="p-3">5+ people, heavy use</td><td className="p-3 text-center">1-2 Gbps</td><td className="p-3 text-center font-semibold">Fiber 2 Gig</td><td className="p-3 text-center">$64.99/mo</td></tr>
                 <tr className="bg-gray-50"><td className="p-3">Power users, 30+ devices</td><td className="p-3 text-center">2-5 Gbps</td><td className="p-3 text-center font-semibold">Fiber 5 Gig</td><td className="p-3 text-center">$89.99/mo</td></tr>

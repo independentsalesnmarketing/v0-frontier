@@ -68,7 +68,7 @@ export function BusinessOrderForm({ isOpen, onClose, preSelectedPlan }: Business
 
       // Use the same Google Apps Script URL that works with the residential form
       const scriptUrl =
-        "https://script.google.com/macros/s/AKfycbx4TS3QR-ZEgYcTrK7DQ5Ab2YN4Tfeh-Ah9hrlmr8e3GsEzsuhUkRI8M7fUMl2Wfo04/exec"
+        "https://script.google.com/macros/s/AKfycbx6QqdUuVmjmqshF7yw6Erac1UGhkY59ajw7Ho9VeumwqagWAvMnirhXLD3bVExYqJW/exec"
 
       // Create a hidden iframe if it doesn't exist
       if (!iframeRef.current) {

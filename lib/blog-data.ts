@@ -370,7 +370,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "frontier-internet-pricing-guide",
     title: "Frontier Internet Pricing Guide 2026: Every Plan, Every Cost",
-    description: "Complete breakdown of Frontier Fiber pricing for 2026. All plans from $29.99 to $154.99/mo with fees, taxes, and hidden cost analysis.",
+    description: "Complete breakdown of Frontier Fiber pricing for 2026. All plans from $34.99 to $154.99/mo with fees, taxes, and hidden cost analysis.",
     publishDate: "2026-01-20",
     updateDate: "2026-03-06",
     readTime: 10,

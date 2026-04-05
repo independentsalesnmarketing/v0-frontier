@@ -368,10 +368,10 @@ function ConversionBlock({ results }: { results: Results }) {
   if (dl < 100) {
     tag = "You\'re missing 5–20× faster speeds"
     headline = "Your connection is holding you back"
-    body = `At ${fmtStr(dl)} download, a single 4K stream eats up to 25% of your bandwidth — leaving almost nothing for calls, gaming, or backups. Frontier Fiber 500 is 5–20× faster from $29.99/mo.`
-    plan = "Frontier Fiber 500"; speed = "500/500 Mbps"; price = "$29.99/mo"; href = "/internet/fiber-500"
+    body = `At ${fmtStr(dl)} download, a single 4K stream eats up to 25% of your bandwidth — leaving almost nothing for calls, gaming, or backups. Frontier Fiber 500 is 5–20× faster from $34.99/mo.`
+    plan = "Frontier Fiber 500"; speed = "500/500 Mbps"; price = "$34.99/mo"; href = "/internet/fiber-500"
   } else if (dl < 500) {
-    plan = "Frontier Fiber 500"; speed = "500/500 Mbps"; price = "$29.99/mo"; href = "/internet/fiber-500"
+    plan = "Frontier Fiber 500"; speed = "500/500 Mbps"; price = "$34.99/mo"; href = "/internet/fiber-500"
     if (lacksSymmetry) {
       tag = "Cable throttles your upload — fiber doesn\'t"
       headline = `Upload: ${fmtStr(ul)} — that\'s the cable tax`
@@ -379,7 +379,7 @@ function ConversionBlock({ results }: { results: Results }) {
     } else {
       tag = "Faster + likely cheaper — check availability"
       headline = "You\'re on mid-tier. Here\'s what you\'re missing."
-      body = `Frontier Fiber 500 delivers 500 Mbps symmetrically — no data caps, no contracts, free installation — from $29.99/mo. Good chance it costs less than you\'re paying now.`
+      body = `Frontier Fiber 500 delivers 500 Mbps symmetrically — no data caps, no contracts, free installation — from $34.99/mo. Good chance it costs less than you\'re paying now.`
     }
   } else if (dl < 1000) {
     plan = "Frontier Fiber 1 Gig"; speed = "1,000/1,000 Mbps"; price = "$49.99/mo"; href = "/internet/fiber-1-gig"

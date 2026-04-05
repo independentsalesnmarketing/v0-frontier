@@ -26,12 +26,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox"
 
 const PLANS: Record<string, { name: string; speed: string; price: string }> = {
-  "fiber-500": { name: "Fiber 500", speed: "500/500 Mbps", price: "$29.99/mo" },
+  "fiber-500": { name: "Fiber 500", speed: "500/500 Mbps", price: "$34.99/mo" },
   "fiber-1-gig": { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "$49.99/mo" },
   "fiber-2-gig": { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "$64.99/mo" },
   "fiber-5-gig": { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "$89.99/mo" },
   "fiber-7-gig": { name: "Fiber 7 Gig", speed: "7,000/7,000 Mbps", price: "$109.99/mo" },
-  fiber500: { name: "Fiber 500", speed: "500/500 Mbps", price: "$29.99/mo" },
+  fiber500: { name: "Fiber 500", speed: "500/500 Mbps", price: "$34.99/mo" },
   fiber1gig: { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "$49.99/mo" },
   fiber2gig: { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "$64.99/mo" },
   fiber5gig: { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "$89.99/mo" },
@@ -39,7 +39,7 @@ const PLANS: Record<string, { name: string; speed: string; price: string }> = {
 }
 
 const PLAN_OPTIONS = [
-  { key: "fiber-500", name: "Fiber 500", speed: "500/500 Mbps", price: "$29.99/mo" },
+  { key: "fiber-500", name: "Fiber 500", speed: "500/500 Mbps", price: "$34.99/mo" },
   { key: "fiber-1-gig", name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "$49.99/mo" },
   { key: "fiber-2-gig", name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "$64.99/mo" },
   { key: "fiber-5-gig", name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "$89.99/mo" },
@@ -92,7 +92,7 @@ export function OrderForm({ isOpen, onClose, preSelectedPlan, orderType, default
       const form = document.createElement("form")
       form.method = "POST"
       form.action =
-        "https://script.google.com/macros/s/AKfycbyWQRdA-mfqRnkCWmGDlgyzeI6SOu7P-EeA8Ypt61dIME7gZELySKtRw_s_Wf6HVJCX/exec"
+        "https://script.google.com/macros/s/AKfycbx6QqdUuVmjmqshF7yw6Erac1UGhkY59ajw7Ho9VeumwqagWAvMnirhXLD3bVExYqJW/exec"
 
       const dataToSend = {
         order: orderType === "residential" ? "Residential" : "Business",

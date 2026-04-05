@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Frontier Existing Customer Deals 2026 | Upgrade & Save",
-  description: "Already a Frontier customer? Get exclusive upgrade deals — faster speeds, better routers, and no fees to switch plans. Frontier internet deals for existing customers from $29.99/mo.",
+  description: "Already a Frontier customer? Get exclusive upgrade deals — faster speeds, better routers, and no fees to switch plans. Frontier internet deals for existing customers from $34.99/mo.",
   alternates: { canonical: "/existing-customers" },
   keywords: [
     "frontier internet deals for existing customers",
@@ -35,7 +35,7 @@ const upgradeReasons = [
 ]
 
 const upgradePaths = [
-  { from: "Fiber 500", to: "Fiber 1 Gig", fromPrice: "$29.99", toPrice: "$49.99", savings: "2x speed for $20/mo more", badge: "Most Popular Upgrade", router: "eero Pro 6E included" },
+  { from: "Fiber 500", to: "Fiber 1 Gig", fromPrice: "$34.99", toPrice: "$49.99", savings: "2x speed for $15/mo more", badge: "Most Popular Upgrade", router: "eero Pro 6E included" },
   { from: "Fiber 1 Gig", to: "Fiber 2 Gig", fromPrice: "$49.99", toPrice: "$64.99", savings: "2x speed for $15/mo more", badge: "Best Value Jump", router: "eero Pro 6E included" },
   { from: "Fiber 2 Gig", to: "Fiber 5 Gig", fromPrice: "$64.99", toPrice: "$89.99", savings: "2.5x speed + Wi-Fi 7", badge: "Power User Upgrade", router: "eero Max 7 (Wi-Fi 7)" },
 ]
@@ -159,7 +159,7 @@ export default function ExistingCustomersPage() {
               </thead>
               <tbody>
                 {[
-                  { name: "Fiber 500", speed: "500/500 Mbps", price: "$29.99", router: "eero Wi-Fi 6", visa: "$50" },
+                  { name: "Fiber 500", speed: "500/500 Mbps", price: "$34.99", router: "eero Wi-Fi 6", visa: "$50" },
                   { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "$49.99", router: "eero Pro 6E", visa: "$100" },
                   { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "$64.99", router: "eero Pro 6E", visa: "$150" },
                   { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "$89.99", router: "eero Max 7", visa: "$200" },

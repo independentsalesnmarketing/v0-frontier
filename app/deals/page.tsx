@@ -11,14 +11,14 @@ const currentMonthYear = getCurrentMonthYear()
 const priceValidUntil = getEndOfCurrentMonthIso()
 
 export const metadata: Metadata = {
-  title: "Frontier Internet Deals 2026 | Fiber from $29.99/mo — Save Today",
+  title: "Frontier Internet Deals 2026 | Fiber from $34.99/mo — Save Today",
   description:
-    "Current Frontier internet deals: fiber plans from $29.99/mo, free installation, free eero router, and Visa reward cards up to $200. Limited-time promotions for new customers.",
+    "Current Frontier internet deals: fiber plans from $34.99/mo, free installation, free eero router, and Visa reward cards up to $200. Limited-time promotions for new customers.",
   alternates: { canonical: "/deals" },
   openGraph: {
-    title: "Frontier Internet Deals 2026 — Fiber from $29.99/mo",
+    title: "Frontier Internet Deals 2026 — Fiber from $34.99/mo",
     description:
-      "Save on Frontier Fiber internet. Plans from $29.99/mo with free installation, free router, and Visa reward cards.",
+      "Save on Frontier Fiber internet. Plans from $34.99/mo with free installation, free router, and Visa reward cards.",
     type: "website",
   },
   keywords: [
@@ -72,7 +72,7 @@ const offerSchema = {
       "@type": "Offer",
       name: "Fiber 500 Deal",
       description: "500/500 Mbps fiber internet with $50 Visa Reward Card",
-      price: "29.99",
+      price: "34.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       priceValidUntil,
@@ -111,7 +111,7 @@ const deals = [
   {
     name: "Fiber 500",
     speed: "500/500 Mbps",
-    price: "29.99",
+    price: "34.99",
     wasPrice: "39.99",
     reward: "$50 Visa® Reward Card",
     features: ["Best for 2–4 people", "Stream HD on several devices", "Free eero Wi-Fi 6 router", "Unlimited data"],
@@ -171,7 +171,7 @@ export default function DealsPage() {
             <span className="text-[#64ffda]">{currentMonthYear}</span>
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto mb-8">
-            Save on fiber internet with exclusive promotions. Free installation, free router, Visa® reward cards, and prices starting at just $29.99/mo.
+            Save on fiber internet with exclusive promotions. Free installation, free router, Visa® reward cards, and prices starting at just $34.99/mo.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             {["Free Installation", "No Contracts", "Visa® Reward Cards", "Free WiFi Router"].map((perk) => (
@@ -194,7 +194,7 @@ export default function DealsPage() {
               { label: "Promotional Period", value: `${currentMonthYear} — limited time` },
               { label: "Visa Reward Card Range", value: "$50 (500 Mbps) to $200 (5 Gig)" },
               { label: "Installation Fee", value: "$0 — included on all plans" },
-              { label: "Starting Price", value: "$29.99/mo with AutoPay" },
+              { label: "Starting Price", value: "$34.99/mo with AutoPay" },
               { label: "Contract Required", value: "No — cancel anytime" },
               { label: "Router", value: "Free eero Wi-Fi router on every plan" },
             ]}

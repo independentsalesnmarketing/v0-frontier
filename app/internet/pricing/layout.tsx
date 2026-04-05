@@ -2,14 +2,14 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Frontier Internet Pricing 2026 | Plans from $29.99/mo — No Hidden Fees",
+  title: "Frontier Internet Pricing 2026 | Plans from $34.99/mo — No Hidden Fees",
   description:
-    "Transparent Frontier Fiber internet pricing. Plans from $29.99/mo to $109.99/mo with no hidden fees, no contracts, free installation, and free eero router. Compare every plan.",
+    "Transparent Frontier Fiber internet pricing. Plans from $34.99/mo to $109.99/mo with no hidden fees, no contracts, free installation, and free eero router. Compare every plan.",
   alternates: { canonical: "/internet/pricing" },
   openGraph: {
     title: "Frontier Internet Pricing 2026 — No Hidden Fees",
     description:
-      "Compare Frontier Fiber pricing from $29.99/mo. Every plan side by side with real costs. No contracts, unlimited data.",
+      "Compare Frontier Fiber pricing from $34.99/mo. Every plan side by side with real costs. No contracts, unlimited data.",
     type: "website",
   },
   keywords: [

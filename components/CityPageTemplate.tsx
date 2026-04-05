@@ -66,7 +66,7 @@ function slugify(text: string): string {
 }
 
 const plans = [
-  { name: "Fiber 500", speed: "500/500 Mbps", price: "29.99", key: "fiber-500", devices: "5-10", router: "eero Wi-Fi 6", reward: "$50 Visa® Reward Card" },
+  { name: "Fiber 500", speed: "500/500 Mbps", price: "34.99", key: "fiber-500", devices: "5-10", router: "eero Wi-Fi 6", reward: "$50 Visa® Reward Card" },
   { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "49.99", key: "fiber-1-gig", devices: "10-20", router: "eero Pro 6E", reward: "$100 Visa® Reward Card" },
   { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "64.99", key: "fiber-2-gig", devices: "30-50+", router: "eero Pro 6E", reward: "$150 Visa® Reward Card", popular: true as const },
   { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "89.99", key: "fiber-5-gig", devices: "50-100+", router: "eero Max 7", reward: "$200 Visa® Reward Card" },
@@ -158,7 +158,7 @@ export default function CityPageTemplate({ cityName, stateName }: CityPageTempla
         <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
           {[
             { value: "5 Gig", label: "Max Speed", color: "text-[#DA202C]" },
-            { value: "$29.99", label: "Starting Price", color: "text-[#64ffda]" },
+            { value: "$34.99", label: "Starting Price", color: "text-[#64ffda]" },
             { value: "$0", label: "Installation", color: "text-white" },
             { value: "Unlimited", label: "Data", color: "text-[#00B7C3]" },
           ].map(({ value, label, color }) => (
@@ -492,13 +492,13 @@ export default function CityPageTemplate({ cityName, stateName }: CityPageTempla
         Ready for Frontier Fiber<br />in {cityName}?
       </h2>
       <p className="text-white/50 text-lg mb-8 max-w-xl mx-auto">
-        Plans from $29.99/mo. Free installation. No contracts. No data caps.
+        Plans from $34.99/mo. Free installation. No contracts. No data caps.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <PageOrderButton
           className="inline-flex items-center justify-center bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold py-4 px-10 rounded-xl text-lg transition-all shadow-lg shadow-[#DA202C]/25"
         >
-          Order Online — From $29.99/mo
+          Order Online — From $34.99/mo
           <ArrowRight className="w-5 h-5 ml-2" />
         </PageOrderButton>
         <Link href="/internet" className="inline-flex items-center justify-center border border-white/20 text-white font-semibold py-4 px-8 rounded-xl hover:bg-white/5 transition-all">
@@ -568,7 +568,7 @@ export default function CityPageTemplate({ cityName, stateName }: CityPageTempla
             brand: { "@type": "Brand", name: "Frontier Communications" },
             offers: {
               "@type": "AggregateOffer",
-              lowPrice: "29.99",
+              lowPrice: "34.99",
               highPrice: "89.99",
               priceCurrency: "USD",
               offerCount: 4,
@@ -597,7 +597,7 @@ export default function CityPageTemplate({ cityName, stateName }: CityPageTempla
             { "@type": "Question", name: `How long does installation take in ${cityName}?`, acceptedAnswer: { "@type": "Answer", text: "Installation typically takes 2-4 hours and is free on all plans." } },
             { "@type": "Question", name: "Are there any contracts or hidden fees?", acceptedAnswer: { "@type": "Answer", text: "No contracts. No hidden equipment fees, data overages, or surprise price increases." } },
             { "@type": "Question", name: `How does Frontier compare to ${competitor1} and ${competitor2}?`, acceptedAnswer: { "@type": "Answer", text: `Frontier offers symmetrical speeds, no data caps, no contracts, and free installation — advantages over most cable providers in ${cityName}.` } },
-            { "@type": "Question", name: `What internet speed do I need in ${cityName}?`, acceptedAnswer: { "@type": "Answer", text: "For 1-3 people, Fiber 500 at $29.99/mo. For families, Fiber 2 Gig at $64.99/mo. For home offices, Fiber 1 Gig at $49.99/mo." } },
+            { "@type": "Question", name: `What internet speed do I need in ${cityName}?`, acceptedAnswer: { "@type": "Answer", text: "For 1-3 people, Fiber 500 at $34.99/mo. For families, Fiber 2 Gig at $64.99/mo. For home offices, Fiber 1 Gig at $49.99/mo." } },
           ],
         },
         {

@@ -250,11 +250,11 @@ export default function MobilePage() {
           <Star className="h-10 w-10 text-[#00b7c3] mx-auto mb-4" />
           <h2 className="text-2xl md:text-3xl font-black mb-4">Bundle & Save More</h2>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">
-            Frontier Fiber 500 starts at $29.99/mo. Add Frontier Mobile for $25/line/mo. Together, that&apos;s whole-home fiber plus unlimited 5G wireless — for less than most standalone phone bills alone.
+            Frontier Fiber 500 starts at $34.99/mo. Add Frontier Mobile for $25/line/mo. Together, that&apos;s whole-home fiber plus unlimited 5G wireless — for less than most standalone phone bills alone.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 max-w-2xl mx-auto">
             <div className="bg-white/10 rounded-xl p-4 text-center">
-              <p className="text-3xl font-black text-[#00b7c3]">$29.99</p>
+              <p className="text-3xl font-black text-[#00b7c3]">$34.99</p>
               <p className="text-sm text-white/60">Fiber 500/mo</p>
             </div>
             <div className="flex items-center justify-center text-2xl font-bold text-white/40">+</div>

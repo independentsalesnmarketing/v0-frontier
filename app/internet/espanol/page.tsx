@@ -7,14 +7,14 @@ import { PageOrderButton } from "@/components/PageInteractions"
 import Breadcrumbs from "@/components/Breadcrumbs"
 
 export const metadata: Metadata = {
-  title: "Frontier Internet en Español | Planes de Fibra desde $29.99/mes",
+  title: "Frontier Internet en Español | Planes de Fibra desde $34.99/mes",
   description:
-    "Planes de internet de fibra óptica de Frontier desde $29.99/mes. Velocidades hasta 7 Gbps, datos ilimitados, sin contratos. Llame para ordenar en español.",
+    "Planes de internet de fibra óptica de Frontier desde $34.99/mes. Velocidades hasta 7 Gbps, datos ilimitados, sin contratos. Llame para ordenar en español.",
   alternates: { canonical: "/internet/espanol" },
   openGraph: {
-    title: "Frontier Internet en Español | Planes de Fibra desde $29.99/mes",
+    title: "Frontier Internet en Español | Planes de Fibra desde $34.99/mes",
     description:
-      "Planes de internet de fibra óptica de Frontier desde $29.99/mes. Velocidades hasta 7 Gbps, datos ilimitados, sin contratos.",
+      "Planes de internet de fibra óptica de Frontier desde $34.99/mes. Velocidades hasta 7 Gbps, datos ilimitados, sin contratos.",
   },
   keywords: [
     "frontier internet español",
@@ -37,7 +37,7 @@ const faqSchema = {
       name: "¿Cuánto cuesta el internet de Frontier?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Los planes de internet de fibra de Frontier comienzan desde $29.99 al mes para 500 Mbps. No hay contratos anuales y los precios son fijos — no suben después de un periodo promocional.",
+        text: "Los planes de internet de fibra de Frontier comienzan desde $34.99 al mes para 500 Mbps. No hay contratos anuales y los precios son fijos — no suben después de un periodo promocional.",
       },
     },
     {
@@ -100,7 +100,7 @@ export default function FrontierEspanolPage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Internet de Fibra Óptica
               <br />
-              <span className="text-green-400">Desde $29.99/mes</span>
+              <span className="text-green-400">Desde $34.99/mes</span>
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -141,7 +141,7 @@ export default function FrontierEspanolPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
             {[
-              { name: "Fiber 500", speed: "500 Mbps", price: "$29.99", ideal: "Ideal para parejas y familias pequeñas" },
+              { name: "Fiber 500", speed: "500 Mbps", price: "$34.99", ideal: "Ideal para parejas y familias pequeñas" },
               { name: "Fiber 1 Gig", speed: "1,000 Mbps", price: "$49.99", ideal: "Perfecto para familias con muchos dispositivos", popular: true },
               { name: "Fiber 2 Gig", speed: "2,000 Mbps", price: "$64.99", ideal: "Para gaming, streaming 4K y trabajo remoto" },
               { name: "Fiber 5 Gig", speed: "5,000 Mbps", price: "$89.99", ideal: "Para usuarios avanzados y hogares inteligentes" },
@@ -288,7 +288,7 @@ export default function FrontierEspanolPage() {
             {[
               {
                 q: "¿Cuánto cuesta el internet de Frontier?",
-                a: "Los planes de internet de fibra de Frontier comienzan desde $29.99 al mes para 500 Mbps. Los precios son fijos y no suben después de un periodo promocional. No hay contratos anuales.",
+                a: "Los planes de internet de fibra de Frontier comienzan desde $34.99 al mes para 500 Mbps. Los precios son fijos y no suben después de un periodo promocional. No hay contratos anuales.",
               },
               {
                 q: "¿Frontier tiene servicio al cliente en español?",

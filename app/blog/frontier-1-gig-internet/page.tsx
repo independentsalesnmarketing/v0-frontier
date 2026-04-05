@@ -65,7 +65,7 @@ const faqSchema = {
       name: "Is Frontier 1 Gig internet worth it over the 500 Mbps plan?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For most single people and couples, Frontier Fiber 500 at $29.99/mo is more than enough. Upgrading to 1 Gig at $49.99/mo makes sense for large households (4+ people), serious gamers and streamers, households with 3+ remote workers, and homes with 30+ connected devices.",
+        text: "For most single people and couples, Frontier Fiber 500 at $34.99/mo is more than enough. Upgrading to 1 Gig at $49.99/mo makes sense for large households (4+ people), serious gamers and streamers, households with 3+ remote workers, and homes with 30+ connected devices.",
       },
     },
     {
@@ -98,7 +98,7 @@ const faqSchema = {
 const comparisons = [
   { feature: "Download Speed", fiveHundred: "500 Mbps", oneGig: "1,000 Mbps", winner: "1gig" },
   { feature: "Upload Speed", fiveHundred: "500 Mbps", oneGig: "1,000 Mbps", winner: "1gig" },
-  { feature: "Price/mo (Auto Pay)", fiveHundred: "$29.99", oneGig: "$49.99", winner: "500" },
+  { feature: "Price/mo (Auto Pay)", fiveHundred: "$34.99", oneGig: "$49.99", winner: "500" },
   { feature: "Router Included", fiveHundred: "eero Wi-Fi 6", oneGig: "eero Pro 6E (Wi-Fi 6E)", winner: "1gig" },
   { feature: "Data Cap", fiveHundred: "None", oneGig: "None", winner: "tie" },
   { feature: "Contract", fiveHundred: "None", oneGig: "None", winner: "tie" },
@@ -156,7 +156,7 @@ export default function Page() {
               Frontier 1 Gig Internet: Is It Worth $49.99/mo?
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mb-6">
-              Frontier&apos;s Fiber 1 Gig plan delivers 1,000/1,000 Mbps symmetrical speeds — truly gigabit internet for any household. But with Fiber 500 available at $29.99/mo, is spending $20 more worth it?
+              Frontier&apos;s Fiber 1 Gig plan delivers 1,000/1,000 Mbps symmetrical speeds — truly gigabit internet for any household. But with Fiber 500 available at $34.99/mo, is spending $15 more worth it?
             </p>
             <div className="flex flex-wrap gap-6 text-sm text-white/60">
               <span>Updated: {getResolvedMonthlyUpdatedDate("2026-03-20")}</span>
@@ -183,10 +183,10 @@ export default function Page() {
           <article className="prose lg:prose-xl max-w-none mt-8">
             <h2>The Quick Answer</h2>
             <p>
-              <strong>Frontier Fiber 1 Gig</strong> costs $49.99/mo and delivers 1,000 Mbps download and 1,000 Mbps upload — fully symmetrical. It&apos;s $20/mo more than the entry-level Fiber 500 plan ($29.99/mo).
+              <strong>Frontier Fiber 1 Gig</strong> costs $49.99/mo and delivers 1,000 Mbps download and 1,000 Mbps upload — fully symmetrical. It&apos;s $15/mo more than the entry-level Fiber 500 plan ($34.99/mo).
             </p>
             <p>
-              For most 1-4 person households, the 500 Mbps plan is genuinely overkill — and 1 Gig is extreme overkill. But for large families, serious creators, power users, and homes with 30+ devices, that extra $20/mo unlocks meaningful performance gains and a significantly better router.
+              For most 1-4 person households, the 500 Mbps plan is genuinely overkill — and 1 Gig is extreme overkill. But for large families, serious creators, power users, and homes with 30+ devices, that extra $15/mo unlocks meaningful performance gains and a significantly better router.
             </p>
 
             <h2>Frontier 1 Gig Price in 2026</h2>
@@ -269,7 +269,7 @@ export default function Page() {
           <article className="prose lg:prose-xl max-w-none">
             <h2>Who Should Stick With Fiber 500?</h2>
             <p>
-              The <strong>Frontier Fiber 500 plan at $29.99/mo</strong> is genuinely excellent value. You should stick with it if:
+              The <strong>Frontier Fiber 500 plan at $34.99/mo</strong> is genuinely excellent value. You should stick with it if:
             </p>
             <ul>
               <li>Your household is 1-4 people with typical usage</li>
@@ -303,7 +303,7 @@ export default function Page() {
 
             <h2>Bottom Line: Should You Get Frontier 1 Gig?</h2>
             <p>
-              <strong>Get the 1 Gig plan if</strong> you have a large household (5+ people), create or upload content regularly, or want the eero Pro 6E&apos;s enhanced Wi-Fi 6E performance. The $100 Visa Reward Card also partially offsets the $20/mo price difference in the first year.
+              <strong>Get the 1 Gig plan if</strong> you have a large household (5+ people), create or upload content regularly, or want the eero Pro 6E&apos;s enhanced Wi-Fi 6E performance. The $100 Visa Reward Card also partially offsets the $15/mo price difference in the first year.
             </p>
             <p>
               <strong>Stick with Fiber 500 if</strong> you&apos;re a typical household of 1-4 people — it&apos;s already faster than nearly every cable provider&apos;s most expensive plan, at less than half the price.
@@ -317,7 +317,7 @@ export default function Page() {
           <div className="bg-[#0A1E3C] rounded-2xl p-8 mt-10 text-center text-white">
             <h2 className="text-2xl font-black mb-3">Ready to Get Frontier 1 Gig?</h2>
             <p className="text-white/70 mb-6 max-w-lg mx-auto">
-              Check availability at your address and get started with Frontier Fiber — 500 Mbps at $29.99/mo or 1 Gig at $49.99/mo. No contracts, free installation, includes a Visa Reward Card.
+              Check availability at your address and get started with Frontier Fiber — 500 Mbps at $34.99/mo or 1 Gig at $49.99/mo. No contracts, free installation, includes a Visa Reward Card.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

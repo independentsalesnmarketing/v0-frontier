@@ -49,7 +49,7 @@ const faqData = [
   { q: "Did my Fios service change when Frontier took over?", a: "The underlying fiber infrastructure stayed the same, but Frontier introduced new plan tiers (up to 7 Gig), lower prices, free eero routers, and eliminated many of the fees Verizon charged." },
   { q: "Is Frontier Fiber faster than Verizon Fios was?", a: "Yes. Verizon Fios maxed out at 940 Mbps in most areas. Frontier now offers speeds up to 7 Gbps — over 7x faster — on the same fiber infrastructure." },
   { q: "Do I still need my old Fios router?", a: "No. Frontier provides a free eero Wi-Fi router with every plan. You can return or recycle your old Fios Quantum Gateway. The eero system typically provides better Wi-Fi coverage." },
-  { q: "Are Frontier's prices lower than Fios?", a: "Generally yes. Frontier Fiber 500 starts at $29.99/mo, while Verizon Fios 300 Mbps was $49.99/mo. You get more speed for less money with Frontier." },
+  { q: "Are Frontier's prices lower than Fios?", a: "Generally yes. Frontier Fiber 500 starts at $34.99/mo, while Verizon Fios 300 Mbps was $49.99/mo. You get more speed for less money with Frontier." },
   { q: "Can I keep my email address?", a: "If you had a Verizon email, Frontier maintained email forwarding during the transition. For current customers, Frontier offers guidance on migrating to a free email provider like Gmail." },
   { q: "Does Frontier have contracts like Verizon?", a: "No. All Frontier Fiber plans are contract-free with no early termination fees. You can cancel or change plans at any time." },
   { q: "What states did this transition affect?", a: "Frontier acquired Verizon's wireline operations in California, Texas, Florida, and several other states including Connecticut, Indiana, Oregon, and Washington." },
@@ -75,7 +75,7 @@ const timeline = [
 
 const comparisons = [
   { feature: "Max Speed", fios: "940 Mbps", frontier: "7,000 Mbps", winner: "frontier" },
-  { feature: "Lowest Price", fios: "$49.99/mo (300 Mbps)", frontier: "$29.99/mo (500 Mbps)", winner: "frontier" },
+  { feature: "Lowest Price", fios: "$49.99/mo (300 Mbps)", frontier: "$34.99/mo (500 Mbps)", winner: "frontier" },
   { feature: "Upload Speed", fios: "Symmetrical", frontier: "Symmetrical", winner: "tie" },
   { feature: "Router", fios: "$15/mo rental", frontier: "Free eero (yours to keep)", winner: "frontier" },
   { feature: "Data Caps", fios: "None", frontier: "None", winner: "tie" },
@@ -133,7 +133,7 @@ export default function VerizonToFrontierPage() {
               </h3>
               <ul className="space-y-3 text-blue-900">
                 <li className="flex items-start gap-2"><Zap className="h-5 w-5 mt-0.5 flex-shrink-0 text-blue-600" />Max speed: 940 Mbps → <strong>7,000 Mbps</strong></li>
-                <li className="flex items-start gap-2"><Zap className="h-5 w-5 mt-0.5 flex-shrink-0 text-blue-600" />Lowest price: $49.99 → <strong>$29.99/mo</strong></li>
+                <li className="flex items-start gap-2"><Zap className="h-5 w-5 mt-0.5 flex-shrink-0 text-blue-600" />Lowest price: $49.99 → <strong>$34.99/mo</strong></li>
                 <li className="flex items-start gap-2"><Zap className="h-5 w-5 mt-0.5 flex-shrink-0 text-blue-600" />Router: $15/mo rental → <strong>Free eero (yours to keep)</strong></li>
                 <li className="flex items-start gap-2"><Zap className="h-5 w-5 mt-0.5 flex-shrink-0 text-blue-600" />Installation: $99-$149 → <strong>Free</strong></li>
                 <li className="flex items-start gap-2"><Zap className="h-5 w-5 mt-0.5 flex-shrink-0 text-blue-600" />Contract: 1-2 year options → <strong>No contract</strong></li>
@@ -199,7 +199,7 @@ export default function VerizonToFrontierPage() {
           <p className="text-center text-white/60 mb-12 max-w-2xl mx-auto">The network that used to be Fios — now with more speed tiers and lower prices.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Fiber 500", speed: "500/500 Mbps", price: "29.99", best: false },
+              { name: "Fiber 500", speed: "500/500 Mbps", price: "34.99", best: false },
               { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "49.99", best: true },
               { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "64.99", best: false },
               { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "89.99", best: false },

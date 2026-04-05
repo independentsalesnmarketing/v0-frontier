@@ -28,7 +28,7 @@ export default function BundlingGuidePage() {
 
       <h2 className="text-2xl font-bold mt-10 mb-4">The Modern Alternative: Fiber + Streaming</h2>
       <p className="text-gray-700 leading-relaxed mb-4">
-        A Frontier Fiber plan starting at $29.99/month paired with two or three streaming services (Netflix, Hulu, Disney+ for roughly $30 to $40 total) gets you more content, better internet speeds, and a lower monthly bill. No contracts, no equipment rental fees, and the flexibility to cancel or change streaming services month to month.
+        A Frontier Fiber plan starting at $34.99/month paired with two or three streaming services (Netflix, Hulu, Disney+ for roughly $30 to $40 total) gets you more content, better internet speeds, and a lower monthly bill. No contracts, no equipment rental fees, and the flexibility to cancel or change streaming services month to month.
       </p>
 
       <h2 className="text-2xl font-bold mt-10 mb-4">When Bundling Still Wins</h2>

@@ -137,7 +137,7 @@ export default function FiberVsCable() {
             <div>
               <h3 className="text-xl font-bold text-[#0A1E3C] mb-2">Price Comparison</h3>
               <p className="text-gray-700">
-                Fiber starts at $29.99/month vs cable at $35-50. But when you factor in cable's data cap overage fees
+                Fiber starts at $34.99/month vs cable at $35-50. But when you factor in cable's data cap overage fees
                 and equipment rental, fiber ends up cheaper. Plus, Frontier includes equipment and installation at no
                 extra cost.
               </p>

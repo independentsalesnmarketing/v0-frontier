@@ -5,13 +5,13 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
 
 export const metadata: Metadata = {
-  title: "Frontier New Customer Deals 2026 | Fiber Internet from $29.99/mo",
+  title: "Frontier New Customer Deals 2026 | Fiber Internet from $34.99/mo",
   description:
-    "Exclusive Frontier new customer deals: fiber internet from $29.99/mo, free installation, free eero WiFi router, and Visa reward cards up to $200. Switch to Frontier today.",
+    "Exclusive Frontier new customer deals: fiber internet from $34.99/mo, free installation, free eero WiFi router, and Visa reward cards up to $200. Switch to Frontier today.",
   alternates: { canonical: "/new-customer" },
   openGraph: {
-    title: "Frontier New Customer Deals 2026 — Fiber from $29.99/mo",
-    description: "Switch to Frontier Fiber and save. Plans from $29.99/mo, free installation, and Visa reward cards for new customers.",
+    title: "Frontier New Customer Deals 2026 — Fiber from $34.99/mo",
+    description: "Switch to Frontier Fiber and save. Plans from $34.99/mo, free installation, and Visa reward cards for new customers.",
     type: "website",
   },
   keywords: [
@@ -126,7 +126,7 @@ export default function NewCustomerPage() {
           <p className="text-white/50 text-center mb-12">Pick the speed that fits your household.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {[
-              { name: "Fiber 500", speed: "500/500 Mbps", price: "29.99", reward: "$50 Visa® Card", key: "fiber-500", best: "1-3 people" },
+              { name: "Fiber 500", speed: "500/500 Mbps", price: "34.99", reward: "$50 Visa® Card", key: "fiber-500", best: "1-3 people" },
               { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "49.99", reward: "$100 Visa® Card", key: "fiber-1-gig", best: "3-5 people" },
               { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "64.99", reward: "$150 Visa® Card", key: "fiber-2-gig", best: "5-8+ people", popular: true },
               { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "89.99", reward: "$200 Visa® Card", key: "fiber-5-gig", best: "Power users" },

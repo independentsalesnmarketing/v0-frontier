@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!stateName) return {}
   const cityCount = frontierCoverage[stateName]?.length || 0
   return {
-    title: `Frontier Fiber Internet in ${stateName} | Plans from $29.99/mo`,
-    description: `Frontier Fiber Internet is available in ${cityCount}+ cities across ${stateName}. Plans from $29.99/mo — unlimited data, free installation, no contracts. Check availability at your address.`,
+    title: `Frontier Fiber Internet in ${stateName} | Plans from $34.99/mo`,
+    description: `Frontier Fiber Internet is available in ${cityCount}+ cities across ${stateName}. Plans from $34.99/mo — unlimited data, free installation, no contracts. Check availability at your address.`,
     alternates: { canonical: `/internet-in/${state}` },
     openGraph: {
-      title: `Frontier Fiber in ${stateName} — Plans from $29.99/mo`,
+      title: `Frontier Fiber in ${stateName} — Plans from $34.99/mo`,
       description: `Check Frontier Fiber availability in ${stateName}. ${cityCount}+ cities covered. Unlimited data, free installation, no contracts.`,
       type: "website",
     },
@@ -81,7 +81,7 @@ export default async function StateLandingPage({ params }: Props) {
               Frontier Fiber Internet in {stateName}
             </h1>
             <p className="text-lg text-white/70 mb-8 max-w-2xl mx-auto">
-              Frontier Fiber is available in {cities.length}+ cities across {stateName}. Get symmetrical speeds up to 7 Gig, free installation, unlimited data, and no contracts — starting at $29.99/mo.
+              Frontier Fiber is available in {cities.length}+ cities across {stateName}. Get symmetrical speeds up to 7 Gig, free installation, unlimited data, and no contracts — starting at $34.99/mo.
             </p>
             <PageOrderButton className="inline-flex items-center justify-center bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold h-14 px-10 rounded-xl text-lg cta-pulse shadow-xl">
               Check Availability
@@ -97,7 +97,7 @@ export default async function StateLandingPage({ params }: Props) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {[
               { value: `${cities.length}+`, label: "Cities Covered" },
-              { value: "$29.99", label: "Starting Price" },
+              { value: "$34.99", label: "Starting Price" },
               { value: "5 Gig", label: "Max Speed" },
               { value: "$0", label: "Installation" },
             ].map(({ value, label }) => (
@@ -121,7 +121,7 @@ export default async function StateLandingPage({ params }: Props) {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {[
-              { name: "Fiber 500", speed: "500/500 Mbps", price: "$29.99" },
+              { name: "Fiber 500", speed: "500/500 Mbps", price: "$34.99" },
               { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "$49.99" },
               { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "$64.99" },
               { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "$89.99" },
@@ -216,7 +216,7 @@ export default async function StateLandingPage({ params }: Props) {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-black mb-4">Get Frontier Fiber in {stateName}</h2>
           <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-            Plans start at $29.99/mo. Free installation, no contracts, unlimited data.
+            Plans start at $34.99/mo. Free installation, no contracts, unlimited data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <PageOrderButton className="inline-flex items-center justify-center bg-white text-[#DA202C] font-bold h-14 px-10 rounded-xl text-lg hover:bg-gray-100">

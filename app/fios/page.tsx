@@ -6,7 +6,7 @@ import { PageOrderButton } from "@/components/PageInteractions"
 
 export const metadata: Metadata = {
   title: "Frontier Fios Plans, Pricing & Availability 2026 | Frontier Deals",
-  description: "Looking for Frontier Fios plans and pricing? Frontier now operates the Fios fiber network as Frontier Fiber. See current plans, prices, and availability — from $29.99/mo with no contracts.",
+  description: "Looking for Frontier Fios plans and pricing? Frontier now operates the Fios fiber network as Frontier Fiber. See current plans, prices, and availability — from $34.99/mo with no contracts.",
   alternates: { canonical: "/fios" },
   keywords: [
     "frontier fios",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Frontier Fios Plans & Pricing 2026 | Now Frontier Fiber",
-    description: "Frontier now operates the former Verizon Fios network. Current plans: 500 Mbps–7 Gig from $29.99/mo. No contracts. Free installation.",
+    description: "Frontier now operates the former Verizon Fios network. Current plans: 500 Mbps–7 Gig from $34.99/mo. No contracts. Free installation.",
     type: "website",
   },
 }
@@ -51,7 +51,7 @@ const faqSchema = {
       name: "What are Frontier Fios plans and prices in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The former Frontier Fios service is now sold as Frontier Fiber. Plans include: Fiber 500 (500/500 Mbps) at $29.99/mo, Fiber 1 Gig (1,000/1,000 Mbps) at $49.99/mo, Fiber 2 Gig at $64.99/mo, Fiber 5 Gig at $89.99/mo, and Fiber 7 Gig at $109.99/mo. All plans include a free eero router, unlimited data, and no annual contract.",
+        text: "The former Frontier Fios service is now sold as Frontier Fiber. Plans include: Fiber 500 (500/500 Mbps) at $34.99/mo, Fiber 1 Gig (1,000/1,000 Mbps) at $49.99/mo, Fiber 2 Gig at $64.99/mo, Fiber 5 Gig at $89.99/mo, and Fiber 7 Gig at $109.99/mo. All plans include a free eero router, unlimited data, and no annual contract.",
       },
     },
     {
@@ -75,7 +75,7 @@ const faqSchema = {
       name: "Are Frontier Fios prices lower than Verizon Fios was?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Frontier's entry-level plan (500 Mbps for $29.99/mo) is significantly cheaper than Verizon Fios was. Verizon Fios 300 Mbps was $49.99/mo. Frontier gives you more speed at a lower price, plus speeds up to 7 Gbps that Fios never offered.",
+        text: "Yes. Frontier's entry-level plan (500 Mbps for $34.99/mo) is significantly cheaper than Verizon Fios was. Verizon Fios 300 Mbps was $49.99/mo. Frontier gives you more speed at a lower price, plus speeds up to 7 Gbps that Fios never offered.",
       },
     },
     {
@@ -98,7 +98,7 @@ const faqSchema = {
 }
 
 const plans = [
-  { name: "Fiber 500", speed: "500/500 Mbps", price: "$29.99", router: "eero Wi-Fi 6", visa: "$50", highlight: false },
+  { name: "Fiber 500", speed: "500/500 Mbps", price: "$34.99", router: "eero Wi-Fi 6", visa: "$50", highlight: false },
   { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "$49.99", router: "eero Pro 6E", visa: "$100", highlight: true },
   { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "$64.99", router: "eero Pro 6E", visa: "$150", highlight: false },
   { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "$89.99", router: "eero Max 7", visa: "$200", highlight: false },
@@ -107,7 +107,7 @@ const plans = [
 
 const fiosVsFrontier = [
   { feature: "Max Speed", fios: "940 Mbps", frontier: "7,000 Mbps", winner: "frontier" },
-  { feature: "Entry Price", fios: "$49.99/mo (300 Mbps)", frontier: "$29.99/mo (500 Mbps)", winner: "frontier" },
+  { feature: "Entry Price", fios: "$49.99/mo (300 Mbps)", frontier: "$34.99/mo (500 Mbps)", winner: "frontier" },
   { feature: "Upload Speed", fios: "Symmetrical", frontier: "Symmetrical", winner: "tie" },
   { feature: "Router", fios: "$15/mo rental fee", frontier: "Free eero (yours to keep)", winner: "frontier" },
   { feature: "Data Cap", fios: "None", frontier: "None", winner: "tie" },
@@ -146,7 +146,7 @@ export default function FiosPage() {
             <span className="block text-[#00b7c3] mt-2">Now Faster. Now Cheaper.</span>
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-            The Fios fiber network is now <strong className="text-white">Frontier Fiber</strong> — the same physical lines, upgraded to speeds up to 7 Gig, at prices starting at <strong className="text-white">$29.99/mo</strong>. No annual contracts. Free installation.
+            The Fios fiber network is now <strong className="text-white">Frontier Fiber</strong> — the same physical lines, upgraded to speeds up to 7 Gig, at prices starting at <strong className="text-white">$34.99/mo</strong>. No annual contracts. Free installation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <PageOrderButton className="inline-flex items-center gap-2 bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold h-14 px-10 rounded-xl text-lg shadow-xl">
@@ -250,7 +250,7 @@ export default function FiosPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { icon: <DollarSign className="h-6 w-6" />, title: "Lower Starting Price", desc: "Frontier Fiber 500 starts at $29.99/mo — 40% less than Verizon Fios 300 Mbps was at $49.99/mo, and you get nearly double the speed." },
+              { icon: <DollarSign className="h-6 w-6" />, title: "Lower Starting Price", desc: "Frontier Fiber 500 starts at $34.99/mo — about 30% less than Verizon Fios 300 Mbps was at $49.99/mo, and you get nearly double the speed." },
               { icon: <Zap className="h-6 w-6" />, title: "7x Faster Max Speed", desc: "Verizon Fios topped out at 940 Mbps. Frontier now offers 7,000 Mbps (7 Gig) on the same fiber infrastructure — over 7 times faster." },
               { icon: <Wifi className="h-6 w-6" />, title: "Free Router (No Rental)", desc: "Fios charged $15/mo to rent a router. Frontier gives you a free eero Wi-Fi 6/6E/7 router that's yours to keep — saving $180/year." },
               { icon: <Shield className="h-6 w-6" />, title: "No Annual Contract", desc: "Verizon Fios often required 1-2 year contracts. Frontier is 100% month-to-month — cancel or change plans anytime with no early termination fee." },
@@ -331,7 +331,7 @@ export default function FiosPage() {
             Get Frontier Fiber — The New Fios
           </h2>
           <p className="text-white/70 mb-8 max-w-xl mx-auto">
-            Check availability at your address. Plans from $29.99/mo with free installation, free eero router, and a Visa Reward Card up to $200.
+            Check availability at your address. Plans from $34.99/mo with free installation, free eero router, and a Visa Reward Card up to $200.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <PageOrderButton className="inline-flex items-center gap-2 bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold h-14 px-10 rounded-xl text-lg shadow-xl">

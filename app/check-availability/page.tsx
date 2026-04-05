@@ -210,7 +210,7 @@ export default function CheckAvailabilityPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-black mb-4">Ready to Get Connected?</h2>
           <p className="text-white/60 mb-8 max-w-xl mx-auto">
-            Frontier Fiber plans start at $29.99/mo. Free installation, no contracts, unlimited data.
+            Frontier Fiber plans start at $34.99/mo. Free installation, no contracts, unlimited data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <PageOrderButton planName="fiber-2-gig" className="inline-flex items-center justify-center bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold h-14 px-10 rounded-xl text-lg">

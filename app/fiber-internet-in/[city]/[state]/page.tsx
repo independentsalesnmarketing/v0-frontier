@@ -50,8 +50,8 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
   }
 
   const stateAbbr = getStateInitials(stateName)
-  const title = `Frontier Fiber Internet in ${cityName}, ${stateAbbr} | Plans from $29.99/mo`
-  const description = `Get Frontier Fiber Internet in ${cityName}, ${stateName}. Plans starting at $29.99/mo with speeds up to 7 Gig, free installation, no data caps, and no contracts. Check availability today.`
+  const title = `Frontier Fiber Internet in ${cityName}, ${stateAbbr} | Plans from $34.99/mo`
+  const description = `Get Frontier Fiber Internet in ${cityName}, ${stateName}. Plans starting at $34.99/mo with speeds up to 7 Gig, free installation, no data caps, and no contracts. Check availability today.`
 
   return {
     title,

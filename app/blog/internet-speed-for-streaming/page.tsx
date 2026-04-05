@@ -27,7 +27,7 @@ export default function Page() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
             <p className="text-blue-800 font-semibold mb-2">Quick Answer</p>
-            <p className="text-blue-700">A single 4K stream needs <strong>25 Mbps</strong>. For a household streaming on 3+ screens simultaneously, get <strong>200-500 Mbps</strong>. Frontier Fiber 500 ($29.99/mo) handles most streaming households effortlessly.</p>
+            <p className="text-blue-700">A single 4K stream needs <strong>25 Mbps</strong>. For a household streaming on 3+ screens simultaneously, get <strong>200-500 Mbps</strong>. Frontier Fiber 500 ($34.99/mo) handles most streaming households effortlessly.</p>
           </div>
 
           <h2>Speed Requirements by Resolution</h2>
@@ -81,11 +81,11 @@ export default function Page() {
           <p>This is why we recommend <strong>2-3x more bandwidth</strong> than the theoretical minimum. Frontier Fiber 500 Mbps gives you enormous headroom for a household of streamers.</p>
 
           <h2>Cord-Cutting with Frontier Fiber</h2>
-          <p>Replacing a $150+/mo cable TV package with streaming services typically costs $30-80/mo. Combined with Frontier Fiber at $29.99-49.99/mo, most households save $50-100/month while getting more content.</p>
+          <p>Replacing a $150+/mo cable TV package with streaming services typically costs $30-80/mo. Combined with Frontier Fiber at $34.99-49.99/mo, most households save $50-100/month while getting more content.</p>
           <div className="not-prose my-8 bg-green-50 border border-green-200 rounded-lg p-6">
             <h3 className="font-bold text-green-800 mb-3">Example Cord-Cutting Setup</h3>
             <ul className="space-y-2 text-sm">
-              <li className="flex justify-between"><span>Frontier Fiber 500</span><span className="font-bold">$29.99/mo</span></li>
+              <li className="flex justify-between"><span>Frontier Fiber 500</span><span className="font-bold">$34.99/mo</span></li>
               <li className="flex justify-between"><span>YouTube TV (live sports & news)</span><span>$72.99/mo</span></li>
               <li className="flex justify-between"><span>Netflix Standard</span><span>$17.99/mo</span></li>
               <li className="flex justify-between border-t border-green-300 pt-2 mt-2"><span className="font-bold">Total</span><span className="font-bold">$120.97/mo</span></li>
@@ -96,8 +96,8 @@ export default function Page() {
           <h2>Our Recommendation</h2>
           <div className="not-prose grid gap-4 my-8">
             {[
-              { scenario: "1-2 screens, mostly HD", plan: "Fiber 500", price: "$29.99/mo", reason: "500 Mbps handles casual streaming with massive headroom" },
-              { scenario: "3-4 screens, 4K streaming", plan: "Fiber 500 or 1 Gig", price: "$29.99-$49.99/mo", reason: "The upgrade to 1 Gig gives more buffer for gaming and WFH alongside streaming" },
+              { scenario: "1-2 screens, mostly HD", plan: "Fiber 500", price: "$34.99/mo", reason: "500 Mbps handles casual streaming with massive headroom" },
+              { scenario: "3-4 screens, 4K streaming", plan: "Fiber 500 or 1 Gig", price: "$34.99-$49.99/mo", reason: "The upgrade to 1 Gig gives more buffer for gaming and WFH alongside streaming" },
               { scenario: "5+ screens, 4K + gaming + WFH", plan: "Fiber 1 Gig", price: "$49.99/mo", reason: "1,000 Mbps supports the whole family doing everything at once" },
               { scenario: "Home theater enthusiast, 8K ready", plan: "Fiber 2 Gig", price: "$64.99/mo", reason: "Future-proof for 8K streaming and ultra-high-bitrate content" },
             ].map(({ scenario, plan, price, reason }) => (

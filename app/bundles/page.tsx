@@ -56,7 +56,7 @@ const bundles = [
     name: "Fiber 500 + Digital Voice",
     planKey: "fiber-500",
     internetSpeed: "500/500 Mbps",
-    internetPrice: 29.99,
+    internetPrice: 34.99,
     voicePrice: 25,
     features: [
       "No data caps or throttling",
@@ -432,7 +432,7 @@ export default function Bundles() {
               <div className="text-3xl font-bold text-[#00b7c3] mb-2">$30–$50<span className="text-sm text-gray-400 font-normal">/mo</span></div>
               <h3 className="text-lg font-semibold mb-3">Basic Streaming Setup</h3>
               <ul className="space-y-2 text-sm text-white/80">
-                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Frontier Fiber 500 ($29.99/mo)</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Frontier Fiber 500 ($34.99/mo)</li>
                 <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Netflix Standard ($17.99/mo)</li>
                 <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> Free eero Wi-Fi 6 router</li>
                 <li className="flex items-start gap-2"><Check className="w-4 h-4 text-[#00b7c3] mt-0.5 flex-shrink-0" /> HD streaming on 3+ devices</li>

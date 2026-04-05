@@ -62,7 +62,7 @@ export default function Page() {
           <h2>Frontier&apos;s Approach to Affordability</h2>
           <p>While Frontier doesn&apos;t have a dedicated low-income program like some competitors, their pricing is inherently competitive:</p>
           <div className="not-prose space-y-3 my-6">
-            {["Fiber 500 at $29.99/mo is one of the lowest fiber prices available", "No hidden fees — the price you see is the price you pay", "No equipment fees — router is included free", "No contracts — cancel if your financial situation changes", "No data caps — you get full, unlimited usage at every price point"].map(item => (
+            {["Fiber 500 at $34.99/mo is one of the lowest fiber prices available", "No hidden fees — the price you see is the price you pay", "No equipment fees — router is included free", "No contracts — cancel if your financial situation changes", "No data caps — you get full, unlimited usage at every price point"].map(item => (
               <div key={item} className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700">{item}</span></div>
             ))}
           </div>
@@ -71,7 +71,7 @@ export default function Page() {
           <p>Whether or not you used the ACP, here are practical strategies to keep costs down:</p>
 
           <h3>Right-Size Your Plan</h3>
-          <p>Don&apos;t pay for speed you don&apos;t need. A single person or couple who streams and browses does not need 1 Gig. The Fiber 500 plan at $29.99/mo is genuinely sufficient for basic use.</p>
+          <p>Don&apos;t pay for speed you don&apos;t need. A single person or couple who streams and browses does not need 1 Gig. The Fiber 500 plan at $34.99/mo is genuinely sufficient for basic use.</p>
 
           <h3>Enable Auto Pay</h3>
           <p>Frontier&apos;s advertised prices include the Auto Pay discount. Make sure you&apos;re enrolled to get the lowest rate.</p>

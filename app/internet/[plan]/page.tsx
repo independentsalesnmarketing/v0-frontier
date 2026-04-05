@@ -11,7 +11,7 @@ const plans: Record<string, {
   bestFor: string[]; features: string[]; useCases: { icon: React.ReactNode; title: string; desc: string }[];
 }> = {
   "fiber-500": {
-    name: "Fiber 500", speed: "500/500 Mbps", price: "29.99", wasPrice: "39.99", reward: "$50 Visa® Reward Card",
+    name: "Fiber 500", speed: "500/500 Mbps", price: "34.99", wasPrice: "39.99", reward: "$50 Visa® Reward Card",
     router: "eero Wi-Fi 6", idealFor: "small families", planKey: "fiber-500", maxDevices: "10-15",
     bestFor: ["Small families (2-4 people)", "HD and some 4K streaming", "Video calls and light gaming", "Work from home basics"],
     features: ["500 Mbps symmetrical speeds", "Free eero Wi-Fi 6 router", "Free professional installation", "Unlimited data — no caps", "No annual contracts", "Auto Pay discount included"],

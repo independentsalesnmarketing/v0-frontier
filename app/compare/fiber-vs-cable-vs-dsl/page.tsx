@@ -63,7 +63,7 @@ const comparisonData = [
   },
   {
     metric: "Monthly Cost (Base)",
-    fiber: "$29.99-$109.99",
+    fiber: "$34.99-$109.99",
     cable: "$35-$90",
     dsl: "$20-$60",
     winner: "dsl",

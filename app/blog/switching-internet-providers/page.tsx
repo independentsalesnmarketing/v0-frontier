@@ -54,7 +54,7 @@ export default function SwitchingProvidersPage() {
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-10 mb-8">
         <h3 className="font-bold text-lg mb-2">Ready to Make the Switch?</h3>
         <p className="text-gray-700 mb-4">
-          Frontier Fiber offers free installation, no contracts, and no data caps. Plans start at $29.99/mo.
+          Frontier Fiber offers free installation, no contracts, and no data caps. Plans start at $34.99/mo.
         </p>
         <Link href="/check-availability" className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
           Check Availability

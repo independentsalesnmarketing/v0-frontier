@@ -82,8 +82,8 @@ export default function Page() {
               <thead><tr className="bg-[#0A1E3C] text-white"><th className="p-3 text-left">AI User Type</th><th className="p-3 text-center">Recommended Plan</th><th className="p-3 text-center">Price</th></tr></thead>
               <tbody>
                 {[
-                  ["Casual (ChatGPT, voice assistants)", "Fiber 500", "$29.99/mo"],
-                  ["Moderate (image gen, AI editing, smart home)", "Fiber 500", "$29.99/mo"],
+                  ["Casual (ChatGPT, voice assistants)", "Fiber 500", "$34.99/mo"],
+                  ["Moderate (image gen, AI editing, smart home)", "Fiber 500", "$34.99/mo"],
                   ["Heavy (video gen, cloud training, creator)", "Fiber 1 Gig", "$49.99/mo"],
                   ["Professional (AI development, multiple models)", "Fiber 2 Gig+", "$64.99+/mo"],
                 ].map(([type, plan, price], i) => (

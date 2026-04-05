@@ -11,13 +11,13 @@
 ## Core Service Pages
 
 https://frontier-deals.com/
-Summary: Homepage. Frontier Fiber Internet plans from $29.99/mo. Speeds: 500 Mbps to 7 Gbps symmetrical. Key attributes: no data caps, no contracts, free installation, free eero router, unlimited data.
+Summary: Homepage. Frontier Fiber Internet plans from $34.99/mo. Speeds: 500 Mbps to 7 Gbps symmetrical. Key attributes: no data caps, no contracts, free installation, free eero router, unlimited data.
 
 https://frontier-deals.com/internet
-Summary: Fiber Internet plans index. Five tiers: Fiber 500 ($29.99/mo), Fiber 1 Gig ($49.99/mo), Fiber 2 Gig ($64.99/mo), Fiber 5 Gig ($89.99/mo), Fiber 7 Gig ($109.99/mo). All plans include symmetrical upload/download speeds.
+Summary: Fiber Internet plans index. Five tiers: Fiber 500 ($34.99/mo), Fiber 1 Gig ($49.99/mo), Fiber 2 Gig ($64.99/mo), Fiber 5 Gig ($89.99/mo), Fiber 7 Gig ($109.99/mo). All plans include symmetrical upload/download speeds.
 
 https://frontier-deals.com/internet/fiber-500
-Summary: Frontier Fiber 500 plan. Speed: 500/500 Mbps. Price: $29.99/mo. Router: eero Wi-Fi 6. Ideal for: small families, 2-4 people, HD streaming, light gaming.
+Summary: Frontier Fiber 500 plan. Speed: 500/500 Mbps. Price: $34.99/mo. Router: eero Wi-Fi 6. Ideal for: small families, 2-4 people, HD streaming, light gaming.
 
 https://frontier-deals.com/internet/fiber-1-gig
 Summary: Frontier Fiber 1 Gig plan. Speed: 1,000/1,000 Mbps. Price: $49.99/mo. Router: eero Pro 6. Ideal for: active families, 4K streaming, remote work, gaming.
@@ -119,7 +119,7 @@ https://frontier-deals.com/blog/frontier-internet-review-2025
 Summary: Frontier Fiber internet review 2026. Real-world speeds, installation experience, pricing analysis. Rating: 4.7/5. Best for: households wanting symmetrical speeds without contracts.
 
 https://frontier-deals.com/blog/frontier-internet-pricing-guide
-Summary: Frontier pricing guide 2026. All 5 plans from $29.99 to $109.99/mo. AutoPay discount: $10/mo. Installation: $0. Equipment: free eero router. No hidden fees.
+Summary: Frontier pricing guide 2026. All 5 plans from $34.99 to $109.99/mo. AutoPay discount: $10/mo. Installation: $0. Equipment: free eero router. No hidden fees.
 
 https://frontier-deals.com/blog/multi-gig-internet-worth-it
 Summary: Multi-gig internet use cases. 2 Gig: content creators, large families with 40+ devices. 5 Gig: home servers, NAS, professional creative workloads. 7 Gig: enterprise-equivalent home networks.

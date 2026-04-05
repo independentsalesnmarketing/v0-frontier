@@ -26,14 +26,14 @@ import GlossaryTerms from "@/components/GlossaryTerms"
 import { fiberInternetTerms, buyingGuideTerms } from "@/lib/glossary-data"
 
 export const metadata: Metadata = {
-  title: "Frontier Internet Plans 2026 | Fiber from $29.99/mo | Frontier Deals",
+  title: "Frontier Internet Plans 2026 | Fiber from $34.99/mo | Frontier Deals",
   description:
-    "Frontier Communications fiber internet from $29.99/mo. Unlimited data, no contracts, free eero router, free installation. Check availability and order today.",
+    "Frontier Communications fiber internet from $34.99/mo. Unlimited data, no contracts, free eero router, free installation. Check availability and order today.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Frontier Internet Plans 2026 | Fiber from $29.99/mo",
+    title: "Frontier Internet Plans 2026 | Fiber from $34.99/mo",
     description:
-      "Shop Frontier Communications fiber internet plans from $29.99/mo. Unlimited data, free router, free installation. Check availability now.",
+      "Shop Frontier Communications fiber internet plans from $34.99/mo. Unlimited data, free router, free installation. Check availability now.",
     url: "https://frontier-deals.com",
   },
 }
@@ -58,7 +58,7 @@ const structuredData = {
     "Minnesota","Pennsylvania","North Carolina","South Carolina","West Virginia",
     "Illinois","Georgia","Arizona","Nevada","Iowa","Nebraska","Tennessee",
   ].map((state) => ({ "@type": "State", name: state })),
-  priceRange: "$29.99-$109.99",
+  priceRange: "$34.99-$109.99",
   sameAs: [
     "https://en.wikipedia.org/wiki/Frontier_Communications",
     "https://frontier.com",
@@ -140,7 +140,7 @@ const productSchema = {
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "USD",
-    lowPrice: "29.99",
+    lowPrice: "34.99",
     highPrice: "109.99",
     offerCount: "5",
     url: "https://frontier-deals.com/internet",
@@ -156,7 +156,7 @@ const productSchema = {
     { "@type": "PropertyValue", name: "Installation Fee", value: "$0" },
     { "@type": "PropertyValue", name: "Equipment Fee", value: "$0 — free eero router included" },
     { "@type": "PropertyValue", name: "AutoPay Discount", value: "$10/month" },
-    { "@type": "PropertyValue", name: "Starting Price", value: "$29.99/month" },
+    { "@type": "PropertyValue", name: "Starting Price", value: "$34.99/month" },
   ],
 }
 
@@ -194,7 +194,7 @@ export default function IndexPage() {
                 { label: "Speed Range", value: "500 Mbps to 7 Gig" },
                 { label: "Data Policy", value: "Unlimited data, no caps" },
                 { label: "Contract", value: "No annual contract required" },
-                { label: "Starting Price", value: "$29.99/month with AutoPay" },
+                { label: "Starting Price", value: "$34.99/month with AutoPay" },
               ]}
             />
             <div className="text-sm text-gray-700 flex flex-wrap gap-x-4 gap-y-1">
@@ -212,7 +212,7 @@ export default function IndexPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { value: "7 Gig", label: "Max Speed Available", color: "text-[#DA202C]" },
-                { value: "$29.99", label: "Starting Price / Month", color: "text-[#64ffda]" },
+                { value: "$34.99", label: "Starting Price / Month", color: "text-[#64ffda]" },
                 { value: "Unlimited", label: "Data — No Caps", color: "text-white" },
                 { value: "$0", label: "Installation Fee", color: "text-[#00B7C3]" },
               ].map(({ value, label, color }) => (
@@ -269,7 +269,7 @@ export default function IndexPage() {
               <PlanCard
                 name="Fiber 500"
                 speed="500/500 Mbps"
-                price="29.99"
+                price="34.99"
                 wasPrice="39.99"
                 badge="Limited Time Deal!"
                 reward="Claim a $50 Visa® Reward Card"

@@ -9,7 +9,7 @@ import KeyFacts from "@/components/KeyFacts"
 export const metadata: Metadata = {
   title: "Frontier Fiber Coverage Map | Find Internet in Your Area",
   description:
-    "Check Frontier Fiber Internet availability at your address. Coverage across 19+ states and 400+ cities — plans from $29.99/mo, no contracts, free installation.",
+    "Check Frontier Fiber Internet availability at your address. Coverage across 19+ states and 400+ cities — plans from $34.99/mo, no contracts, free installation.",
   keywords: [
     "frontier fiber coverage",
     "frontier internet availability",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/coverage" },
   openGraph: {
     title: "Frontier Fiber Coverage Map | Find Internet in Your Area",
-    description: "Check Frontier Fiber Internet availability in your area. Browse our coverage map across 19+ states and hundreds of cities starting at $29.99/mo.",
+    description: "Check Frontier Fiber Internet availability in your area. Browse our coverage map across 19+ states and hundreds of cities starting at $34.99/mo.",
     url: "https://frontier-deals.com/coverage",
     siteName: "Frontier Deals",
     images: [{ url: "/images/og-frontier-internet.jpg", width: 1200, height: 630, alt: "Frontier Fiber Coverage Map" }],
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Frontier Fiber Coverage Map | Find Internet in Your Area",
-    description: "Check Frontier Fiber availability across 19+ states. Find plans from $29.99/mo.",
+    description: "Check Frontier Fiber availability across 19+ states. Find plans from $34.99/mo.",
     images: ["/images/og-frontier-internet.jpg"],
   },
 }
@@ -173,7 +173,7 @@ export default function CoveragePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
             <Link href="/internet" className="bg-white text-center p-4 rounded-lg border border-gray-100 hover:shadow-md transition-all">
               <p className="font-semibold text-[#0A1E3C] text-sm">View Plans</p>
-              <p className="text-xs text-gray-500 mt-1">From $29.99/mo</p>
+              <p className="text-xs text-gray-500 mt-1">From $34.99/mo</p>
             </Link>
             <Link href="/deals" className="bg-white text-center p-4 rounded-lg border border-gray-100 hover:shadow-md transition-all">
               <p className="font-semibold text-[#0A1E3C] text-sm">Current Deals</p>

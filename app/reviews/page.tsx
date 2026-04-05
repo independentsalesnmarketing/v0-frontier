@@ -81,7 +81,7 @@ export default function ReviewsPage() {
     brand: { "@type": "Brand", name: "Frontier Communications" },
     offers: {
       "@type": "AggregateOffer",
-      lowPrice: "29.99",
+      lowPrice: "34.99",
       highPrice: "89.99",
       priceCurrency: "USD",
       offerCount: 4,
@@ -243,7 +243,7 @@ export default function ReviewsPage() {
       <section className="py-16 bg-[#DA202C] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-black mb-4">Join Thousands of Happy Customers</h2>
-          <p className="text-lg text-white/80 mb-8">Fiber plans starting at $29.99/mo with free installation and no contracts.</p>
+          <p className="text-lg text-white/80 mb-8">Fiber plans starting at $34.99/mo with free installation and no contracts.</p>
           <PageOrderButton planName="fiber-2-gig" className="inline-flex items-center justify-center bg-white text-[#DA202C] font-bold h-14 px-10 rounded-xl text-lg hover:bg-gray-100">
             Get Started Today <ArrowRight className="ml-2 h-5 w-5" />
           </PageOrderButton>

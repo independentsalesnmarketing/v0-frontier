@@ -7,8 +7,8 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import RelatedServices from "@/components/RelatedServices"
 
 export const metadata: Metadata = {
-  title: "Frontier TV + Netflix Bundle 2026 | Stream & Save from $29.99/mo",
-  description: "Bundle Frontier Fiber with Netflix and YouTube TV — unlimited data, no buffering, one simple bill. Plans from $29.99/mo with no contract required.",
+  title: "Frontier TV + Netflix Bundle 2026 | Stream & Save from $34.99/mo",
+  description: "Bundle Frontier Fiber with Netflix and YouTube TV — unlimited data, no buffering, one simple bill. Plans from $34.99/mo with no contract required.",
   alternates: { canonical: "/tv-netflix" },
   openGraph: {
     title: "Frontier TV & Netflix Bundles | Stream More, Save More",

@@ -228,7 +228,7 @@ export default function AboutPage() {
             <h2 className="text-xl font-bold text-[#0A1E3C] mb-6">Explore Frontier Services</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { href: "/internet", label: "Fiber Internet", sub: "From $29.99/mo" },
+                { href: "/internet", label: "Fiber Internet", sub: "From $34.99/mo" },
                 { href: "/bundles", label: "Bundles", sub: "Internet + Phone" },
                 { href: "/business", label: "Business", sub: "Dedicated fiber" },
                 { href: "/coverage", label: "Coverage Map", sub: "19+ states" },

@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowRight, Check, HelpCircle, ChevronRight, Shield, DollarSign, TrendingDown, AlertCircle, Zap } from "lucide-react"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
+import { getCurrentMonthYear } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Is Verizon Fios Now Frontier? The Full Story (2026)",
@@ -31,7 +32,7 @@ export default function VerizonFrontierExplainedPage() {
       <section className="bg-[#0A1E3C] text-white py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-2 text-sm text-white/60 mb-4">
-            <span>Internet Technology</span><span>•</span><span>10 min read</span><span>•</span><span>Updated March 2026</span>
+            <span>Internet Technology</span><span>•</span><span>10 min read</span><span>•</span><span>Updated {getCurrentMonthYear()}</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black mb-6 leading-tight">
             Is Verizon Fios Now Frontier?<br />
@@ -58,7 +59,7 @@ export default function VerizonFrontierExplainedPage() {
                 { year: "2020", event: "Frontier files for Chapter 11 bankruptcy and undergoes restructuring to reduce debt." },
                 { year: "2021", event: "Frontier emerges from bankruptcy with $10 billion less debt and a new management team focused on fiber expansion." },
                 { year: "2023-2025", event: "Frontier invests billions in upgrading the network — adding multi-gig speeds, eero routers, and expanding fiber coverage to millions of new addresses." },
-                { year: "2026", event: "Frontier Fiber now offers speeds up to 7 Gbps with plans starting at $29.99/mo — faster and more affordable than the old Fios service." },
+                { year: "2026", event: "Frontier Fiber now offers speeds up to 7 Gbps with plans starting at $34.99/mo — faster and more affordable than the old Fios service." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
                   <span className="bg-[#0A1E3C] text-white text-xs font-bold px-3 py-1.5 rounded-full flex-shrink-0">{item.year}</span>
@@ -80,7 +81,7 @@ export default function VerizonFrontierExplainedPage() {
                 <tbody>
                   {[
                     ["Max Speed", "Up to 2 Gbps", "Up to 7 Gbps"],
-                    ["Starting Price", "$49.99/mo", "$29.99/mo"],
+                    ["Starting Price", "$49.99/mo", "$34.99/mo"],
                     ["Contracts", "1-2 year contracts", "No contracts"],
                     ["Data Caps", "Unlimited", "Unlimited"],
                     ["Router", "Verizon router rental", "Free eero (yours to keep)"],
@@ -112,7 +113,7 @@ export default function VerizonFrontierExplainedPage() {
             <div className="space-y-4 mb-8">
               <div className="bg-[#f8f9fb] rounded-xl p-6 border border-gray-100">
                 <h3 className="font-bold text-[#0A1E3C] mb-2 flex items-center gap-2"><TrendingDown className="h-5 w-5 text-[#00b7c3]" />Lower Prices</h3>
-                <p className="text-sm text-gray-600">Frontier&apos;s aggressive pricing starts at $29.99/mo — significantly lower than what most Fios customers were paying. No annual contracts mean you can shop plans freely.</p>
+                <p className="text-sm text-gray-600">Frontier&apos;s aggressive pricing starts at $34.99/mo — significantly lower than what most Fios customers were paying. No annual contracts mean you can shop plans freely.</p>
               </div>
               <div className="bg-[#f8f9fb] rounded-xl p-6 border border-gray-100">
                 <h3 className="font-bold text-[#0A1E3C] mb-2 flex items-center gap-2"><Zap className="h-5 w-5 text-[#00b7c3]" />Faster Speeds</h3>
@@ -129,7 +130,7 @@ export default function VerizonFrontierExplainedPage() {
               {[
                 { q: "Is Verizon Fios now Frontier?", a: "Yes, in states where Verizon sold its wireline network. The fiber infrastructure is the same, but the service is now branded and managed by Frontier Communications." },
                 { q: "Did my Fios service change when Frontier took over?", a: "The underlying fiber technology remained the same. Frontier has upgraded the network with faster speeds (up to 7 Gbps), new eero routers, simplified no-contract pricing, and free installation." },
-                { q: "Is Frontier Fiber as good as Verizon Fios?", a: "Frontier Fiber now exceeds what Fios offered — faster max speeds (7 Gbps vs 2 Gbps), lower starting prices ($29.99 vs $49.99), free routers instead of rental fees, and no contracts." },
+                { q: "Is Frontier Fiber as good as Verizon Fios?", a: "Frontier Fiber now exceeds what Fios offered — faster max speeds (7 Gbps vs 2 Gbps), lower starting prices ($34.99 vs $49.99), free routers instead of rental fees, and no contracts." },
                 { q: "Can I switch from Verizon Fios to Frontier?", a: "If you're in a Frontier service area, you already have Frontier. If you're in a Verizon Fios area (Northeast), Frontier offers separate fiber service — check availability at your address." },
                 { q: "Do I need new equipment?", a: "When you sign up for or upgrade a Frontier Fiber plan, you'll receive a new eero router at no cost. The fiber ONT (wall unit) may be reused or replaced depending on your speed tier." },
               ].map((faq, i) => (
@@ -147,7 +148,7 @@ export default function VerizonFrontierExplainedPage() {
           {/* CTA */}
           <div className="bg-[#0A1E3C] rounded-2xl p-8 md:p-12 text-white text-center mt-12">
             <h2 className="text-2xl font-black mb-4">Ready to Experience the New Frontier Fiber?</h2>
-            <p className="text-white/70 mb-6 max-w-lg mx-auto">Plans from $29.99/mo with no contracts, free installation, and free eero router. See what&apos;s available at your address.</p>
+            <p className="text-white/70 mb-6 max-w-lg mx-auto">Plans from $34.99/mo with no contracts, free installation, and free eero router. See what&apos;s available at your address.</p>
             <PageOrderButton className="inline-flex items-center gap-2 bg-[#DA202C] hover:bg-[#b71c1c] text-white font-bold h-12 px-8 rounded-xl text-base shadow-lg">
               Check Availability <ArrowRight className="h-5 w-5" />
             </PageOrderButton>

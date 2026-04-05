@@ -181,7 +181,7 @@ export default function InternetSpeedsPage() {
           <p className="text-center text-white/60 mb-12 max-w-xl mx-auto">Every plan includes symmetrical speeds, unlimited data, free installation, and a free eero router.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Fiber 500", speed: "500/500 Mbps", price: "29.99", best: false, label: "Great starter plan" },
+              { name: "Fiber 500", speed: "500/500 Mbps", price: "34.99", best: false, label: "Great starter plan" },
               { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "49.99", best: true, label: "Most popular" },
               { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "64.99", best: false, label: "Power households" },
               { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "89.99", best: false, label: "Wi-Fi 7 included" },

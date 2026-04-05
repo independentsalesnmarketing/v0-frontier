@@ -9,16 +9,16 @@ import { sitewideCoreKeywords } from "@/lib/seo-keywords"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
 
 export const metadata = {
-  title: "Frontier Fiber Internet: Best Deals from $29.99/mo | Frontier Deals",
+  title: "Frontier Fiber Internet: Best Deals from $34.99/mo | Frontier Deals",
   description:
-    "Frontier fiber internet plans from $29.99/mo — unlimited data, no contracts, free eero router, and free installation. Authorized Frontier retailer. Order today.",
+    "Frontier fiber internet plans from $34.99/mo — unlimited data, no contracts, free eero router, and free installation. Authorized Frontier retailer. Order today.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
   openGraph: {
-    title: "Frontier Deals | Authorized Retailer — Fiber Internet from $29.99/mo",
+    title: "Frontier Deals | Authorized Retailer — Fiber Internet from $34.99/mo",
     description:
       "Shop Frontier fiber internet plans through an authorized retailer. Compare speeds up to 7 Gbps, check availability, and order online.",
     type: "website",
@@ -33,9 +33,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Frontier Fiber Internet: Best Deals from $29.99/mo | Frontier Deals",
+    title: "Frontier Fiber Internet: Best Deals from $34.99/mo | Frontier Deals",
     description:
-      "Best Frontier fiber internet deals from $29.99/mo. Unlimited data, free eero router, free installation.",
+      "Best Frontier fiber internet deals from $34.99/mo. Unlimited data, free eero router, free installation.",
     images: ["/images/og-frontier-hero.jpg"],
   },
   keywords: sitewideCoreKeywords,

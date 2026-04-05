@@ -3,10 +3,11 @@ import Link from "next/link"
 import { ArrowRight, Check, DollarSign, ChevronRight, Star, Shield, Wifi, Gift, AlertTriangle, TrendingDown, Calculator } from "lucide-react"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import { PageOrderButton } from "@/components/PageInteractions"
+import { getCurrentMonthYear } from "@/lib/seo-dates"
 
 export const metadata: Metadata = {
   title: "Frontier Internet Pricing Guide 2026: Every Plan, Every Cost",
-  description: "Complete Frontier Fiber pricing breakdown. Every plan from $29.99-$109.99/mo with real costs, fees, what's included free, and money-saving tips. No hidden fees.",
+  description: "Complete Frontier Fiber pricing breakdown. Every plan from $34.99-$109.99/mo with real costs, fees, what's included free, and money-saving tips. No hidden fees.",
   alternates: { canonical: "/blog/frontier-internet-pricing-guide" },
   openGraph: { title: "Frontier Internet Pricing Guide 2026", description: "Full pricing breakdown for every Frontier Fiber plan. Real costs, free perks, and how to save." },
   keywords: ["frontier internet pricing", "frontier fiber cost", "frontier internet price", "how much is frontier internet", "frontier internet plans cost", "frontier monthly cost"],
@@ -19,7 +20,7 @@ export default function PricingGuidePage() {
       <section className="bg-[#0A1E3C] text-white py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-2 text-sm text-white/60 mb-4">
-            <span>Buying Guide</span><span>•</span><span>12 min read</span><span>•</span><span>Updated March 2026</span>
+            <span>Buying Guide</span><span>•</span><span>12 min read</span><span>•</span><span>Updated {getCurrentMonthYear()}</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black mb-6 leading-tight">
             Frontier Internet Pricing Guide 2026
@@ -48,7 +49,7 @@ export default function PricingGuidePage() {
                 </thead>
                 <tbody>
                   {[
-                    { plan: "Fiber 500", speed: "500 Mbps", monthly: "$29.99", annual: "$359.88", perMbps: "$0.060" },
+                    { plan: "Fiber 500", speed: "500 Mbps", monthly: "$34.99", annual: "$419.88", perMbps: "$0.070" },
                     { plan: "Fiber 1 Gig", speed: "1,000 Mbps", monthly: "$49.99", annual: "$599.88", perMbps: "$0.050", best: true },
                     { plan: "Fiber 2 Gig", speed: "2,000 Mbps", monthly: "$64.99", annual: "$779.88", perMbps: "$0.032", best: true },
                     { plan: "Fiber 5 Gig", speed: "5,000 Mbps", monthly: "$89.99", annual: "$1,079.88", perMbps: "$0.018" },
@@ -109,7 +110,7 @@ export default function PricingGuidePage() {
 
           <h2 className="text-2xl font-black text-[#0A1E3C] mt-10 mb-4">Detailed Plan Breakdown</h2>
           {[
-            { name: "Fiber 500", speed: "500/500 Mbps", price: "$29.99/mo", router: "eero Wi-Fi 6", visa: "$50", ideal: "1-3 people. Streaming, browsing, video calls." },
+            { name: "Fiber 500", speed: "500/500 Mbps", price: "$34.99/mo", router: "eero Wi-Fi 6", visa: "$50", ideal: "1-3 people. Streaming, browsing, video calls." },
             { name: "Fiber 1 Gig", speed: "1,000/1,000 Mbps", price: "$49.99/mo", router: "eero Pro 6E", visa: "$100", ideal: "3-6 people. Gaming, WFH, 4K streaming on multiple screens." },
             { name: "Fiber 2 Gig", speed: "2,000/2,000 Mbps", price: "$64.99/mo", router: "eero Pro 6E", visa: "$150", ideal: "5-10 people. Large families, smart homes, content creators." },
             { name: "Fiber 5 Gig", speed: "5,000/5,000 Mbps", price: "$89.99/mo", router: "eero Max 7 (Wi-Fi 7)", visa: "$200", ideal: "Power users, home servers, 8K streaming, future-proofing." },
@@ -166,7 +167,7 @@ export default function PricingGuidePage() {
               </thead>
               <tbody>
                 {[
-                  ["Frontier Fiber", "$29.99", "$49.99", "None", "None", true],
+                  ["Frontier Fiber", "$34.99", "$49.99", "None", "None", true],
                   ["Xfinity", "$55-65", "$75-80", "1.2 TB", "1-2 years"],
                   ["AT&T Fiber", "$55", "$80", "None", "None"],
                   ["Spectrum", "$49.99", "$79.99", "None", "None"],
