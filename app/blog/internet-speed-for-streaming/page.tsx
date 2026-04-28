@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Internet Speed for Streaming: How Much Do You Really Need?", description: "From Netflix to YouTube TV, every streaming service has different bandwidth needs. Here's exactly how much internet speed you need for buffer-free streaming.", url: "https://frontier-deals.com/blog/internet-speed-for-streaming", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-03-01", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Internet Speed for Streaming: How Much Do You Really Need?", description: "From Netflix to YouTube TV, every streaming service has different bandwidth needs. Here's exactly how much internet speed you need for buffer-free streaming.", url: "https://frontler-internet.com/blog/internet-speed-for-streaming", image: { "@type": "ImageObject", url: "https://frontler-internet.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-03-01", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontler-internet.com/images/frontier-logo-design.png" } } }
 
   return (
     <>

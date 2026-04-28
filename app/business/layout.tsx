@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Business Fiber Internet Plans | Frontier Authorized Retailer",
     description:
       "Enterprise-grade Frontier fiber internet for businesses of all sizes. Symmetrical speeds, 99.9% uptime, dedicated support.",
-    url: "https://frontier-deals.com/business",
+    url: "https://frontler-internet.com/business",
     siteName: "Frontier Deals",
     images: [
       {

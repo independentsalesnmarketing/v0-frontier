@@ -20,7 +20,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.label,
-      ...(item.href ? { item: `https://frontier-deals.com${item.href}` } : {}),
+      ...(item.href ? { item: `https://frontler-internet.com${item.href}` } : {}),
     })),
   }
 

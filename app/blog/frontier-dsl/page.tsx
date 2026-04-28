@@ -38,7 +38,7 @@ const articleSchema = {
   datePublished: "2025-10-01",
   dateModified: "2026-01-15",
   author: { "@type": "Person", name: "Marcus Chen" },
-  publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/logo.png" } },
+  publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontler-internet.com/images/logo.png" } },
 }
 
 const faqSchema = {

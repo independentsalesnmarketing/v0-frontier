@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Internet for AI in 2026: How AI Changes Bandwidth Needs", description: "AI assistants, image generators, and cloud AI workloads are changing how much internet bandwidth you need.", url: "https://frontier-deals.com/blog/internet-for-ai-2025", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-09-01", dateModified: getResolvedMonthlyUpdatedDate("2026-03-15"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Internet for AI in 2026: How AI Changes Bandwidth Needs", description: "AI assistants, image generators, and cloud AI workloads are changing how much internet bandwidth you need.", url: "https://frontler-internet.com/blog/internet-for-ai-2025", image: { "@type": "ImageObject", url: "https://frontler-internet.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-09-01", dateModified: getResolvedMonthlyUpdatedDate("2026-03-15"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontler-internet.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

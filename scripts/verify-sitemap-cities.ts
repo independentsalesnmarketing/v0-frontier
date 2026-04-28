@@ -51,28 +51,28 @@ async function verifySitemapCities() {
       const citySlug = city.toLowerCase().replace(/\s+/g, "-")
 
       // Check fiber-internet-in format
-      const fiberUrl = `https://frontier-deals.com/fiber-internet-in/${citySlug}/${stateSlug}`
+      const fiberUrl = `https://frontler-internet.com/fiber-internet-in/${citySlug}/${stateSlug}`
       if (!urls.includes(fiberUrl)) {
         console.error(`Missing URL: ${fiberUrl}`)
         allCitiesIncluded = false
       }
 
       // Check coverage format
-      const coverageUrl = `https://frontier-deals.com/coverage/${stateSlug}/${citySlug}`
+      const coverageUrl = `https://frontler-internet.com/coverage/${stateSlug}/${citySlug}`
       if (!urls.includes(coverageUrl)) {
         console.error(`Missing URL: ${coverageUrl}`)
         allCitiesIncluded = false
       }
 
       // Check hyphenated format
-      const hyphenatedUrl = `https://frontier-deals.com/fiber-internet-in-${citySlug}-${stateSlug}`
+      const hyphenatedUrl = `https://frontler-internet.com/fiber-internet-in-${citySlug}-${stateSlug}`
       if (!urls.includes(hyphenatedUrl)) {
         console.error(`Missing URL: ${hyphenatedUrl}`)
         allCitiesIncluded = false
       }
 
       // Check locations format
-      const locationsUrl = `https://frontier-deals.com/locations/${citySlug}-${stateSlug}`
+      const locationsUrl = `https://frontler-internet.com/locations/${citySlug}-${stateSlug}`
       if (!urls.includes(locationsUrl)) {
         console.error(`Missing URL: ${locationsUrl}`)
         allCitiesIncluded = false

@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "Online Gaming Internet Guide: Speed, Latency, and Lag Explained | Frontier",
   description: "Why latency matters more than download speed for gaming, how to reduce ping, and what internet plan gamers should choose.",
-  alternates: { canonical: "https://frontier-deals.com/blog/gaming-internet-guide" },
+  alternates: { canonical: "https://frontler-internet.com/blog/gaming-internet-guide" },
 }
 
 export default function GamingGuidePage() {

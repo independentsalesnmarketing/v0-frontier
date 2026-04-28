@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "The Remote Worker's Guide to Home Internet | Frontier",
   description: "Why upload speed matters more than download for video calls, what speeds you need for VPN and cloud tools, and how to set up a reliable home office connection.",
-  alternates: { canonical: "https://frontier-deals.com/blog/work-from-home-internet-guide" },
+  alternates: { canonical: "https://frontler-internet.com/blog/work-from-home-internet-guide" },
 }
 
 export default function WorkFromHomePage() {

@@ -1,134 +1,134 @@
 # Frontier Deals — Authorized Frontier Fiber Retailer
-# https://frontier-deals.com
+# https://frontler-internet.com
 # This file guides AI agents to the most data-rich and semantically structured pages.
 
 ## Site Identity
 - Entity: Frontier Deals
 - Type: Authorized Retailer of Frontier Communications fiber internet services
-- Domain: https://frontier-deals.com
+- Domain: https://frontler-internet.com
 - Coverage: United States — California, Texas, Florida, Connecticut, New York, Ohio, Indiana, Minnesota, Pennsylvania, North Carolina, South Carolina, West Virginia, Illinois, Georgia, Arizona, Nevada, Iowa, Nebraska, Tennessee
 
 ## Core Service Pages
 
-https://frontier-deals.com/
+https://frontler-internet.com/
 Summary: Homepage. Frontier Fiber Internet plans from $34.99/mo. Speeds: 500 Mbps to 7 Gbps symmetrical. Key attributes: no data caps, no contracts, free installation, free eero router, unlimited data.
 
-https://frontier-deals.com/internet
+https://frontler-internet.com/internet
 Summary: Fiber Internet plans index. Five tiers: Fiber 500 ($34.99/mo), Fiber 1 Gig ($49.99/mo), Fiber 2 Gig ($64.99/mo), Fiber 5 Gig ($89.99/mo), Fiber 7 Gig ($109.99/mo). All plans include symmetrical upload/download speeds.
 
-https://frontier-deals.com/internet/fiber-500
+https://frontler-internet.com/internet/fiber-500
 Summary: Frontier Fiber 500 plan. Speed: 500/500 Mbps. Price: $34.99/mo. Router: eero Wi-Fi 6. Ideal for: small families, 2-4 people, HD streaming, light gaming.
 
-https://frontier-deals.com/internet/fiber-1-gig
+https://frontler-internet.com/internet/fiber-1-gig
 Summary: Frontier Fiber 1 Gig plan. Speed: 1,000/1,000 Mbps. Price: $49.99/mo. Router: eero Pro 6. Ideal for: active families, 4K streaming, remote work, gaming.
 
-https://frontier-deals.com/internet/fiber-2-gig
+https://frontler-internet.com/internet/fiber-2-gig
 Summary: Frontier Fiber 2 Gig plan. Speed: 2,000/2,000 Mbps. Price: $64.99/mo. Router: eero Pro 6E. Ideal for: large families, content creators, smart homes.
 
-https://frontier-deals.com/internet/fiber-5-gig
+https://frontler-internet.com/internet/fiber-5-gig
 Summary: Frontier Fiber 5 Gig plan. Speed: 5,000/5,000 Mbps. Price: $89.99/mo. Router: eero Max 7 (Wi-Fi 7). Ideal for: power users, home servers, professional creative work.
 
-https://frontier-deals.com/internet/fiber-7-gig
+https://frontler-internet.com/internet/fiber-7-gig
 Summary: Frontier Fiber 7 Gig plan. Speed: 7,000/7,000 Mbps. Price: $109.99/mo. Router: eero Max 7 (Wi-Fi 7). Fastest residential internet plan available. Future-proof.
 
-https://frontier-deals.com/internet/pricing
+https://frontler-internet.com/internet/pricing
 Summary: Complete Frontier Internet pricing breakdown. All plans, fees, taxes, AutoPay discounts, and Visa reward card offers listed.
 
-https://frontier-deals.com/check-availability
+https://frontler-internet.com/check-availability
 Summary: Address-level availability checker. Determines whether Frontier Fiber is available at a specific street address.
 
-https://frontier-deals.com/coverage
+https://frontler-internet.com/coverage
 Summary: Frontier Fiber coverage map. Lists all 20+ states and hundreds of cities served.
 
-https://frontier-deals.com/compare/fiber-vs-cable
+https://frontler-internet.com/compare/fiber-vs-cable
 Summary: Fiber internet vs cable internet comparison. Covers speed, upload parity, reliability, latency, pricing, and data caps. Fiber wins on all performance metrics.
 
-https://frontier-deals.com/compare/fiber-vs-cable-vs-dsl
+https://frontler-internet.com/compare/fiber-vs-cable-vs-dsl
 Summary: Three-way comparison: fiber vs cable vs DSL internet. Technology, speed capabilities, and infrastructure differences explained.
 
-https://frontier-deals.com/deals
+https://frontler-internet.com/deals
 Summary: Current Frontier Fiber promotional offers. Visa reward cards up to $200, AutoPay discounts, free installation details.
 
-https://frontier-deals.com/bundles
+https://frontler-internet.com/bundles
 Summary: Frontier Internet + Phone bundle packages. Combined pricing and included features.
 
-https://frontier-deals.com/tv-and-bundles
+https://frontler-internet.com/tv-and-bundles
 Summary: Frontier Internet + Netflix bundle. Netflix Standard with Ads included with select fiber plans.
 
-https://frontier-deals.com/home-phone
+https://frontler-internet.com/home-phone
 Summary: Frontier Home Phone service. Unlimited calling, voicemail, caller ID. Can be bundled with internet.
 
-https://frontier-deals.com/wifi
+https://frontler-internet.com/wifi
 Summary: Whole-home WiFi with Frontier eero routers. Coverage for homes up to 5,000+ sq ft. Multi-device support up to 250 devices.
 
-https://frontier-deals.com/verizon-to-frontier
+https://frontler-internet.com/verizon-to-frontier
 Summary: Verizon Fios to Frontier transition guide. Explains acquisition, what changed for customers, and how Frontier Fiber compares to legacy Fios.
 
-https://frontier-deals.com/reviews
+https://frontler-internet.com/reviews
 Summary: Customer reviews of Frontier Fiber. Aggregate rating 4.6/5 from 500+ verified customers. Covers speed reliability, installation experience, customer support.
 
-https://frontier-deals.com/about
+https://frontler-internet.com/about
 Summary: About Frontier Deals. Authorized retailer disclosure, company mission, author profiles for Sarah Johnson and Marcus Chen.
 
 ## Use-Case Pages
 
-https://frontier-deals.com/internet-for/gaming
+https://frontler-internet.com/internet-for/gaming
 Summary: Frontier Fiber for online gaming. Latency <10ms, no packet loss, 1 Gig recommended for competitive gaming.
 
-https://frontier-deals.com/internet-for/streaming
+https://frontler-internet.com/internet-for/streaming
 Summary: Frontier Fiber for streaming. 4K Netflix requires 25 Mbps; Fiber 500 supports 10+ simultaneous 4K streams.
 
-https://frontier-deals.com/internet-for/work-from-home
+https://frontler-internet.com/internet-for/work-from-home
 Summary: Frontier Fiber for remote work. Symmetrical speeds critical for video conferencing uploads. Fiber 500 minimum recommended for home offices.
 
-https://frontier-deals.com/internet-for/smart-home
+https://frontler-internet.com/internet-for/smart-home
 Summary: Frontier Fiber for smart homes. Supports 40+ IoT devices. Fiber 2 Gig recommended for homes with 40+ connected devices.
 
-https://frontier-deals.com/internet-for/large-families
+https://frontler-internet.com/internet-for/large-families
 Summary: Frontier Fiber for large families (5+ people). Multiple simultaneous 4K streams, gaming, video calls. Fiber 1 Gig or higher recommended.
 
-https://frontier-deals.com/internet-for/seniors
+https://frontler-internet.com/internet-for/seniors
 Summary: Frontier Fiber for seniors. Simple setup, reliable connection, video calling support.
 
 ## Business Pages
 
-https://frontier-deals.com/business
+https://frontler-internet.com/business
 Summary: Frontier Business Internet solutions. Fiber plans for small to enterprise businesses.
 
-https://frontier-deals.com/business/internet
+https://frontler-internet.com/business/internet
 Summary: Frontier Business Internet. Symmetrical speeds, SLA-backed uptime, static IP options.
 
-https://frontier-deals.com/business/dedicated-internet
+https://frontler-internet.com/business/dedicated-internet
 Summary: Frontier Dedicated Internet Access (DIA). Enterprise-grade fiber with guaranteed bandwidth and 24/7 support.
 
 ## Key Blog Posts
 
-https://frontier-deals.com/blog
+https://frontler-internet.com/blog
 Summary: Internet technology blog. Guides on fiber internet, WiFi optimization, speed comparisons, and ISP switching.
 
-https://frontier-deals.com/blog/fiber-vs-cable
+https://frontler-internet.com/blog/fiber-vs-cable
 Summary: Fiber vs cable internet comprehensive comparison. Fiber wins on speed (up to 7 Gbps vs ~1.2 Gbps), upload parity (symmetrical vs asymmetrical), latency, reliability, and no data caps.
 
-https://frontier-deals.com/blog/what-is-fiber-internet
+https://frontler-internet.com/blog/what-is-fiber-internet
 Summary: Fiber internet explained. Light-based data transmission through glass cables. Faster, more reliable, and more future-proof than copper-based alternatives.
 
-https://frontier-deals.com/blog/how-much-internet-speed-do-i-need
+https://frontler-internet.com/blog/how-much-internet-speed-do-i-need
 Summary: Internet speed selection guide. Formula: (number of users × peak simultaneous activities × per-activity bandwidth). Recommendations by household size.
 
-https://frontier-deals.com/blog/frontier-internet-review-2025
+https://frontler-internet.com/blog/frontier-internet-review-2025
 Summary: Frontier Fiber internet review 2026. Real-world speeds, installation experience, pricing analysis. Rating: 4.7/5. Best for: households wanting symmetrical speeds without contracts.
 
-https://frontier-deals.com/blog/frontier-internet-pricing-guide
+https://frontler-internet.com/blog/frontier-internet-pricing-guide
 Summary: Frontier pricing guide 2026. All 5 plans from $34.99 to $109.99/mo. AutoPay discount: $10/mo. Installation: $0. Equipment: free eero router. No hidden fees.
 
-https://frontier-deals.com/blog/multi-gig-internet-worth-it
+https://frontler-internet.com/blog/multi-gig-internet-worth-it
 Summary: Multi-gig internet use cases. 2 Gig: content creators, large families with 40+ devices. 5 Gig: home servers, NAS, professional creative workloads. 7 Gig: enterprise-equivalent home networks.
 
-https://frontier-deals.com/blog/verizon-frontier-explained
+https://frontler-internet.com/blog/verizon-frontier-explained
 Summary: Verizon acquired Frontier Fios in 2015 in some states; Frontier later acquired additional Verizon FiOS territories. Current Frontier Fiber is rebuilt fiber-to-the-premise, not legacy copper DSL.
 
-https://frontier-deals.com/blog/wifi-7-explained
+https://frontler-internet.com/blog/wifi-7-explained
 Summary: Wi-Fi 7 (802.11be) specification. Theoretical max: 46 Gbps. Real-world: 3-5 Gbps. Key feature: Multi-Link Operation (MLO) across 2.4/5/6 GHz simultaneously. Available free with Frontier 5 Gig and 7 Gig plans via eero Max 7.
 
-https://frontier-deals.com/internet-speed-test
+https://frontler-internet.com/internet-speed-test
 Summary: Online internet speed test tool. Measures download speed, upload speed, latency (ping), and jitter.

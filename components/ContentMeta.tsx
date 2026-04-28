@@ -64,7 +64,7 @@ export default function ContentMeta({
           ...(resolvedTitle ? { headline: resolvedTitle } : {}),
           ...(resolvedDescription ? { description: resolvedDescription } : {}),
           ...(pageSlug
-            ? { url: `https://frontier-deals.com${pageSlug}` }
+            ? { url: `https://frontler-internet.com${pageSlug}` }
             : {}),
           datePublished: isoDate(resolvedPublishDate),
           dateModified: isoDate(resolvedUpdateDate),
@@ -77,10 +77,10 @@ export default function ContentMeta({
           publisher: {
             "@type": "Organization",
             name: "Frontier Deals",
-            url: "https://frontier-deals.com",
+            url: "https://frontler-internet.com",
             logo: {
               "@type": "ImageObject",
-              url: "https://frontier-deals.com/android-chrome-192x192.png",
+              url: "https://frontler-internet.com/android-chrome-192x192.png",
             },
           },
           // Speakable: headline + first article paragraph are ideal for voice/AI summaries
@@ -97,13 +97,13 @@ export default function ContentMeta({
       ? {
           "@context": "https://schema.org",
           "@type": "ClaimReview",
-          url: `https://frontier-deals.com${pageSlug}`,
+          url: `https://frontler-internet.com${pageSlug}`,
           claimReviewed: resolvedTitle,
           reviewDate: isoDate(resolvedUpdateDate),
           author: {
             "@type": "Organization",
             name: factChecker ?? "Technical Review Team",
-            url: "https://frontier-deals.com",
+            url: "https://frontler-internet.com",
           },
           reviewRating: {
             "@type": "Rating",

@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "How to Fix WiFi Dead Zones in Your Home | Frontier",
   description: "Practical tips for eliminating weak spots in your home WiFi coverage, from router placement to mesh systems and ethernet backhaul.",
-  alternates: { canonical: "https://frontier-deals.com/blog/wifi-dead-zones-fix" },
+  alternates: { canonical: "https://frontler-internet.com/blog/wifi-dead-zones-fix" },
 }
 
 export default function WifiDeadZonesPage() {

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Frontier Internet: FREE Installation Offer",
     description:
       "Limited time offer: Get Frontier's lightning-fast fiber internet with FREE installation. Order online today!",
-    url: "https://frontier-deals.com/order",
+    url: "https://frontler-internet.com/order",
     type: "website",
     images: [{ url: "/images/hero-family-internet.jpg" }],
   },

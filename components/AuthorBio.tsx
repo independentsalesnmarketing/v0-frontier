@@ -32,7 +32,7 @@ export default function AuthorBio({
   publications = [],
 }: AuthorProps) {
   const registryAuthor = AUTHORS[name]
-  const resolvedUrl = url ?? registryAuthor?.url ?? `https://frontier-deals.com/about#${name.toLowerCase().replace(/\s+/g, "-")}`
+  const resolvedUrl = url ?? registryAuthor?.url ?? `https://frontler-internet.com/about#${name.toLowerCase().replace(/\s+/g, "-")}`
   const resolvedSameAs = sameAs.length > 0 ? sameAs : (registryAuthor?.sameAs ?? [])
 
   const personSchema = {
@@ -44,7 +44,7 @@ export default function AuthorBio({
     url: resolvedUrl,
     ...(resolvedSameAs.length > 0 && { sameAs: resolvedSameAs }),
     ...(credentials.length > 0 && { hasCredential: credentials.map((c) => ({ "@type": "EducationalOccupationalCredential", credentialCategory: c })) }),
-    worksFor: { "@type": "Organization", name: "Frontier Deals", url: "https://frontier-deals.com" },
+    worksFor: { "@type": "Organization", name: "Frontier Deals", url: "https://frontler-internet.com" },
   }
 
   return (

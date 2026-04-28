@@ -4,7 +4,7 @@ import { blogPosts } from "@/lib/blog-data"
 import { getAllCompetitorSlugs } from "@/lib/competitor-data"
 import { getResolvedMonthlyUpdatedDate } from "@/lib/seo-dates"
 
-const BASE_URL = "https://frontier-deals.com"
+const BASE_URL = "https://frontler-internet.com"
 
 function slugify(text: string): string {
   return text

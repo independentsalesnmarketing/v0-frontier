@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "Fiber Internet Availability: How to Check If Your Address Is Covered",
   description: "Learn how to check fiber internet availability at your address, understand why coverage varies by neighborhood, and what to do if fiber isn't available yet.",
-  alternates: { canonical: "https://frontier-deals.com/blog/fiber-internet-availability-guide" },
+  alternates: { canonical: "https://frontler-internet.com/blog/fiber-internet-availability-guide" },
 }
 
 export default function FiberAvailabilityGuidePage() {

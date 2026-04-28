@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Who Actually Needs 5 Gig Internet?", description: "5 Gig internet sounds impressive, but do you really need it? Honest breakdown of who benefits and who should save money.", url: "https://frontier-deals.com/blog/who-needs-5-gig-internet", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-07-25", dateModified: getResolvedMonthlyUpdatedDate("2026-03-11"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Who Actually Needs 5 Gig Internet?", description: "5 Gig internet sounds impressive, but do you really need it? Honest breakdown of who benefits and who should save money.", url: "https://frontler-internet.com/blog/who-needs-5-gig-internet", image: { "@type": "ImageObject", url: "https://frontler-internet.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-07-25", dateModified: getResolvedMonthlyUpdatedDate("2026-03-11"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontler-internet.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

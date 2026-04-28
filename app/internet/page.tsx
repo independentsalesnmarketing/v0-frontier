@@ -55,7 +55,7 @@ const productSchema = {
   "@type": "Product",
   name: "Frontier Fiber Internet",
   description: "High-speed fiber internet with symmetrical speeds up to 7 Gbps, unlimited data, and no contracts.",
-  image: "https://frontier-deals.com/images/og-frontier-internet.jpg",
+  image: "https://frontler-internet.com/images/og-frontier-internet.jpg",
   brand: { "@type": "Brand", name: "Frontier Communications" },
   offers: {
     "@type": "AggregateOffer",
@@ -63,7 +63,7 @@ const productSchema = {
     lowPrice: "34.99",
     highPrice: "109.99",
     offerCount: "5",
-    url: "https://frontier-deals.com/internet",
+    url: "https://frontler-internet.com/internet",
     availability: "https://schema.org/InStock",
   },
 }

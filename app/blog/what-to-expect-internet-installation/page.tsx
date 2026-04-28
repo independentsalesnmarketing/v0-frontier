@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "What to Expect During Fiber Internet Installation | Frontier",
   description: "A step-by-step walkthrough of the Frontier Fiber installation process, from scheduling to setup, so you know exactly what happens on installation day.",
-  alternates: { canonical: "https://frontier-deals.com/blog/what-to-expect-internet-installation" },
+  alternates: { canonical: "https://frontler-internet.com/blog/what-to-expect-internet-installation" },
 }
 
 export default function InstallationGuidePage() {

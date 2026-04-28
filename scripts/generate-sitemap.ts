@@ -33,7 +33,7 @@ function generateSitemap() {
 
   for (const page of mainPages) {
     urls.push(`  <url>
-    <loc>https://frontier-deals.com${page.url}</loc>
+    <loc>https://frontler-internet.com${page.url}</loc>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`)
@@ -45,7 +45,7 @@ function generateSitemap() {
     const stateSlug = state.toLowerCase().replace(/\s+/g, "-")
 
     urls.push(`  <url>
-    <loc>https://frontier-deals.com/coverage/${stateSlug}</loc>
+    <loc>https://frontler-internet.com/coverage/${stateSlug}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`)
@@ -64,14 +64,14 @@ function generateSitemap() {
       // For each city, list both formats consecutively
       // Format 1: /fiber-internet-in/[city]/[state]
       urls.push(`  <url>
-    <loc>https://frontier-deals.com/fiber-internet-in/${citySlug}/${stateSlug}</loc>
+    <loc>https://frontler-internet.com/fiber-internet-in/${citySlug}/${stateSlug}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`)
 
       // Format 2: /coverage/[state]/[city]
       urls.push(`  <url>
-    <loc>https://frontier-deals.com/coverage/${stateSlug}/${citySlug}</loc>
+    <loc>https://frontler-internet.com/coverage/${stateSlug}/${citySlug}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`)

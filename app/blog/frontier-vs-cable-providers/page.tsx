@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Frontier Fiber vs Cable Internet: Which Is Better in 2026?", description: "Frontier Fiber vs Xfinity, Spectrum, Cox, and other cable providers. Speed, price, reliability, and contract comparison.", url: "https://frontier-deals.com/blog/frontier-vs-cable-providers", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-03-02", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Frontier Fiber vs Cable Internet: Which Is Better in 2026?", description: "Frontier Fiber vs Xfinity, Spectrum, Cox, and other cable providers. Speed, price, reliability, and contract comparison.", url: "https://frontler-internet.com/blog/frontier-vs-cable-providers", image: { "@type": "ImageObject", url: "https://frontler-internet.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-03-02", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontler-internet.com/images/frontier-logo-design.png" } } }
 
   return (
     <>
