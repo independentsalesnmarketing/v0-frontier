@@ -2,7 +2,8 @@
 
 import React from "react"
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
+import { resolveIpGeoLocation } from "@/lib/geolocation"
 import { X, ChevronRight, ChevronLeft, Building, User, Mail, Phone, Hash, Loader2, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -20,6 +21,12 @@ export function BusinessOrderForm({ isOpen, onClose, preSelectedPlan }: Business
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showThankYou, setShowThankYou] = useState(false)
   const iframeRef = useRef<HTMLIFrameElement | null>(null)
+  const ipGeoPromiseRef = useRef<Promise<string> | null>(null)
+
+  useEffect(() => {
+    if (!isOpen) return
+    ipGeoPromiseRef.current = resolveIpGeoLocation()
+  }, [isOpen])
   const [formData, setFormData] = useState({
     companyName: "",
     businessType: "",
@@ -45,11 +52,19 @@ export function BusinessOrderForm({ isOpen, onClose, preSelectedPlan }: Business
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
     try {
+      let geoLocation = ""
+      if (ipGeoPromiseRef.current) {
+        geoLocation = await Promise.race<string>([
+          ipGeoPromiseRef.current,
+          new Promise<string>((r) => setTimeout(() => r(""), 3000)),
+        ])
+      }
+
       // Format data exactly as expected by the Google Apps Script
       const dataToSend = {
         order: "Business",
@@ -64,11 +79,12 @@ export function BusinessOrderForm({ isOpen, onClose, preSelectedPlan }: Business
         federalTaxId: formData.federalTaxId,
         internetPlan: formData.internetPlan,
         voipService: formData.voipService || "No",
+        geoLocation,
       }
 
       // Use the same Google Apps Script URL that works with the residential form
       const scriptUrl =
-        "https://script.google.com/macros/s/AKfycbx6QqdUuVmjmqshF7yw6Erac1UGhkY59ajw7Ho9VeumwqagWAvMnirhXLD3bVExYqJW/exec"
+        "https://script.google.com/macros/s/AKfycbw3v1WwweiCkaBNIOAPQbvFV2XdqAHggh6na67uXKy2wh9b-klNm9Ruo66cQzIn4ch1EA/exec"
 
       // Create a hidden iframe if it doesn't exist
       if (!iframeRef.current) {

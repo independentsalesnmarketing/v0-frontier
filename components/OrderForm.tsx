@@ -1,7 +1,8 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
+import { resolveIpGeoLocation } from "@/lib/geolocation"
 import { createPortal } from "react-dom"
 import {
   X,
@@ -24,6 +25,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
+import { InstallDatePicker } from "@/components/InstallDatePicker"
 
 const PLANS: Record<string, { name: string; speed: string; price: string }> = {
   "fiber-500": { name: "Fiber 500", speed: "500/500 Mbps", price: "$34.99/mo" },
@@ -58,6 +60,12 @@ export function OrderForm({ isOpen, onClose, preSelectedPlan, orderType, default
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showThankYou, setShowThankYou] = useState(false)
   const [showAddOns, setShowAddOns] = useState(false)
+  const ipGeoPromiseRef = useRef<Promise<string> | null>(null)
+
+  useEffect(() => {
+    if (!isOpen) return
+    ipGeoPromiseRef.current = resolveIpGeoLocation()
+  }, [isOpen])
 
   const [selectedPlanKey, setSelectedPlanKey] = useState<string | null>(preSelectedPlan || null)
   const plan = selectedPlanKey ? (PLANS[selectedPlanKey] || PLANS[selectedPlanKey.toLowerCase().replace(/\s+/g, "")]) : null
@@ -84,15 +92,23 @@ export function OrderForm({ isOpen, onClose, preSelectedPlan, orderType, default
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
     try {
+      let geoLocation = ""
+      if (ipGeoPromiseRef.current) {
+        geoLocation = await Promise.race<string>([
+          ipGeoPromiseRef.current,
+          new Promise<string>((r) => setTimeout(() => r(""), 3000)),
+        ])
+      }
+
       const form = document.createElement("form")
       form.method = "POST"
       form.action =
-        "https://script.google.com/macros/s/AKfycbx6QqdUuVmjmqshF7yw6Erac1UGhkY59ajw7Ho9VeumwqagWAvMnirhXLD3bVExYqJW/exec"
+        "https://script.google.com/macros/s/AKfycbw3v1WwweiCkaBNIOAPQbvFV2XdqAHggh6na67uXKy2wh9b-klNm9Ruo66cQzIn4ch1EA/exec"
 
       const dataToSend = {
         order: orderType === "residential" ? "Residential" : "Business",
@@ -111,6 +127,7 @@ export function OrderForm({ isOpen, onClose, preSelectedPlan, orderType, default
         unbreakableWiFi: formData.unbreakableWiFi ? "Yes" : "No",
         identityProtection: formData.identityProtection ? "Yes" : "No",
         premiumTechPro: formData.premiumTechPro ? "Yes" : "No",
+        geoLocation,
       }
 
       const hiddenField = document.createElement("input")
@@ -307,8 +324,13 @@ export function OrderForm({ isOpen, onClose, preSelectedPlan, orderType, default
               </legend>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="preferredInstallDate" className="text-gray-600 text-sm">Preferred Install Date</Label>
-                  <Input id="preferredInstallDate" name="preferredInstallDate" type="date" value={formData.preferredInstallDate} onChange={handleChange} className="mt-1.5 h-11 border-gray-200 focus:border-[#0A1E3C] focus:ring-[#0A1E3C]" />
+                  <Label className="text-gray-600 text-sm">Preferred Install Date</Label>
+                  <div className="mt-1.5">
+                    <InstallDatePicker
+                      value={formData.preferredInstallDate}
+                      onChange={(date) => setFormData((p) => ({ ...p, preferredInstallDate: date }))}
+                    />
+                  </div>
                 </div>
                 <div>
                   <Label htmlFor="preferredInstallTime" className="text-gray-600 text-sm">Preferred Install Time</Label>
