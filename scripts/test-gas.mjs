@@ -2,7 +2,7 @@ import https from "https";
 import querystring from "querystring";
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx6QqdUuVmjmqshF7yw6Erac1UGhkY59ajw7Ho9VeumwqagWAvMnirhXLD3bVExYqJW/exec";
+  "https://script.google.com/macros/s/AKfycbw3v1WwweiCkaBNIOAPQbvFV2XdqAHggh6na67uXKy2wh9b-klNm9Ruo66cQzIn4ch1EA/exec";
 
 async function post(label, payload) {
   return new Promise((resolve, reject) => {
