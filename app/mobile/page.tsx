@@ -139,7 +139,7 @@ const productSchema = {
     price: "25.00",
     priceValidUntil: "2026-12-31",
     availability: "https://schema.org/InStock",
-    url: "https://frontier-deals.com/mobile",
+    url: "https://frontler-internet.com/mobile",
   },
 }
 

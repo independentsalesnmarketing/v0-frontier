@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "Is Bundling Internet and TV Worth It in 2026? | Frontier Deals",
   description: "Traditional cable bundles used to be the only way to save. Here's how modern fiber internet plus streaming compares to legacy bundles on price and flexibility.",
-  alternates: { canonical: "https://frontier-deals.com/blog/internet-tv-bundle-save-money" },
+  alternates: { canonical: "https://frontler-internet.com/blog/internet-tv-bundle-save-money" },
 }
 
 export default function BundlingGuidePage() {

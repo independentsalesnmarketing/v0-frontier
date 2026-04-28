@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "Internet Speeds for Streaming: Netflix, YouTube, and Beyond | Frontier",
   description: "How much bandwidth 4K streaming really uses, why buffering happens, and how many simultaneous streams your internet plan can handle.",
-  alternates: { canonical: "https://frontier-deals.com/blog/streaming-internet-requirements" },
+  alternates: { canonical: "https://frontler-internet.com/blog/streaming-internet-requirements" },
 }
 
 export default function StreamingGuidePage() {

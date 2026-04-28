@@ -56,11 +56,11 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
   return {
     title,
     description,
-    alternates: { canonical: `https://frontier-deals.com/fiber-internet-in/${city}/${state}` },
+    alternates: { canonical: `https://frontler-internet.com/fiber-internet-in/${city}/${state}` },
     openGraph: {
       title,
       description,
-      url: `https://frontier-deals.com/fiber-internet-in/${city}/${state}`,
+      url: `https://frontler-internet.com/fiber-internet-in/${city}/${state}`,
       siteName: "Frontier Deals",
       locale: "en_US",
       type: "website",

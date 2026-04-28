@@ -21,7 +21,7 @@ export function generateMetadata(): Metadata {
       type: "article",
       publishedTime: "2025-03-15T08:00:00Z",
       modifiedTime,
-      authors: ["https://frontier-deals.com/about#sarah-johnson"],
+      authors: ["https://frontler-internet.com/about#sarah-johnson"],
     },
     twitter: {
       card: "summary_large_image",

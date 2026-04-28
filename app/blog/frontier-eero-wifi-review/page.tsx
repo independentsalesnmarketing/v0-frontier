@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Frontier eero WiFi Review: Are the Free Routers Good?", description: "In-depth review of the eero routers included free with Frontier Fiber plans. Covers eero Wi-Fi 6, Pro 6, Pro 6E, and Max 7.", url: "https://frontier-deals.com/blog/frontier-eero-wifi-review", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-07-01", dateModified: getResolvedMonthlyUpdatedDate("2026-03-09"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Frontier eero WiFi Review: Are the Free Routers Good?", description: "In-depth review of the eero routers included free with Frontier Fiber plans. Covers eero Wi-Fi 6, Pro 6, Pro 6E, and Max 7.", url: "https://frontler-internet.com/blog/frontier-eero-wifi-review", image: { "@type": "ImageObject", url: "https://frontler-internet.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-07-01", dateModified: getResolvedMonthlyUpdatedDate("2026-03-09"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontler-internet.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

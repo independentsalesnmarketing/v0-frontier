@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Frontier Home Phone Service from $9.99/mo | Unlimited Calling",
     description: "Frontier Digital Unlimited Voice: unlimited calling, HD quality, 20+ features. Bundle with fiber and save $25/mo.",
-    url: "https://frontier-deals.com/home-phone",
+    url: "https://frontler-internet.com/home-phone",
     siteName: "Frontier Deals",
     images: [{ url: "/images/og-frontier-internet.jpg", width: 1200, height: 630, alt: "Frontier Home Phone Service" }],
     locale: "en_US",

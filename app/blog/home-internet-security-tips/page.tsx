@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "10 Home Internet Security Tips Every Family Should Know | Frontier Deals",
   description: "Protect your home network from hackers and malware with these straightforward security practices. No tech degree required.",
-  alternates: { canonical: "https://frontier-deals.com/blog/home-internet-security-tips" },
+  alternates: { canonical: "https://frontler-internet.com/blog/home-internet-security-tips" },
 }
 
 export default function InternetSecurityTipsPage() {

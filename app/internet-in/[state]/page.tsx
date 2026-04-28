@@ -56,8 +56,8 @@ export default async function StateLandingPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://frontier-deals.com/" },
-      { "@type": "ListItem", position: 2, name: "Coverage", item: "https://frontier-deals.com/coverage" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://frontler-internet.com/" },
+      { "@type": "ListItem", position: 2, name: "Coverage", item: "https://frontler-internet.com/coverage" },
       { "@type": "ListItem", position: 3, name: stateName },
     ],
   }

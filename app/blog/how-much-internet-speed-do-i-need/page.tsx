@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "How Much Internet Speed Do I Actually Need? | Frontier",
   description: "A practical guide to choosing the right internet speed for your household based on how many people and devices are online simultaneously.",
-  alternates: { canonical: "https://frontier-deals.com/blog/how-much-internet-speed-do-i-need" },
+  alternates: { canonical: "https://frontler-internet.com/blog/how-much-internet-speed-do-i-need" },
 }
 
 export default function HowMuchSpeedPage() {

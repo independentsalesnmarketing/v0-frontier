@@ -28,10 +28,10 @@ const articleSchema = {
   "@type": "Article",
   headline: "Frontier 1 Gig Internet: Is It Worth It?",
   description: "A complete review of Frontier Fiber 1 Gig internet — price, speed, who needs it, and how it compares to the 500 Mbps plan.",
-  url: "https://frontier-deals.com/blog/frontier-1-gig-internet",
+  url: "https://frontler-internet.com/blog/frontier-1-gig-internet",
   image: {
     "@type": "ImageObject",
-    url: "https://frontier-deals.com/images/og-frontier-hero.jpg",
+    url: "https://frontler-internet.com/images/og-frontier-hero.jpg",
     width: 1200,
     height: 630,
   },
@@ -43,7 +43,7 @@ const articleSchema = {
     name: "Frontier Deals",
     logo: {
       "@type": "ImageObject",
-      url: "https://frontier-deals.com/images/frontier-logo-design.png",
+      url: "https://frontler-internet.com/images/frontier-logo-design.png",
     },
   },
 }

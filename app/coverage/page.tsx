@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Frontier Fiber Coverage Map | Find Internet in Your Area",
     description: "Check Frontier Fiber Internet availability in your area. Browse our coverage map across 19+ states and hundreds of cities starting at $34.99/mo.",
-    url: "https://frontier-deals.com/coverage",
+    url: "https://frontler-internet.com/coverage",
     siteName: "Frontier Deals",
     images: [{ url: "/images/og-frontier-internet.jpg", width: 1200, height: 630, alt: "Frontier Fiber Coverage Map" }],
     locale: "en_US",

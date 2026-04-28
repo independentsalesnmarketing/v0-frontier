@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "Home Network Setup Guide: Router Placement, Ethernet, and Mesh WiFi",
   description: "Get the most out of your internet plan by setting up your home network properly. Covers optimal router placement, when to use Ethernet, and mesh WiFi systems.",
-  alternates: { canonical: "https://frontier-deals.com/blog/home-network-setup-guide" },
+  alternates: { canonical: "https://frontler-internet.com/blog/home-network-setup-guide" },
 }
 
 export default function HomeNetworkGuidePage() {

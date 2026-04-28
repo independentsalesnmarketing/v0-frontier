@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Frontier Internet Plans 2026 | Fiber from $34.99/mo",
     description:
       "Shop Frontier Communications fiber internet plans from $34.99/mo. Unlimited data, free router, free installation. Check availability now.",
-    url: "https://frontier-deals.com",
+    url: "https://frontler-internet.com",
   },
 }
 
@@ -42,12 +42,12 @@ export const metadata: Metadata = {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://frontier-deals.com/#organization",
+  "@id": "https://frontler-internet.com/#organization",
   name: "Frontier Deals — Authorized Frontier Retailer",
-  url: "https://frontier-deals.com",
+  url: "https://frontler-internet.com",
   logo: {
     "@type": "ImageObject",
-    url: "https://frontier-deals.com/android-chrome-192x192.png",
+    url: "https://frontler-internet.com/android-chrome-192x192.png",
     width: 192,
     height: 192,
   },
@@ -69,15 +69,15 @@ const structuredData = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://frontier-deals.com/#website",
-  url: "https://frontier-deals.com",
+  "@id": "https://frontler-internet.com/#website",
+  url: "https://frontler-internet.com",
   name: "Frontier Deals",
   description: "Authorized Frontier Internet Retailer",
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://frontier-deals.com/coverage?q={search_term_string}",
+      urlTemplate: "https://frontler-internet.com/coverage?q={search_term_string}",
     },
     "query-input": "required name=search_term_string",
   },
@@ -133,7 +133,7 @@ const faqSchema = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  "@id": "https://frontier-deals.com/#product",
+  "@id": "https://frontler-internet.com/#product",
   name: "Frontier Fiber Internet",
   description: "High-speed fiber internet with symmetrical speeds up to 7 Gig",
   brand: { "@type": "Brand", name: "Frontier Communications" },
@@ -143,7 +143,7 @@ const productSchema = {
     lowPrice: "34.99",
     highPrice: "109.99",
     offerCount: "5",
-    url: "https://frontier-deals.com/internet",
+    url: "https://frontler-internet.com/internet",
     availability: "https://schema.org/InStock",
   },
   additionalProperty: [
@@ -163,7 +163,7 @@ const productSchema = {
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "@id": "https://frontier-deals.com/#webpage",
+  "@id": "https://frontler-internet.com/#webpage",
   speakableSpecification: {
     "@type": "SpeakableSpecification",
     cssSelector: [".faq-section", "h1", ".hero-description"],
@@ -570,7 +570,7 @@ export default function IndexPage() {
               </div>
             </div>
             <p className="text-xs text-white/35 mt-10">
-              frontier-deals.com is an authorized retailer of Frontier Communications services.
+              frontler-internet.com is an authorized retailer of Frontier Communications services.
               We are not affiliated with Frontier Communications parent company.
             </p>
           </div>

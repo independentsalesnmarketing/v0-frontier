@@ -250,7 +250,7 @@ const productSchema = {
   "@type": "Product",
   name: "Frontier Internet & Voice Bundles",
   description: "Combine Frontier Fiber Internet with Digital Voice for the ultimate connectivity package.",
-  image: "https://frontier-deals.com/android-chrome-192x192.png",
+  image: "https://frontler-internet.com/android-chrome-192x192.png",
   brand: { "@type": "Brand", name: "Frontier Communications" },
   offers: { "@type": "AggregateOffer", lowPrice: "64.99", highPrice: "174.99", priceCurrency: "USD", offerCount: bundles.length },
   aggregateRating: { "@type": "AggregateRating", ratingValue: "4.7", bestRating: "5", worstRating: "1", ratingCount: "5892" },

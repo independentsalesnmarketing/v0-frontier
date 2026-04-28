@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 const retailerSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://frontier-deals.com/#organization",
+  "@id": "https://frontler-internet.com/#organization",
   name: "Frontier Deals",
-  url: "https://frontier-deals.com",
-  logo: "https://frontier-deals.com/android-chrome-192x192.png",
+  url: "https://frontler-internet.com",
+  logo: "https://frontler-internet.com/android-chrome-192x192.png",
   description:
     "Authorized retailer of Frontier Communications fiber internet services. We help residential and business customers compare plans, check availability, and order service.",
-  email: "support@frontier-deals.com",
+  email: "support@frontler-internet.com",
   areaServed: {
     "@type": "Country",
     name: "United States",
@@ -40,14 +40,14 @@ const retailerSchema = {
       closes: "21:00",
     },
   },
-  sameAs: ["https://frontier-deals.com"],
+  sameAs: ["https://frontler-internet.com"],
 }
 
 const TEAM = [
   {
     name: "Sarah Johnson",
     role: "Senior Technology Writer",
-    bio: "Sarah has 15+ years in telecommunications and consumer technology. She writes in-depth guides on fiber internet, home networking, and broadband policy for frontier-deals.com readers.",
+    bio: "Sarah has 15+ years in telecommunications and consumer technology. She writes in-depth guides on fiber internet, home networking, and broadband policy for frontler-internet.com readers.",
     credentials: ["Certified Network Professional", "M.S. Telecommunications", "Technical Writing Fellow"],
   },
   {
@@ -196,7 +196,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-3xl font-black text-white mb-4">Full Disclosure</h2>
             <p className="text-white/65 leading-relaxed max-w-2xl mx-auto mb-8 text-sm">
-              frontier-deals.com is operated by an independent authorized retailer of Frontier
+              frontler-internet.com is operated by an independent authorized retailer of Frontier
               Communications services. We are <strong className="text-white">not</strong> Frontier
               Communications or any of its affiliates or subsidiaries. Frontier, the Frontier logo, and
               all related marks are trademarks of Frontier Communications Parent Inc. Pricing shown

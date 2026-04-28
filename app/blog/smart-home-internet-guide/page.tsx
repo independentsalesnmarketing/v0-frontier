@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "How Many Smart Devices Can Your Internet Handle? | Frontier",
   description: "From Ring doorbells to smart thermostats, every device uses bandwidth. Here's how to make sure your internet can keep up with your smart home.",
-  alternates: { canonical: "https://frontier-deals.com/blog/smart-home-internet-guide" },
+  alternates: { canonical: "https://frontler-internet.com/blog/smart-home-internet-guide" },
 }
 
 export default function SmartHomeGuidePage() {

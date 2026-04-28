@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "Is Multi-Gig Internet Worth It? 2 Gig vs 5 Gig Explained | Frontier Deals",
   description: "Multi-gig internet plans are now available to homes. Here's who actually benefits from 2 Gig or 5 Gig speeds, and who's better off with a standard gig plan.",
-  alternates: { canonical: "https://frontier-deals.com/blog/multi-gig-internet-worth-it" },
+  alternates: { canonical: "https://frontler-internet.com/blog/multi-gig-internet-worth-it" },
 }
 
 export default function MultiGigPage() {

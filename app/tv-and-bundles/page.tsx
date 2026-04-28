@@ -151,7 +151,7 @@ const productSchema = {
   "@type": "Product",
   name: "Frontier TV & Netflix Bundle",
   description: "Experience the best of streaming entertainment with Frontier Fiber Internet and Netflix bundled together.",
-  image: "https://frontier-deals.com/android-chrome-192x192.png",
+  image: "https://frontler-internet.com/android-chrome-192x192.png",
   brand: { "@type": "Brand", name: "Frontier Communications" },
   offers: { "@type": "AggregateOffer", lowPrice: "37.98", highPrice: "97.98", priceCurrency: "USD", offerCount: "4" },
   aggregateRating: { "@type": "AggregateRating", ratingValue: "4.6", bestRating: "5", worstRating: "1", ratingCount: "3421" },

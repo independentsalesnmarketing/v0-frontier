@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "What Are Data Caps and Why Do ISPs Have Them? | Frontier",
   description: "How data caps work, how much data your household actually uses, and why Frontier Fiber doesn't cap your data.",
-  alternates: { canonical: "https://frontier-deals.com/blog/data-caps-explained" },
+  alternates: { canonical: "https://frontler-internet.com/blog/data-caps-explained" },
 }
 
 export default function DataCapsExplainedPage() {

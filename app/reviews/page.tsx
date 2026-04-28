@@ -77,7 +77,7 @@ export default function ReviewsPage() {
     "@type": "Product",
     name: "Frontier Fiber Internet",
     description: "High-speed fiber optic internet service with symmetrical upload and download speeds up to 7 Gbps, no data caps, and no contracts.",
-    image: "https://frontier-deals.com/android-chrome-192x192.png",
+    image: "https://frontler-internet.com/android-chrome-192x192.png",
     brand: { "@type": "Brand", name: "Frontier Communications" },
     offers: {
       "@type": "AggregateOffer",

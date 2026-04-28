@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "How to Cancel T-Mobile Home Internet & Switch to Frontier Fiber", description: "Easy guide to canceling T-Mobile 5G Home Internet and upgrading to Frontier Fiber. No contracts make switching simple.", url: "https://frontier-deals.com/blog/how-to-cancel-tmobile-switch-to-frontier", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-02-27", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "How to Cancel T-Mobile Home Internet & Switch to Frontier Fiber", description: "Easy guide to canceling T-Mobile 5G Home Internet and upgrading to Frontier Fiber. No contracts make switching simple.", url: "https://frontler-internet.com/blog/how-to-cancel-tmobile-switch-to-frontier", image: { "@type": "ImageObject", url: "https://frontler-internet.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2026-02-27", dateModified: getResolvedMonthlyUpdatedDate("2026-03-06"), author: { "@type": "Person", name: "Marcus Chen" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontler-internet.com/images/frontier-logo-design.png" } } }
 
   return (
     <>

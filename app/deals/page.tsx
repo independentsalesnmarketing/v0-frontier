@@ -65,7 +65,7 @@ const offerSchema = {
   "@type": "OfferCatalog",
   name: `Frontier Fiber Internet Deals — ${currentMonthYear}`,
   description: "Current promotional offers for Frontier Fiber Internet through an authorized retailer.",
-  url: "https://frontier-deals.com/deals",
+  url: "https://frontler-internet.com/deals",
   numberOfItems: 4,
   itemListElement: [
     {
@@ -292,7 +292,7 @@ export default function DealsPage() {
           <p className="text-xs text-gray-400 max-w-3xl mx-auto">
             Prices shown reflect Auto Pay &amp; paperless billing discount. Visa® Reward Card mailed after 90 days of active service.
             Standard rates apply after promotional period. All plans include unlimited data, no contracts, and free standard installation.
-            frontier-deals.com is an authorized retailer — not affiliated with Frontier Communications parent company.
+            frontler-internet.com is an authorized retailer — not affiliated with Frontier Communications parent company.
           </p>
         </div>
       </section>

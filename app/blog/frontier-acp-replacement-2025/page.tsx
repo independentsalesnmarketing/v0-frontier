@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "ACP Ended: How to Get Affordable Internet in 2026", description: "The FCC's ACP ended in 2024. Here's what replaced it and how to get affordable internet now.", url: "https://frontier-deals.com/blog/frontier-acp-replacement-2025", image: { "@type": "ImageObject", url: "https://frontier-deals.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-09-15", dateModified: getResolvedMonthlyUpdatedDate("2026-03-10"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontier-deals.com/images/frontier-logo-design.png" } } }
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "ACP Ended: How to Get Affordable Internet in 2026", description: "The FCC's ACP ended in 2024. Here's what replaced it and how to get affordable internet now.", url: "https://frontler-internet.com/blog/frontier-acp-replacement-2025", image: { "@type": "ImageObject", url: "https://frontler-internet.com/images/og-frontier-hero.jpg", width: 1200, height: 630 }, datePublished: "2025-09-15", dateModified: getResolvedMonthlyUpdatedDate("2026-03-10"), author: { "@type": "Person", name: "Sarah Johnson" }, publisher: { "@type": "Organization", name: "Frontier Deals", logo: { "@type": "ImageObject", url: "https://frontler-internet.com/images/frontier-logo-design.png" } } }
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

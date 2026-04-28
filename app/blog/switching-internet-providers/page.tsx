@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "How to Switch Internet Providers Without Losing Service",
   description: "A step-by-step guide to switching ISPs smoothly, including overlapping service dates, equipment returns, cancellation tips, and how to avoid early termination fees.",
-  alternates: { canonical: "https://frontier-deals.com/blog/switching-internet-providers" },
+  alternates: { canonical: "https://frontler-internet.com/blog/switching-internet-providers" },
 }
 
 export default function SwitchingProvidersPage() {

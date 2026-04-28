@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "What Is Fiber Internet? A Plain-English Explainer | Frontier",
   description: "How fiber optic internet actually works, why it's faster than cable or DSL, and what you need to know before signing up for a fiber plan.",
-  alternates: { canonical: "https://frontier-deals.com/blog/what-is-fiber-internet" },
+  alternates: { canonical: "https://frontler-internet.com/blog/what-is-fiber-internet" },
 }
 
 export default function WhatIsFiberPage() {
@@ -94,7 +94,7 @@ export default function WhatIsFiberPage() {
           Fiber availability depends on whether your provider has run fiber-optic cables to your neighborhood. This infrastructure is expanding rapidly. Frontier alone has added fiber to millions of new homes since 2021, with expansion ongoing across the country.
         </p>
         <p>
-          The fastest way to check is to enter your address on your provider's website. Frontier customers can check availability at <Link href="/check-availability" className="text-blue-600 hover:underline">frontier-deals.com/check-availability</Link>.
+          The fastest way to check is to enter your address on your provider's website. Frontier customers can check availability at <Link href="/check-availability" className="text-blue-600 hover:underline">frontler-internet.com/check-availability</Link>.
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4">Bottom Line</h2>

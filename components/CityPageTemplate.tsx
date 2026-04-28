@@ -559,11 +559,11 @@ export default function CityPageTemplate({ cityName, stateName }: CityPageTempla
           "@type": "WebPage",
           name: `Frontier Fiber Internet in ${cityName}, ${stateName}`,
           description: `Frontier Fiber Internet plans in ${cityName}, ${stateAbbr}. Speeds up to 7 Gig, free installation, no data caps.`,
-          url: `https://frontier-deals.com/fiber-internet-in/${slugify(cityName)}/${slugify(stateName)}`,
+          url: `https://frontler-internet.com/fiber-internet-in/${slugify(cityName)}/${slugify(stateName)}`,
           mainEntity: {
             "@type": "Product",
             name: "Frontier Fiber Internet",
-            image: "https://frontier-deals.com/android-chrome-192x192.png",
+            image: "https://frontler-internet.com/android-chrome-192x192.png",
             description: `High-speed fiber internet in ${cityName}, ${stateAbbr} with speeds up to 7 Gbps`,
             brand: { "@type": "Brand", name: "Frontier Communications" },
             offers: {
@@ -604,10 +604,10 @@ export default function CityPageTemplate({ cityName, stateName }: CityPageTempla
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://frontier-deals.com" },
-            { "@type": "ListItem", position: 2, name: "Coverage", item: "https://frontier-deals.com/coverage" },
-            { "@type": "ListItem", position: 3, name: stateName, item: `https://frontier-deals.com/internet-in/${slugify(stateName)}` },
-            { "@type": "ListItem", position: 4, name: `${cityName}, ${stateAbbr}`, item: `https://frontier-deals.com/fiber-internet-in/${slugify(cityName)}/${slugify(stateName)}` },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://frontler-internet.com" },
+            { "@type": "ListItem", position: 2, name: "Coverage", item: "https://frontler-internet.com/coverage" },
+            { "@type": "ListItem", position: 3, name: stateName, item: `https://frontler-internet.com/internet-in/${slugify(stateName)}` },
+            { "@type": "ListItem", position: 4, name: `${cityName}, ${stateAbbr}`, item: `https://frontler-internet.com/fiber-internet-in/${slugify(cityName)}/${slugify(stateName)}` },
           ],
         },
       ]),

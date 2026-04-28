@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free eero Wi-Fi 6 Router with Frontier Fiber | Whole-Home Coverage",
     description: "Every Frontier Fiber plan includes a free Amazon eero Wi-Fi 6 router for whole-home wireless coverage.",
-    url: "https://frontier-deals.com/wifi",
+    url: "https://frontler-internet.com/wifi",
     siteName: "Frontier Deals",
     images: [{ url: "/images/og-frontier-internet.jpg", width: 1200, height: 630, alt: "Frontier eero Wi-Fi 6 Router" }],
     locale: "en_US",

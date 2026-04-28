@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "Internet Speed Tests: What Your Results Actually Mean | Frontier",
   description: "How to run an accurate speed test, what download, upload, latency, and jitter numbers mean, and when your results indicate a problem.",
-  alternates: { canonical: "https://frontier-deals.com/blog/internet-speed-test-explained" },
+  alternates: { canonical: "https://frontler-internet.com/blog/internet-speed-test-explained" },
 }
 
 export default function SpeedTestExplainedPage() {

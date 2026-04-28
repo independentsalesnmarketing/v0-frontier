@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 export const metadata: Metadata = {
   title: "Upload vs Download Speed: Why Symmetrical Internet Matters | Frontier",
   description: "Most cable plans give you fast downloads but slow uploads. Learn why symmetrical fiber speeds are essential for video calls, cloud backups, and content creation.",
-  alternates: { canonical: "https://frontier-deals.com/blog/symmetrical-vs-asymmetrical-speeds" },
+  alternates: { canonical: "https://frontler-internet.com/blog/symmetrical-vs-asymmetrical-speeds" },
 }
 
 export default function SymmetricalSpeedsPage() {

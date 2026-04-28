@@ -39,7 +39,7 @@ export const metadata = {
     images: ["/images/og-frontier-hero.jpg"],
   },
   keywords: sitewideCoreKeywords,
-  metadataBase: new URL("https://frontier-deals.com"),
+  metadataBase: new URL("https://frontler-internet.com"),
 }
 
 export const viewport = {
